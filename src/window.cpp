@@ -1,6 +1,9 @@
 #include <glt/window.hpp>
+#include <glt/app.hpp>
 #include <GLFW/glfw3.h>
 #include <algorithm>
+#include <sstream>
+#include <iostream>
 
 namespace glt {
 
@@ -45,5 +48,65 @@ inline void Window::makeCurrentContext()
 
 inline void Window::show() { glfwShowWindow(_window); }
 inline void Window::hide() { glfwHideWindow(_window); }
+
+const int   WIDTH  = 1024;
+const int   HEIGHT = 768;
+const char *TITLE  = "OpenGL Window";
+
+Window easyWindow(int width, int height, const char *title, std::ostream &out)
+{
+    Window window(width, height, title, nullptr, nullptr);
+
+    if (window.valid() == false)
+    {
+        out << "Could not create window." << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
+    window.makeCurrentContext();
+
+    if (initGlTools() == false)
+    {
+        out << "Failed to load OpenGL." << std::endl;
+        exit(EXIT_FAILURE);
+    }
+
+    return window;
+}
+
+inline Window easyWindow(int width, int height, const char *title)
+{
+    return easyWindow(width, height, title, std::cerr);
+}
+
+inline Window easyWindow(int width, int height, std::ostream &out)
+{
+    return easyWindow(width, height, TITLE, out);
+}
+
+inline Window easyWindow(int width, int height)
+{
+    return easyWindow(width, height, TITLE, std::cerr);
+}
+
+inline Window easyWindow(const char *title, std::ostream &out)
+{
+    return easyWindow(WIDTH, HEIGHT, title, out);
+}
+
+inline Window easyWindow(const char *title)
+{
+    return easyWindow(WIDTH, HEIGHT, title, std::cerr);
+}
+
+inline Window easyWindow(std::ostream &out)
+{
+    return easyWindow(WIDTH, HEIGHT, TITLE, out);
+}
+
+inline Window easyWindow()
+{
+    return easyWindow(WIDTH, HEIGHT, TITLE, std::cerr);
+}
 
 } // end namespace glt
