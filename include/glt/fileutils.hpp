@@ -2,6 +2,7 @@
 #define _FILEUTILS_HPP_
 
 #include <glt/api.hpp>
+#include <glt/gl_core_4_5.hpp>
 #include <string>
 #include <ostream>
 
@@ -16,7 +17,7 @@ namespace glt {
  *
  * @return  True if the text was loaded in successsfully, false otherwise.
  */
-bool GLT_API readAllAsciiText(const std::string& filepath, std::ostream& out);
+GLT_API bool readAllAsciiText(const std::string& filepath, std::ostream& out);
 
 /**
  * Returns the OpenGL shader type based off the extension of filename.
@@ -31,7 +32,7 @@ bool GLT_API readAllAsciiText(const std::string& filepath, std::ostream& out);
  * @return  One of the shader types defined by the OpenGL API (e.g.
  *          GL_VERTEX_SHADER) or -1 if the extension is not recognized.
  */
-GLenum GLT_API shaderType(const std::string& filename);
+GLT_API GLenum shaderType(const std::string& filename);
 
 }
 

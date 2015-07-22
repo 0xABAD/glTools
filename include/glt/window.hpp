@@ -53,14 +53,14 @@ public:
  *           window could be created for any reason or OpenGL can not
  *           be loaded then the program will be prematurely exited.
  */
-Window GLT_API easyWindow(int width, int height, const char *title, std::ostream &out);
-Window GLT_API easyWindow(int width, int height, const char *title);
-Window GLT_API easyWindow(int width, int height, std::ostream &out);
-Window GLT_API easyWindow(int width, int height);
-Window GLT_API easyWindow(const char *title, std::ostream &out);
-Window GLT_API easyWindow(const char *title);
-Window GLT_API easyWindow(std::ostream &out);
-Window GLT_API easyWindow();
+GLT_API Window easyWindow(int width, int height, const char *title, std::ostream &out);
+GLT_API Window easyWindow(int width, int height, const char *title);
+GLT_API Window easyWindow(int width, int height, std::ostream &out);
+GLT_API Window easyWindow(int width, int height);
+GLT_API Window easyWindow(const char *title, std::ostream &out);
+GLT_API Window easyWindow(const char *title);
+GLT_API Window easyWindow(std::ostream &out);
+GLT_API Window easyWindow();
 
 } // end namespace glt
 

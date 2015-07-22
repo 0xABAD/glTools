@@ -22,7 +22,7 @@ namespace glt {
     }                                                     \
 }
 
-Program GLT_API compileProgram(std::ostream &out, std::initializer_list<std::string> shaderFilePaths)
+Program compileProgram(std::ostream &out, std::initializer_list<std::string> shaderFilePaths)
 {
     auto prog    = Program::create();
     auto shaders = std::vector<Shader>();
@@ -43,12 +43,12 @@ Program GLT_API compileProgram(std::ostream &out, std::initializer_list<std::str
     return prog;
 }
 
-Program GLT_API compileProgram(std::initializer_list<std::string> shaderFilePaths)
+Program compileProgram(std::initializer_list<std::string> shaderFilePaths)
 {
     return compileProgram(std::ostringstream(), shaderFilePaths);
 }
 
-Program GLT_API compileProgram(std::ostream &out, GLuint shaderId, std::initializer_list<GLuint> otherIds)
+Program compileProgram(std::ostream &out, GLuint shaderId, std::initializer_list<GLuint> otherIds)
 {
     auto prog = Program::create();
 
@@ -64,7 +64,7 @@ Program GLT_API compileProgram(std::ostream &out, GLuint shaderId, std::initiali
     return prog;
 }
 
-Program GLT_API compileProgram(GLuint shaderId, std::initializer_list<GLuint> otherIds)
+Program compileProgram(GLuint shaderId, std::initializer_list<GLuint> otherIds)
 {
     return compileProgram(std::ostringstream(), shaderId, otherIds);
 }

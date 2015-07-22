@@ -5,7 +5,7 @@
 
 namespace glt {
 
-Shader GLT_API compileShader(const std::string& filename)
+Shader compileShader(const std::string& filename)
 {
     auto shader_t = shaderType(filename);
 
@@ -13,13 +13,13 @@ Shader GLT_API compileShader(const std::string& filename)
     else return compileShader(filename, shader_t);
 }
 
-Shader GLT_API compileShader(const std::string& filename, GLenum shadertype)
+Shader compileShader(const std::string& filename, GLenum shadertype)
 {
     std::ostringstream dump;
     return compileShader(filename, shadertype, dump);
 }
 
-Shader GLT_API compileShader(const std::string& filename, std::ostream &out)
+Shader compileShader(const std::string& filename, std::ostream &out)
 {
     auto shader_t = shaderType(filename);
 
@@ -27,7 +27,7 @@ Shader GLT_API compileShader(const std::string& filename, std::ostream &out)
     else return compileShader(filename, shader_t, out);
 }
 
-Shader GLT_API compileShader(const std::string& filename, GLenum shadertype, std::ostream &out)
+Shader compileShader(const std::string& filename, GLenum shadertype, std::ostream &out)
 {
     std::ostringstream contents;
 

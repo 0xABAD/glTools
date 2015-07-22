@@ -2,6 +2,7 @@
 #define __PROGRAM_HPP__
 
 #include <glt/api.hpp>
+#include <glt/gl_core_4_5.hpp>
 #include <ostream>
 
 namespace glt {
@@ -51,8 +52,8 @@ public:
  *       for any reason the the returned program will have an id of zero, otherwise
  *       it will have an id greater than zero.
  */
-Program GLT_API compileProgram(std::ostream &out, std::initializer_list<std::string> paths);
-Program GLT_API compileProgram(std::initializer_list<std::string> paths);
+GLT_API Program compileProgram(std::ostream &out, std::initializer_list<std::string> paths);
+GLT_API Program compileProgram(std::initializer_list<std::string> paths);
 
 /**
  * Compile an OpenGL program using the given pre-compiled shader programs.
@@ -69,8 +70,8 @@ Program GLT_API compileProgram(std::initializer_list<std::string> paths);
  *           be returned, otherwise the program will have an id greater
  *           than zero.
  */
-Program GLT_API compileProgram(std::ostream &out, GLuint shaderId, std::initializer_list<GLuint> otherIds);
-Program GLT_API compileProgram(GLuint shaderId, std::initializer_list<GLuint> otherIds);
+GLT_API Program compileProgram(std::ostream &out, GLuint shaderId, std::initializer_list<GLuint> otherIds);
+GLT_API Program compileProgram(GLuint shaderId, std::initializer_list<GLuint> otherIds);
 
 } // end namepsace glt
 

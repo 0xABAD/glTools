@@ -9,7 +9,7 @@
 
 namespace glt {
 
-bool GLT_API readAllAsciiText(const std::string& filepath, std::ostream& out)
+bool readAllAsciiText(const std::string& filepath, std::ostream& out)
 {
     std::ifstream      file;
     std::ostringstream stream;
@@ -34,7 +34,7 @@ const std::unordered_map<std::string, int> SHADER_MAP = {
     { "comp", gl::COMPUTE_SHADER }
 };
 
-GLenum  GLT_API shaderType(const std::string& filename)
+GLenum shaderType(const std::string& filename)
 {
     std::smatch match;
     std::regex  re(".*\\.(vert|frag|geom|tese|tesc|comp)$",

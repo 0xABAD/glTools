@@ -26,7 +26,7 @@ public:
  *
  * @returns True if glTools was loaded successfully, false otherwise.
  */
-bool GLT_API initGlTools();
+GLT_API bool initGlTools();
 
 } // end namespace glt
 

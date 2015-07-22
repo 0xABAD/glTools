@@ -2,6 +2,7 @@
 #define __SHADER_HPP__
 
 #include <glt/api.hpp>
+#include <glt/gl_core_4_5.hpp>
 #include <string>
 #include <ostream>
 
@@ -64,10 +65,10 @@ public:
  *       not be compiled for any reason then the shader returned will have
  *       and id of zero.
  */
-Shader GLT_API compileShader(const std::string& filepath, GLenum shadertype, std::ostream &out);
-Shader GLT_API compileShader(const std::string& filepath, GLenum shadertype);
-Shader GLT_API compileShader(const std::string& filepath, std::ostream &out);
-Shader GLT_API compileShader(const std::string& filepath);
+GLT_API Shader compileShader(const std::string& filepath, GLenum shadertype, std::ostream &out);
+GLT_API Shader compileShader(const std::string& filepath, GLenum shadertype);
+GLT_API Shader compileShader(const std::string& filepath, std::ostream &out);
+GLT_API Shader compileShader(const std::string& filepath);
 
 
 } // end namespace glt

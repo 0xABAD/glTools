@@ -1,8 +1,6 @@
 #ifndef __API_HPP__
 #define __API_HPP__
 
-#include <glt/gl_core_4_5.hpp>
-
 #if !defined(_WIN32) && (defined(__WIN32__) || defined(WIN32) || defined(__MINGW32__))
   #define _WIN32
 #endif /* _WIN32 */

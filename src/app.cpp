@@ -1,4 +1,5 @@
 #include <glt/app.hpp>
+#include <glt/gl_core_4_5.hpp>
 #include <GLFW/glfw3.h>
 #include <iostream>
 
@@ -8,7 +9,7 @@ App::App()  { glfwInit(); }
 App::~App() { glfwTerminate(); }
 
 
-bool GLT_API initGlTools()
+bool initGlTools()
 {
     return gl::sys::LoadFunctions();
 }
