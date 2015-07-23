@@ -9,5 +9,6 @@
 #include <glt/shader.hpp>
 #include <glt/program.hpp>
 #include <glt/vertexBuffer.hpp>
+#include <glt/vertexArray.hpp>
 
 #endif // __GLT_HPP__
