@@ -3,6 +3,7 @@
 
 #include <glt/api.hpp>
 #include <ostream>
+#include <tuple>
 
 struct GLFWwindow;
 struct GLFWmonitor;
@@ -36,7 +37,42 @@ public:
 
     /** Hides this window. */
     void hide();
+
+    /**
+     * Returns true when the window received an event notifying
+     * that it should be destroyed (e.g. Alt + F4).
+     */
+    bool shouldClose();
+
+    /** Swaps the windows front and back buffer. */
+    void swapBuffers();
+
+    /**
+     * Returns the size of the window's frame buffer.
+     *
+     * This is the size, in pixels, of the window's frame buffer and
+     * typically the dimensions you want when calling glViewport.
+     *
+     * @returns  A tuple where the first element is the frame buffer's
+     *           width and the second is its height.
+     */
+    std::tuple<int, int> getFramebufferSize();
+
+    /**
+     * Returns the size of this window.
+     *
+     * Note that when working with OpenGL, such as calling glViewPort,
+     * then size of the window in pixels is what you want.
+     * @see getFrameBufferSize()
+     *
+     * @returns  A tuple where the first element is the window's
+     *           width and the second is its height.
+     */
+    std::tuple<int, int> getSize();
 };
+
+/** Processes events in the event queue. */
+GLT_API void pollEvents();
 
 /**
  * Creates a window with optional defaults, makes the window the

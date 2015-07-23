@@ -49,6 +49,24 @@ inline void Window::makeCurrentContext()
 
 inline void Window::show() { glfwShowWindow(_window); }
 inline void Window::hide() { glfwHideWindow(_window); }
+inline bool Window::shouldClose() { return glfwWindowShouldClose(_window); }
+inline void Window::swapBuffers() { glfwSwapBuffers(_window); }
+
+std::tuple<int, int> Window::getFramebufferSize()
+{
+    int width, height;
+    glfwGetFramebufferSize(_window, &width, &height);
+    return std::make_tuple(width, height);
+}
+
+std::tuple<int, int> Window::getSize()
+{
+    int width, height;
+    glfwGetWindowSize(_window, &width, &height);
+    return std::make_tuple(width, height);
+}
+
+inline void pollEvents() { glfwPollEvents(); }
 
 const int   WIDTH  = 1024;
 const int   HEIGHT = 768;
@@ -60,7 +78,8 @@ Window easyWindow(int width, int height, const char *title, std::ostream &out)
 
     if (window.valid() == false)
     {
-        out << "Could not create window." << std::endl;
+        out << "Could not create window.\n" 
+            << "Has an App been created?" << std::endl;
         exit(EXIT_FAILURE);
     }
 

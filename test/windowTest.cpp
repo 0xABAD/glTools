@@ -28,5 +28,16 @@ go_bandit([]() {
             AssertThat(window.valid(),    Is().EqualTo(true));
             AssertThat(out.str().empty(), Is().EqualTo(true));
         });
+
+        it("has correct size", []() {
+            auto width  = 800;
+            auto height = 600;
+            auto out    = std::stringstream();
+            auto window = glt::easyWindow(width, height, out);
+            auto size   = window.getSize();
+
+            AssertThat(std::get<0>(size), Equals(width));
+            AssertThat(std::get<1>(size), Equals(height));
+        });
     });
 });
