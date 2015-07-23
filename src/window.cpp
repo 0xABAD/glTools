@@ -1,5 +1,6 @@
 #include <glt/window.hpp>
 #include <glt/app.hpp>
+#include <glt/gl.hpp>
 #include <GLFW/glfw3.h>
 #include <algorithm>
 #include <sstream>
@@ -11,8 +12,8 @@ namespace glt {
 Window::Window(int width, int height, const char *title, GLFWmonitor *monitor, GLFWwindow *share)
     : _window(nullptr)
 {
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, GLT_OPEN_GL_MAJOR_VERSION);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, GLT_OPEN_GL_MINOR_VERSION);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     _window = glfwCreateWindow(width, height, title, monitor, share);

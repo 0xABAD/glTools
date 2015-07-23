@@ -2,7 +2,7 @@
 #define __PROGRAM_HPP__
 
 #include <glt/api.hpp>
-#include <glt/gl_core_4_5.hpp>
+#include <glt/gl.hpp>
 #include <ostream>
 
 namespace glt {

@@ -2,7 +2,7 @@
 #define _FILEUTILS_HPP_
 
 #include <glt/api.hpp>
-#include <glt/gl_core_4_5.hpp>
+#include <glt/gl.hpp>
 #include <string>
 #include <ostream>
 
