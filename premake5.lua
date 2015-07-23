@@ -34,7 +34,3 @@ project "glToolsTest"
     filter "configurations:Debug*"
         defines { "DEBUG" }
         flags   { "Symbols" }
-
-    filter "system:windows"
-        links   { "glfw3dll", "opengl32" }
-        libdirs { os.findlib("opengl32") }
