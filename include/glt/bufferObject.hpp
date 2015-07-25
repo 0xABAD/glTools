@@ -1,5 +1,5 @@
-#ifndef __VERTEX_ARRAY_HPP__
-#define __VERTEX_ARRAY_HPP__
+#ifndef __BUFFER_OBJECT_HPP__
+#define __BUFFER_OBJECT_HPP__
 
 #include <glt/api.hpp>
 #include <glt/gl.hpp>
@@ -7,39 +7,45 @@
 
 namespace glt {
 
+using Allocator   = void (*)(GLsizei, GLuint *);
+using Deallocator = void (*)(GLsizei, const GLuint *);
+
 /**
- * Container for OpenGL vertex array objects.  Has the same 
- * interface, albiet a subset, of an STL vector.  Unlike a
- * vector, a VertexArray can not be modified after it is
- * created.
+ * Container for OpenGL buffer objects of various types.
+ * Has the same interface, albiet a subset, of an STL vector.  
+ * However, unlike a vector, a BufferObject can not be modified 
+ * after it is created.
  */
-class VertexArray final {
+template <Allocator allocator, Deallocator deallocator>
+class BufferObject {
 private:
     std::vector<GLuint> _vector;
 
     void destroy()
     {
-        gl::DeleteVertexArrays(_vector.size(), _vector.data()); 
+        deallocator(_vector.size(), _vector.data()); 
         _vector.clear();
     }
 
 public:
-    VertexArray() : VertexArray(0) {}
+    BufferObject() : BufferObject(0) {}
 
-    explicit VertexArray(std::size_t count)
+    explicit BufferObject(GLsizei count)
         : _vector(count, 0) 
-    { gl::GenVertexArrays(count, _vector.data()); }
+    { 
+        allocator(count, _vector.data()); 
+    }
 
-    ~VertexArray() { destroy(); }
+    virtual ~BufferObject() { destroy(); }
 
-    VertexArray(const VertexArray&)            = delete;
-    VertexArray& operator=(const VertexArray&) = delete;
+    BufferObject(const BufferObject&)            = delete;
+    BufferObject& operator=(const BufferObject&) = delete;
 
-    VertexArray(VertexArray&& rhs) 
+    BufferObject(BufferObject&& rhs) 
         : _vector(0)
     { _vector.swap(rhs._vector); }
 
-    VertexArray& operator=(VertexArray&& rhs)
+    BufferObject& operator=(BufferObject&& rhs)
     {
         destroy();
         _vector.swap(rhs._vector);
@@ -73,6 +79,30 @@ public:
     const_reverse_iterator crend()   const { return _vector.crend(); }
 };
 
+class VertexBuffer final 
+    : public BufferObject<gl::GenBuffers, gl::DeleteBuffers>
+{
+public:
+             VertexBuffer()              : BufferObject()      {}
+    explicit VertexBuffer(GLsizei count) : BufferObject(count) {}
+};
+
+class VertexArray final 
+    : public BufferObject<gl::GenVertexArrays, gl::DeleteVertexArrays>
+{
+public:
+             VertexArray()              : BufferObject()      {}
+    explicit VertexArray(GLsizei count) : BufferObject(count) {}
+};
+
+class TextureBuffer final 
+    : public BufferObject<gl::GenTextures, gl::DeleteTextures>
+{
+public:
+             TextureBuffer()              : BufferObject()      {}
+    explicit TextureBuffer(GLsizei count) : BufferObject(count) {}
+};
+
 } // end namespace glt
 
-#endif  // __VERTEX_ARRAY_HPP__
+#endif  // __BUFFER_OBJECT_HPP__

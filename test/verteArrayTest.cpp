@@ -1,4 +1,4 @@
-#include <glt/vertexArray.hpp>
+#include <glt/bufferObject.hpp>
 #include <glt/window.hpp>
 #include <bandit/bandit.h>
 

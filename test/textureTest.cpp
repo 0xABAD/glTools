@@ -1,5 +1,5 @@
 #include <glt/window.hpp>
-#include <glt/textureBuffer.hpp>
+#include <glt/bufferObject.hpp>
 #include <glt/image.hpp>
 #include <bandit/bandit.h>
 

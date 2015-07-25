@@ -8,9 +8,7 @@
 #include <glt/fileutils.hpp>
 #include <glt/shader.hpp>
 #include <glt/program.hpp>
-#include <glt/vertexBuffer.hpp>
-#include <glt/vertexArray.hpp>
-#include <glt/textureBuffer.hpp>
+#include <glt/bufferObject.hpp>
 #include <glt/image.hpp>
 
 #endif // __GLT_HPP__
