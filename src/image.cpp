@@ -1,4 +1,4 @@
-#include <glt/texture.hpp>
+#include <glt/image.hpp>
 #include <utility>
 
 #define STB_IMAGE_IMPLEMENTATION
@@ -6,7 +6,7 @@
 
 namespace glt {
 
-Texture::Texture(const char *filepath, int force)
+Image::Image(const char *filepath, int force)
     : _data(nullptr)
     , _width(0)
     , _height(0)
@@ -21,12 +21,12 @@ unsigned char* destroy(unsigned char *data)
     return nullptr;
 }
 
-Texture::~Texture()
+Image::~Image()
 {
     _data = destroy(_data);
 }
 
-Texture::Texture(Texture&& rhs)
+Image::Image(Image&& rhs)
     : _data(nullptr)
     , _width(0)
     , _height(0)
@@ -38,7 +38,7 @@ Texture::Texture(Texture&& rhs)
     std::swap(_compPerPixel, rhs._compPerPixel);
 }
 
-Texture& Texture::operator=(Texture&& rhs)
+Image& Image::operator=(Image&& rhs)
 {
     _data = destroy(_data);
     _width = _height = _compPerPixel = 0;

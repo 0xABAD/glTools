@@ -11,6 +11,6 @@
 #include <glt/vertexBuffer.hpp>
 #include <glt/vertexArray.hpp>
 #include <glt/textureBuffer.hpp>
-#include <glt/texture.hpp>
+#include <glt/image.hpp>
 
 #endif // __GLT_HPP__

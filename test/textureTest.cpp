@@ -1,6 +1,6 @@
 #include <glt/window.hpp>
 #include <glt/textureBuffer.hpp>
-#include <glt/texture.hpp>
+#include <glt/image.hpp>
 #include <bandit/bandit.h>
 
 #include <iostream>
@@ -20,16 +20,16 @@ go_bandit([]() {
         });
     });
 
-    describe("Texture", []() {
+    describe("Image", []() {
 
         it("can load image from file", []() {
-            auto texture = glt::Texture("container.jpg");
-            auto isValid = texture.data() != nullptr;
+            auto image   = glt::Image("container.jpg");
+            auto isValid = image.data() != nullptr;
 
-            AssertThat(isValid,                      Is().True());
-            AssertThat(texture.width(),              Equals(512));
-            AssertThat(texture.height(),             Equals(512));
-            AssertThat(texture.componentsPerPixel(), Equals(3));
+            AssertThat(isValid,                    Is().True());
+            AssertThat(image.width(),              Equals(512));
+            AssertThat(image.height(),             Equals(512));
+            AssertThat(image.componentsPerPixel(), Equals(3));
         });
     });
 
