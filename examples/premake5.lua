@@ -18,3 +18,17 @@ project "triangle"
     filter "configurations:Debug*"
         defines { "DEBUG" }
         flags   { "Symbols" }
+
+project "texture"
+    location    "build/texture"
+    language    "C++"
+    kind        "ConsoleApp"
+    targetdir   "build/%{cfg.buildcfg}"
+    libdirs     { "../lib", "../build/Debug" }
+    includedirs { "../include" }
+    files       { "texture/**.hpp", "texture/**.cpp" }
+    links       { "glTools" }
+
+    filter "configurations:Debug*"
+        defines { "DEBUG" }
+        flags   { "Symbols" }
