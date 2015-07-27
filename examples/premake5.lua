@@ -32,3 +32,17 @@ project "texture"
     filter "configurations:Debug*"
         defines { "DEBUG" }
         flags   { "Symbols" }
+
+project "multitex"
+    location    "build/multitex"
+    language    "C++"
+    kind        "ConsoleApp"
+    targetdir   "build/%{cfg.buildcfg}"
+    libdirs     { "../lib", "../build/Debug" }
+    includedirs { "../include" }
+    files       { "multitex/**.hpp", "multitex/**.cpp" }
+    links       { "glTools" }
+
+    filter "configurations:Debug*"
+        defines { "DEBUG" }
+        flags   { "Symbols" }
