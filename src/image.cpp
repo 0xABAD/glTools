@@ -6,12 +6,13 @@
 
 namespace glt {
 
-Image::Image(const char *filepath, int force)
+Image::Image(const char *filepath, bool flip, int force)
     : _data(nullptr)
     , _width(0)
     , _height(0)
     , _compPerPixel(0)
 {
+    stbi_set_flip_vertically_on_load(flip);
     _data = stbi_load(filepath, &_width, &_height, &_compPerPixel, 0);
 }
 

@@ -16,17 +16,26 @@ public:
      * components per pixel will be determined by the underlying
      * library.
      */
-    explicit Image(const char *filepath) : Image(filepath, 0) {};
+    explicit Image(const char *filepath) : Image(filepath, false, 0) {}
 
     /** 
      * Constructs an image whose contents are from filepath. 
      *
      * @param filepath  Path of the file to load the image contents from.
+     * @param flip      True to flip the image vertically when loading.
+     */
+    Image(const char *filepath, bool flip) : Image(filepath, flip, 0) {}
+
+    /** 
+     * Constructs an image whose contents are from filepath. 
+     *
+     * @param filepath  Path of the file to load the image contents from.
+     * @param flip      True to flip the image vertically when loading.
      * @param force     Forces the number components per pixel to be this
      *                  this number.  Valid values are from 1 thru 4 inclusive.
      *                  This range is not checked.
      */
-    Image(const char *filepath, int force);
+    Image(const char *filepath, bool flip, int force);
 
     ~Image();
 
