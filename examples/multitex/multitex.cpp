@@ -1,4 +1,5 @@
 #include <glt/glt.hpp>
+#include <glt/geometry.hpp>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -46,24 +47,11 @@ int main(int argc, char *argv[])
     auto topRight  = glm::translate(glm::mat4{}, glm::vec3{+0.5f, +0.5f, 0});
     auto botRight  = glm::translate(glm::mat4{}, glm::vec3{+0.5f, -0.5f, 0});
     auto matrices  = std::array<glm::mat4 *, 4> { &topLeft, &topRight, &botLeft, &botRight };
-    auto indices   = std::array<GLuint, 6> { 0, 1, 2, 0, 2, 3 };
-    auto vertices  = std::array<GLfloat, 16> {
-        // vertices      // tex coords
-        -0.25, -0.25,    +0.0, +0.0,
-        +0.25, -0.25,    +1.0, +0.0,
-        +0.25, +0.25,    +1.0, +1.0,
-        -0.25, +0.25,    +0.0, +1.0
-    };
+    auto plane     = glt::makePlane(0.5, 0.5);
 
     gl::BindVertexArray(vao[0]);
-    gl::BindBuffer(gl::ARRAY_BUFFER,         vbo[0]);
-    gl::BindBuffer(gl::ELEMENT_ARRAY_BUFFER, vbo[1]);
-    gl::BufferData(gl::ARRAY_BUFFER,         vertices.size() * sizeof(GLfloat), vertices.data(), gl::STATIC_DRAW);
-    gl::BufferData(gl::ELEMENT_ARRAY_BUFFER, indices.size()  * sizeof(GLuint),  indices.data(),  gl::STATIC_DRAW);
-    gl::VertexAttribPointer(0, 2, gl::FLOAT, false, 4 * sizeof(GLfloat), nullptr);
-    gl::VertexAttribPointer(1, 2, gl::FLOAT, false, 4 * sizeof(GLfloat), (void*) (2 * sizeof(GLfloat)));
-    gl::EnableVertexAttribArray(0);
-    gl::EnableVertexAttribArray(1);
+    glt::loadGeometry(plane, vbo[0], vbo[1]);
+    glt::setupAttributes(plane);
     gl::BindVertexArray(0);
 
     loadTexture2D("../media/container.jpg", false, texbuf[0], gl::RGB8, gl::RGB);
@@ -77,7 +65,7 @@ int main(int argc, char *argv[])
     makeView(texbuf[7], texbuf[4], gl::REPEAT,          gl::RGBA8);
 
     gl::BindTexture(gl::TEXTURE_2D, 0);
-    gl::ClearColor(0.1, 0.4, 0.3, 1.0);
+    gl::ClearColor(0.1f, 0.4f, 0.3f, 1.0f);
 
     while (!window.shouldClose())
     {
@@ -87,7 +75,7 @@ int main(int argc, char *argv[])
         gl::UseProgram(program);
         gl::BindVertexArray(vao[0]);
 
-        for (int i = 0; i < matrices.size(); ++i) 
+        for (size_t i = 0; i < matrices.size(); ++i) 
         {
             gl::ActiveTexture(gl::TEXTURE0);
             gl::BindTexture(gl::TEXTURE_2D, texbuf[i]);
@@ -97,7 +85,7 @@ int main(int argc, char *argv[])
 
             gl::Uniform1f(scaleLoc, i == 0 ? 1.0f : 2.0f);
             gl::UniformMatrix4fv(transLoc, 1, gl::FALSE_, glm::value_ptr(*matrices[i]));
-            gl::DrawElements(gl::TRIANGLES, indices.size(), gl::UNSIGNED_INT, nullptr);
+            gl::DrawElements(gl::TRIANGLES, plane.indices.size(), gl::UNSIGNED_INT, nullptr);
         }
 
         gl::BindVertexArray(0);
