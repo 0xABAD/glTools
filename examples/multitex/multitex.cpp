@@ -6,29 +6,14 @@
 #include <iostream>
 #include <array>
 
-void setTexParams(GLint param)
-{
-    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_WRAP_S, param);
-    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_WRAP_T, param);
-    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_MIN_FILTER, gl::LINEAR);
-    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_MAG_FILTER, gl::LINEAR);
-}
-
 void makeView(GLuint tex, GLuint origianl, GLint param, GLenum internalformat)
 {
     gl::TextureView(tex, gl::TEXTURE_2D, origianl, internalformat, 0, 1, 0, 1);
     gl::BindTexture(gl::TEXTURE_2D, tex);
-    setTexParams(param);
-}
-
-void loadTexture2D(const char * filepath, bool flip, GLuint texture, GLenum internalformat, GLenum format)
-{
-    glt::Image image(filepath, flip);
-
-    gl::BindTexture(gl::TEXTURE_2D, texture);
-    setTexParams(gl::CLAMP_TO_EDGE);
-    gl::TextureStorage2D(texture, 1, internalformat, image.width(), image.height());
-    gl::TextureSubImage2D(texture, 0, 0, 0, image.width(), image.height(), format, gl::UNSIGNED_BYTE, image.data());
+    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_WRAP_S, param);
+    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_WRAP_T, param);
+    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_MIN_FILTER, gl::LINEAR);
+    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_MAG_FILTER, gl::LINEAR);
 }
 
 int main(int argc, char *argv[])
@@ -54,12 +39,12 @@ int main(int argc, char *argv[])
     glt::setupAttributes(plane);
     gl::BindVertexArray(0);
 
-    loadTexture2D("../media/container.jpg", false, texbuf[0], gl::RGB8, gl::RGB);
+    glt::loadTexture2D("../media/container.jpg", false, texbuf[0], gl::RGB8, gl::RGB);
     makeView(texbuf[1], texbuf[0], gl::REPEAT,        gl::RGB8);
     makeView(texbuf[2], texbuf[0], gl::REPEAT,        gl::RGB8);
     makeView(texbuf[3], texbuf[0], gl::CLAMP_TO_EDGE, gl::RGB8);
 
-    loadTexture2D("../media/awesomeface.png", true, texbuf[4], gl::RGBA8, gl::RGBA);
+    glt::loadTexture2D("../media/awesomeface.png", true, texbuf[4], gl::RGBA8, gl::RGBA);
     makeView(texbuf[5], texbuf[4], gl::REPEAT,          gl::RGBA8);
     makeView(texbuf[6], texbuf[4], gl::MIRRORED_REPEAT, gl::RGBA8);
     makeView(texbuf[7], texbuf[4], gl::REPEAT,          gl::RGBA8);
