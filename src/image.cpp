@@ -51,4 +51,24 @@ Image& Image::operator=(Image&& rhs)
     return *this;
 }
 
+void loadTexture2D(const char * filepath, 
+                   bool         flip, 
+                   GLuint       texture, 
+                   GLenum       internalformat, 
+                   GLenum       format)
+{
+    glt::Image image(filepath, flip);
+
+    gl::BindTexture(gl::TEXTURE_2D, texture);
+    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_WRAP_S, gl::CLAMP_TO_EDGE);
+    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_WRAP_T, gl::CLAMP_TO_EDGE);
+    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_MIN_FILTER, gl::LINEAR);
+    gl::TexParameteri(gl::TEXTURE_2D, gl::TEXTURE_MAG_FILTER, gl::LINEAR);
+    gl::TextureStorage2D(texture, 1, internalformat, image.width(), image.height());
+    gl::TextureSubImage2D(texture, 0, 0, 0, 
+                         image.width(), image.height(), 
+                         format, gl::UNSIGNED_BYTE, 
+                         image.data());
+}
+
 } // end namespace glt

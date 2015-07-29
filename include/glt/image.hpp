@@ -2,6 +2,7 @@
 #define __IMAGE_HPP__
 
 #include <glt/api.hpp>
+#include <glt/gl.hpp>
 
 namespace glt {
 
@@ -61,6 +62,23 @@ private:
     unsigned char *_data;
     int _width, _height, _compPerPixel;
 };
+
+/**
+ * Loads a 2D image as a texture into OpenGL.
+ *
+ * @param filepath        File path of image to load.
+ * @param flip            Whether to flip the image vertically on load.
+ * @param texture         Texture object that the texture will be bound to.
+ * @param internalformat  Memory layout of each pixel in the image
+ *                        (e.g. gl::RGBA8).
+ * @param format          Format of each pixel in the image for usage
+ *                        (e.g. gl::RGBA).
+ */
+GLT_API void loadTexture2D(const char * filepath, 
+                           bool         flip, 
+                           GLuint       texture, 
+                           GLenum       internalformat, 
+                           GLenum       format);
 
 } // end namespace glt
 
