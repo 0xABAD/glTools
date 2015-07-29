@@ -59,4 +59,77 @@ Geometry makePlane(float width, float height)
     return result;
 }
 
+Geometry makeBox(float width, float height, float depth)
+{
+    Geometry result;
+
+    auto x1 = -width  / 2;
+    auto x2 = x1 + width;
+    auto y1 = -height / 2;
+    auto y2 = y1 + height;
+    auto z1 = depth / 2;
+    auto z2 = z1 - depth;
+
+    result.vertices = {
+        x1, y1, z1,     // front face
+        x2, y1, z1,
+        x2, y2, z1,
+        x1, y2, z1,
+
+        x2, y2, z2,     // back face
+        x2, y1, z2,
+        x1, y1, z2,
+        x1, y2, z2,
+
+        x1, y1, z1,     // left face
+        x1, y2, z1,
+        x1, y2, z2,
+        x1, y1, z2,
+
+        x2, y1, z1,     // right face
+        x2, y1, z2,
+        x2, y2, z2,
+        x2, y2, z1,
+
+        x1, y1, z1,     // bottom face
+        x1, y1, z2,
+        x2, y1, z2,
+        x2, y1, z1,
+
+        x1, y2, z1,     // top face
+        x2, y2, z1,
+        x2, y2, z2,
+        x1, y2, z2,
+    };
+
+    result.texCoords = {
+        0,0,   1,0,   1,1,   0,1,   // front
+        0,1,   0,0,   1,0,   1,1,   // back
+        1,0,   1,1,   0,1,   0,0,   // left
+        0,0,   1,0,   1,1,   0,1,   // right
+        0,1,   0,0,   1,0,   1,1,   // bottom
+        0,0,   1,0,   1,1,   0,1    // top
+    };
+
+    result.indices = {
+         0,  1,  2,  2,  3,  0,     // front face
+         4,  5,  6,  6,  7,  4,     // back face
+         8,  9, 10, 10, 11,  8,     // left face
+        12, 13, 14, 14, 15, 12,     // right face
+        16, 17, 18, 18, 19, 16,     // bottom face
+        20, 21, 22, 22, 23, 20      // top face
+    };
+
+    result.normals = {
+         0, 0, 1,    0, 0, 1,    0, 0, 1,    0, 0, 1,
+         0, 0,-1,    0, 0,-1,    0, 0,-1,    0, 0,-1,
+        -1, 0, 0,   -1, 0, 0,   -1, 0, 0,   -1, 0, 0,
+         1, 0, 0,    1, 0, 0,    1, 0, 0,    1, 0, 0,
+         0,-1, 0,    0,-1, 0,    0,-1, 0,    0,-1, 0 ,
+         0, 1, 0,    0, 1, 0,    0, 1, 0,    0, 1, 0
+    };
+
+    return result;
+}
+
 } // end namespace glt

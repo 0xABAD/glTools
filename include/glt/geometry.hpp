@@ -79,6 +79,18 @@ GLT_API void setupAttributes(const Geometry& geometry, GLuint pos1 = 0, GLuint p
  */
 GLT_API Geometry makePlane(float width, float height);
 
+/**
+ * Creates a geometry that forms a box.  The geometry will normals
+ * that face outward of each face.
+ *
+ * @param width   Width of the box.
+ * @param height  Height of the box.
+ * @param depth   Depth of the box.
+ *
+ * @returns  A box geometry.
+ */
+GLT_API Geometry makeBox(float width, float height, float depth);
+
 } // end namespace glt
 
 #endif // __GEOMETRY_HPP__
