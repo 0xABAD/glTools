@@ -46,3 +46,17 @@ project "multitex"
     filter "configurations:Debug*"
         defines { "DEBUG" }
         flags   { "Symbols" }
+
+project "spincube"
+    location    "build/spincube"
+    language    "C++"
+    kind        "ConsoleApp"
+    targetdir   "build/%{cfg.buildcfg}"
+    libdirs     { "../lib", "../build/Debug" }
+    includedirs { "../include" }
+    files       { "spincube/**.hpp", "spincube/**.cpp" }
+    links       { "glTools" }
+
+    filter "configurations:Debug*"
+        defines { "DEBUG" }
+        flags   { "Symbols" }
