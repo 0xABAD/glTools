@@ -1,4 +1,5 @@
 #include <glt/glt.hpp>
+#include <glt/window.hpp>
 #include <bandit/bandit.h>
 #include <fstream>
 #include <cstdio>

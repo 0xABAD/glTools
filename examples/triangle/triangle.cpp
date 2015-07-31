@@ -1,4 +1,5 @@
 #include <glt/glt.hpp>
+#include <glt/window.hpp>
 #include <iostream>
 
 int main(int argc, char *argv[])

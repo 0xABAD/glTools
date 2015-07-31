@@ -20,14 +20,6 @@ public:
   App& operator=(App&&) = delete;
 };
 
-/**
- * Initializes the glTools library.  This should be called after
- * a window has been made the current context. @see Window
- *
- * @returns True if glTools was loaded successfully, false otherwise.
- */
-GLT_API bool initGlTools();
-
 } // end namespace glt
 
 #endif // __APP_HPP__

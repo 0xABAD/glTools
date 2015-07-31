@@ -1,4 +1,5 @@
 #include <glt/glt.hpp>
+#include <glt/window.hpp>
 #include <glt/geometry.hpp>
 
 #define GLM_FORCE_RADIANS

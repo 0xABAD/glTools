@@ -2,6 +2,7 @@
 #define __WINDOW_HPP__
 
 #include <glt/api.hpp>
+#include <glt/app.hpp>
 #include <ostream>
 #include <tuple>
 

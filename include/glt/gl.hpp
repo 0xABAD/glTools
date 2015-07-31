@@ -16,6 +16,19 @@
   #define GLT_OPEN_GL_MINOR_VERSION 5
 #endif
 
+#include <glt/api.hpp>
 #include <glt/gl_core_4_5.hpp>
+
+namespace glt {
+
+/**
+ * Initializes the glTools library.  This should be called after
+ * a window has been made the current context. @see Window
+ *
+ * @returns True if glTools was loaded successfully, false otherwise.
+ */
+GLT_API bool initGlTools();
+
+} // end namespace glt
 
 #endif // __GL_HPP__

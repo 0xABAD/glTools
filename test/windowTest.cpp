@@ -1,4 +1,5 @@
-#include <glt/glt.hpp>
+#include <glt/window.hpp>
+#include <glt/gl.hpp>
 #include <bandit/bandit.h>
 
 using namespace bandit;
@@ -14,7 +15,7 @@ go_bandit([]() {
         });
 
         it("does no load OpenGL when there is no valid window context", []() {
-            glt::Window window();
+            glt::Window window;
             AssertThat(glt::initGlTools(), Is().EqualTo(false));
         });
     });

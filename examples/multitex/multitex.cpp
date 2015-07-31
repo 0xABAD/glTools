@@ -1,4 +1,5 @@
 #include <glt/glt.hpp>
+#include <glt/window.hpp>
 #include <glt/geometry.hpp>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>

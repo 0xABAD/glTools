@@ -49,7 +49,7 @@ inline void Window::makeCurrentContext()
 
 inline void Window::show() { glfwShowWindow(_window); }
 inline void Window::hide() { glfwHideWindow(_window); }
-inline bool Window::shouldClose() { return glfwWindowShouldClose(_window); }
+inline bool Window::shouldClose() { return static_cast<bool>(glfwWindowShouldClose(_window)); }
 inline void Window::swapBuffers() { glfwSwapBuffers(_window); }
 
 std::tuple<int, int> Window::getFramebufferSize()
