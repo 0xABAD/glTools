@@ -5,6 +5,28 @@
 
 namespace glt {
 
+inline bool compileSource(const Shader& shader, const char * source, GLenum shadertype, std::ostream& out)
+{
+    gl::ShaderSource(shader, 1, static_cast<const GLchar * const *>(&source), nullptr);
+    gl::CompileShader(shader);
+
+    GLint success;
+    gl::GetShaderiv(shader, gl::COMPILE_STATUS, &success);
+
+    if (success == gl::FALSE_)
+    {
+        const GLsizei SIZE = 512;
+        GLchar log[SIZE] = {0};
+
+        gl::GetShaderInfoLog(shader, SIZE, nullptr, log);
+        out << log;
+
+        return false;
+    }
+
+    return true;
+}
+
 Shader compileShader(const std::string& filename)
 {
     auto shader_t = shaderType(filename);
@@ -38,24 +60,26 @@ Shader compileShader(const std::string& filename, GLenum shadertype, std::ostrea
     auto asStr  = contents.str();
     auto source = asStr.c_str();
 
-    gl::ShaderSource(shader, 1, static_cast<const GLchar * const *>(&source), nullptr);
-    gl::CompileShader(shader);
+    if (compileSource(shader, source, shadertype, out))
+        return shader;
 
-    GLint success;
-    gl::GetShaderiv(shader, gl::COMPILE_STATUS, &success);
+    return Shader();
+}
 
-    if (success == gl::FALSE_)
-    {
-        const GLsizei SIZE = 512;
-        GLchar log[SIZE] = {0};
+Shader compileShaderSource(const char * source, GLenum shadertype, std::ostream &out)
+{
+    auto shader = Shader(shadertype);
 
-        gl::GetShaderInfoLog(shader, SIZE, nullptr, log);
-        out << log;
+    if (compileSource(shader, source, shadertype, out))
+        return shader;
 
-        return Shader();
-    }
+    return Shader();
+}
 
-    return shader;
+Shader compileShaderSource(const char * source, GLenum shadertype)
+{
+    std::ostringstream dump;
+    return compileShaderSource(source, shadertype, dump);
 }
 
 } // end namespace glt

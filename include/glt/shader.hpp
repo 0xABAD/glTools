@@ -53,23 +53,38 @@ public:
  * @param filepath    Path to the file containing the shader source code.
  *
  * @param shadertype  The shader's type (e.g. GL_VERTEX_SHADER).  This parameter
- *            is optional and if left out then the shader's type will
- *            will be inferred from by the shader's file extension.
- *            @see shaderType()
+ *                    is optional and if left out then the shader's type will
+ *                    will be inferred from by the shader's file extension.
+ *                    @see shaderType()
  *
  * @param out         Out stream to place the error message if the shader 
- *            could not compiled for any reason.  This parameter is
- *            optional.
+ *                    could not compiled for any reason.  This parameter is
+ *                    optional.
  *
  * @returns  An OpenGL shader with a positive shader id.  If the shader could
- *       not be compiled for any reason then the shader returned will have
- *       and id of zero.
+ *           not be compiled for any reason then the shader returned will have
+ *           and id of zero.
  */
 GLT_API Shader compileShader(const std::string& filepath, GLenum shadertype, std::ostream &out);
 GLT_API Shader compileShader(const std::string& filepath, GLenum shadertype);
 GLT_API Shader compileShader(const std::string& filepath, std::ostream &out);
 GLT_API Shader compileShader(const std::string& filepath);
 
+/**
+ * Compile a shader directly from a source string.
+ *
+ * @param source      The shaders source code.
+ * @param shadertype  Shader type (e.g. GL_VERTEX_SHADER).
+ * @param out         Out stream to place the error message if the shader 
+ *                    could not compiled for any reason.  This parameter is
+ *                    optional.
+
+ * @returns  An OpenGL shader with a positive shader id.  If the shader could
+ *           not be compiled for any reason then the shader returned will have
+ *           and id of zero.
+ */
+GLT_API Shader compileShaderSource(const char * source, GLenum shadertype, std::ostream &out);
+GLT_API Shader compileShaderSource(const char * source, GLenum shadertype);
 
 } // end namespace glt
 

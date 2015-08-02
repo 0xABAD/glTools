@@ -80,6 +80,11 @@ go_bandit([]() {
             std::remove(temp);
         });
 
+        it("can compile from C string source", []() {
+            auto shader = glt::compileShaderSource(VERTEX_SOURCE, gl::VERTEX_SHADER);
+
+            AssertThat( shader.getId(), Is().GreaterThan(0) );
+        });
     });
 
     describe("compileProgram link errors: ", []() {
