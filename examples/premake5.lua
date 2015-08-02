@@ -13,7 +13,8 @@ project "triangle"
     files       { "triangle/**.hpp", "triangle/**.cpp" }
     links       { "glTools" }
 
-    postbuildcommands { "{COPY} ../../../build/Debug/glTools.* ../Debug/." }
+    postbuildcommands { "{COPY} ../../../build/Debug/glTools.* ../Debug/.",
+                        "{COPY} ../../../lib/glfw3.dll ../Debug/." }
 
     filter "configurations:Debug*"
         defines { "DEBUG" }

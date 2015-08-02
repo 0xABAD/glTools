@@ -13,6 +13,8 @@ project "glTools"
     files       { "include/glt/**.hpp", "src/**.cpp" }
     defines     { "GLT_EXPORTS" }
 
+    postbuildcommands { "{COPY} ../../lib/glfw3.dll ../Debug/." }
+
     filter "system:windows"
         links   { "glfw3dll", "opengl32" }
         libdirs { os.findlib("opengl32") }
