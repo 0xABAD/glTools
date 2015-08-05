@@ -33,7 +33,8 @@ void readBitmap(istream         &stream,
     stream.read(reinterpret_cast<char *>(&start), sizeof start);
     stream.read(reinterpret_cast<char *>(_charWidths.data()), _charWidths.size());
 
-    auto bytes = imgX * imgY * (bpp / 8);
+    auto bytesX = imgX * (bpp / 8);
+    auto bytes  = imgY * bytesX;
 
     _image.resize(bytes);
     stream.read(reinterpret_cast<char *>(_image.data()), bytes);
@@ -54,10 +55,10 @@ void readBitmap(istream         &stream,
     // Invert Y-axis of the image
     for (auto i = 0; i < imgY/2; ++i)
     {
-        auto first = _image.data() + (i * imgX);
-        auto last  = _image.data() + ((imgY - 1 - i) * imgX);
+        auto first = _image.data() + (i * bytesX);
+        auto last  = _image.data() + ((imgY - 1 - i) * bytesX);
 
-        swap_ranges(first, first + imgX, last);
+        swap_ranges(first, first + bytesX, last);
     }
 }
 
