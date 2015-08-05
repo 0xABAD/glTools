@@ -40,7 +40,10 @@ namespace glt {
  *
  *    The rest of the data in bitmap contains the actual image.  The amount
  *    of this data is dependent on the resolution the bitmap was generated
- *    with and how many bits per pixel for the image.
+ *    with and how many bits per pixel for the image.  Generated bitmaps
+ *    have the top left corner as the origin of the Y-axis and this class
+ *    will invert the axis so the that bitmap appears upright when loaded
+ *    into OpenGL as a texture.
  */
 class GLT_API BitmapFont final {
 public:

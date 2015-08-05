@@ -38,16 +38,27 @@ void readBitmap(istream         &stream,
     _image.resize(bytes);
     stream.read(reinterpret_cast<char *>(_image.data()), bytes);
 
-    if (!stream.bad() && !stream.fail())
+    if (stream.bad() || stream.fail())
     {
-        _imageWidth  = imgX;
-        _imageHeight = imgY;
-        _cellWidth   = cellX;
-        _cellHeight  = cellY;
-        _bpp         = bpp;
-        _asciiStart  = start;
+        _image.resize(0);
+        return;
     }
-    else _image.resize(0);
+
+    _imageWidth  = imgX;
+    _imageHeight = imgY;
+    _cellWidth   = cellX;
+    _cellHeight  = cellY;
+    _bpp         = bpp;
+    _asciiStart  = start;
+
+    // Invert Y-axis of the image
+    for (auto i = 0; i < imgY/2; ++i)
+    {
+        auto first = _image.data() + (i * imgX);
+        auto last  = _image.data() + ((imgY - 1 - i) * imgX);
+
+        swap_ranges(first, first + imgX, last);
+    }
 }
 
 glt::BitmapFont::BitmapFont(const char * filename)
