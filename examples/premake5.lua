@@ -61,3 +61,17 @@ project "spincube"
     filter "configurations:Debug*"
         defines { "DEBUG" }
         flags   { "Symbols" }
+
+project "textfont"
+    location    "build/textfont"
+    language    "C++"
+    kind        "ConsoleApp"
+    targetdir   "build/%{cfg.buildcfg}"
+    libdirs     { "../lib", "../build/Debug" }
+    includedirs { "../include" }
+    files       { "textfont/**.hpp", "textfont/**.cpp" }
+    links       { "glTools" }
+
+    filter "configurations:Debug*"
+        defines { "DEBUG" }
+        flags   { "Symbols" }
