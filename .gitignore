@@ -27,6 +27,7 @@
 *.out
 *.app
 
+assets/
 build/
 include/GLFW/
 include/glm/
