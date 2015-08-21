@@ -1,13 +1,20 @@
 #include <glt/window.hpp>
 #include <glt/app.hpp>
-#include <glt/gl.hpp>
-#include <GLFW/glfw3.h>
 #include <algorithm>
 #include <sstream>
 #include <iostream>
 
 namespace glt {
 
+void setupCallbacks(GLFWwindow *window)
+{
+    glfwSetKeyCallback(window, OnKeyEvent);
+    glfwSetCharCallback(window, OnTextInput);
+    glfwSetCursorEnterCallback(window, OnCursorEnter);
+    glfwSetCursorPosCallback(window, OnMouseMove);
+    glfwSetMouseButtonCallback(window, OnMouseButtonEvent);
+    glfwSetScrollCallback(window, OnScroll);
+}
 
 Window::Window(int width, int height, const char *title, GLFWmonitor *monitor, GLFWwindow *share)
     : _window(nullptr)
@@ -17,6 +24,8 @@ Window::Window(int width, int height, const char *title, GLFWmonitor *monitor, G
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     _window = glfwCreateWindow(width, height, title, monitor, share);
+    glfwSetWindowUserPointer(_window, (void*) this);
+    setupCallbacks(_window);
 }
 
 inline void destory(GLFWwindow *window)
@@ -33,12 +42,17 @@ Window::~Window() { destory(_window); }
 Window::Window(Window&& rhs) : Window()
 {
     std::swap(_window, rhs._window);
+    glfwSetWindowUserPointer(_window, (void*) this);
+    setupCallbacks(_window);
 }
 
 Window& Window::operator=(Window&& rhs)
 {
     destory(_window);
     std::swap(_window, rhs._window);
+    glfwSetWindowUserPointer(_window, (void*) this);
+    setupCallbacks(_window);
+
     return *this;
 }
 
@@ -64,6 +78,52 @@ std::tuple<int, int> Window::getSize()
     int width, height;
     glfwGetWindowSize(_window, &width, &height);
     return std::make_tuple(width, height);
+}
+
+inline void Window::setInputMode(int mode, int value)
+{
+    glfwSetInputMode(_window, mode, value);
+}
+
+inline void Window::setCursor(GLFWcursor *cursor)
+{
+    glfwSetCursor(_window, cursor);
+}
+
+void OnKeyEvent(GLFWwindow *win, int key, int scancode, int action, int mods)
+{
+    auto window = (Window*) glfwGetWindowUserPointer(win);
+    window->_onKeyEvent(key, scancode, action, mods);
+}
+
+void OnTextInput(GLFWwindow * win, unsigned int codepoint)
+{
+    auto window = (Window*) glfwGetWindowUserPointer(win);
+    window->_onTextInput(codepoint);
+}
+
+void OnCursorEnter(GLFWwindow *win, int entered)
+{
+    auto window = (Window*) glfwGetWindowUserPointer(win);
+    window->_onCursorEnter(entered);
+}
+
+void OnMouseMove(GLFWwindow *win, double xpos, double ypos)
+{
+    auto window = (Window*) glfwGetWindowUserPointer(win);
+    window->_onMouseMove(xpos, ypos);
+}
+
+void OnMouseButtonEvent(GLFWwindow * win, int button, int action, int mods)
+{
+    auto window = (Window*) glfwGetWindowUserPointer(win);
+    window->_onMouseButtonEvent(button, action, mods);
+}
+
+void OnScroll(GLFWwindow *win, double xoffset, double yoffset)
+{
+    auto window = (Window*) glfwGetWindowUserPointer(win);
+    window->_onScroll(xoffset, yoffset);
 }
 
 inline void pollEvents() { glfwPollEvents(); }
