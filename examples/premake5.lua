@@ -75,3 +75,17 @@ project "textfont"
     filter "configurations:Debug*"
         defines { "DEBUG" }
         flags   { "Symbols" }
+
+project "callbacks"
+    location    "build/callbacks"
+    language    "C++"
+    kind        "ConsoleApp"
+    targetdir   "build/%{cfg.buildcfg}"
+    libdirs     { "../lib", "../build/Debug" }
+    includedirs { "../include" }
+    files       { "callbacks/**.hpp", "callbacks/**.cpp" }
+    links       { "glTools" }
+
+    filter "configurations:Debug*"
+        defines { "DEBUG" }
+        flags   { "Symbols" }
