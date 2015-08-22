@@ -18,6 +18,12 @@ void setupCallbacks(GLFWwindow *window)
 
 Window::Window(int width, int height, const char *title, GLFWmonitor *monitor, GLFWwindow *share)
     : _window(nullptr)
+    , _onCursorEnter([](int){})
+    , _onKeyEvent([](int,int,int,int){})
+    , _onTextInput([](unsigned int){})
+    , _onMouseMove([](double,double){})
+    , _onMouseButtonEvent([](int,int,int){})
+    , _onScroll([](double, double){})
 {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, GLT_OPEN_GL_MAJOR_VERSION);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, GLT_OPEN_GL_MINOR_VERSION);
@@ -41,7 +47,13 @@ Window::~Window() { destory(_window); }
 
 Window::Window(Window&& rhs) : Window()
 {
-    std::swap(_window, rhs._window);
+    std::swap(_window,             rhs._window);
+    std::swap(_onCursorEnter,      rhs._onCursorEnter);
+    std::swap(_onKeyEvent,         rhs._onKeyEvent);
+    std::swap(_onTextInput,        rhs._onTextInput);
+    std::swap(_onMouseMove,        rhs._onMouseMove);
+    std::swap(_onMouseButtonEvent, rhs._onMouseButtonEvent);
+    std::swap(_onScroll,           rhs._onScroll);
     glfwSetWindowUserPointer(_window, (void*) this);
     setupCallbacks(_window);
 }
@@ -49,7 +61,13 @@ Window::Window(Window&& rhs) : Window()
 Window& Window::operator=(Window&& rhs)
 {
     destory(_window);
-    std::swap(_window, rhs._window);
+    std::swap(_window,             rhs._window);
+    std::swap(_onCursorEnter,      rhs._onCursorEnter);
+    std::swap(_onKeyEvent,         rhs._onKeyEvent);
+    std::swap(_onTextInput,        rhs._onTextInput);
+    std::swap(_onMouseMove,        rhs._onMouseMove);
+    std::swap(_onMouseButtonEvent, rhs._onMouseButtonEvent);
+    std::swap(_onScroll,           rhs._onScroll);
     glfwSetWindowUserPointer(_window, (void*) this);
     setupCallbacks(_window);
 
