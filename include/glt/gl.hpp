@@ -16,7 +16,6 @@
   #define GLT_OPEN_GL_MINOR_VERSION 5
 #endif
 
-#include <glt/api.hpp>
 #include <glt/gl_core_4_5.hpp>
 
 namespace glt {
@@ -27,7 +26,7 @@ namespace glt {
  *
  * @returns True if glTools was loaded successfully, false otherwise.
  */
-GLT_API bool initGlTools();
+bool initGlTools();
 
 } // end namespace glt
 

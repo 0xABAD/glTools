@@ -11,10 +11,12 @@ project "triangle"
     libdirs     { "../lib", "../build/Debug" }
     includedirs { "../include" }
     files       { "triangle/**.hpp", "triangle/**.cpp" }
-    links       { "glTools" }
+    links       { "glTools", "opengl32", "glfw3" }
+    
+    filter "system:windows"
+        libdirs { os.findlib("opengl32") }
 
-    postbuildcommands { "{COPY} ../../../build/Debug/glTools.* ../Debug/.",
-                        "{COPY} ../../../lib/glfw3.dll ../Debug/." }
+    postbuildcommands { "{COPY} ../../../build/Debug/glTools.* ../Debug/." }
 
     filter "configurations:Debug*"
         defines { "DEBUG" }
@@ -28,7 +30,10 @@ project "texture"
     libdirs     { "../lib", "../build/Debug" }
     includedirs { "../include" }
     files       { "texture/**.hpp", "texture/**.cpp" }
-    links       { "glTools" }
+    links       { "glTools", "opengl32", "glfw3" }
+    
+    filter "system:windows"
+        libdirs { os.findlib("opengl32") }
 
     filter "configurations:Debug*"
         defines { "DEBUG" }
@@ -42,7 +47,10 @@ project "multitex"
     libdirs     { "../lib", "../build/Debug" }
     includedirs { "../include" }
     files       { "multitex/**.hpp", "multitex/**.cpp" }
-    links       { "glTools" }
+    links       { "glTools", "opengl32", "glfw3" }
+    
+    filter "system:windows"
+        libdirs { os.findlib("opengl32") }
 
     filter "configurations:Debug*"
         defines { "DEBUG" }
@@ -56,7 +64,10 @@ project "spincube"
     libdirs     { "../lib", "../build/Debug" }
     includedirs { "../include" }
     files       { "spincube/**.hpp", "spincube/**.cpp" }
-    links       { "glTools" }
+    links       { "glTools", "opengl32", "glfw3" }
+    
+    filter "system:windows"
+        libdirs { os.findlib("opengl32") }
 
     filter "configurations:Debug*"
         defines { "DEBUG" }
@@ -70,7 +81,10 @@ project "textfont"
     libdirs     { "../lib", "../build/Debug" }
     includedirs { "../include" }
     files       { "textfont/**.hpp", "textfont/**.cpp" }
-    links       { "glTools" }
+    links       { "glTools", "opengl32", "glfw3" }
+    
+    filter "system:windows"
+        libdirs { os.findlib("opengl32") }
 
     filter "configurations:Debug*"
         defines { "DEBUG" }
@@ -84,7 +98,10 @@ project "callbacks"
     libdirs     { "../lib", "../build/Debug" }
     includedirs { "../include" }
     files       { "callbacks/**.hpp", "callbacks/**.cpp" }
-    links       { "glTools" }
+    links       { "glTools", "opengl32", "glfw3" }
+    
+    filter "system:windows"
+        libdirs { os.findlib("opengl32") }
 
     filter "configurations:Debug*"
         defines { "DEBUG" }

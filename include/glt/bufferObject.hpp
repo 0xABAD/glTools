@@ -1,7 +1,6 @@
 #ifndef __BUFFER_OBJECT_HPP__
 #define __BUFFER_OBJECT_HPP__
 
-#include <glt/api.hpp>
 #include <glt/gl.hpp>
 #include <vector>
 

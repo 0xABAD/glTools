@@ -1,8 +1,6 @@
 #ifndef __BITMAP_FONT_HPP__
 #define __BITMAP_FONT_HPP__
 
-#include <glt/api.hpp>
-
 #include <vector>
 #include <array>
 #include <cstdint>
@@ -45,7 +43,7 @@ namespace glt {
  *    will invert the axis so the that bitmap appears upright when loaded
  *    into OpenGL as a texture.
  */
-class GLT_API BitmapFont final {
+class BitmapFont final {
 public:
     /** Constructs a bitmap font from the given file path. */
     explicit BitmapFont(const char * filename);

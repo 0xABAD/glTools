@@ -6,18 +6,11 @@ solution "glTools"
 project "glTools"
     location    "build/glTools"
     language    "C++"
-    kind        "SharedLib"
+    kind        "StaticLib"
     targetdir   "build/%{cfg.buildcfg}"
     libdirs     { "lib" }
     includedirs { "include" }
     files       { "include/glt/**.hpp", "src/**.cpp" }
-    defines     { "GLT_EXPORTS" }
-
-    postbuildcommands { "{COPY} ../../lib/glfw3.dll ../Debug/." }
-
-    filter "system:windows"
-        links   { "glfw3dll", "opengl32" }
-        libdirs { os.findlib("opengl32") }
 
     filter "configurations:Debug*"
         defines { "DEBUG" }
@@ -28,10 +21,13 @@ project "glToolsTest"
     language    "C++"
     kind        "ConsoleApp"
     targetdir   "build/%{cfg.buildcfg}"
-    libdirs     { "lib" }
+    libdirs     { "lib", "build/%{cfg.buildcfg}" }
     includedirs { "include", "test" }
     files       { "test/**.cpp" }
-    links       { "glTools" }
+    links       { "glTools", "opengl32", "glfw3" }
+
+    filter "system:windows"
+        libdirs { os.findlib("opengl32") }
 
     filter "configurations:Debug*"
         defines { "DEBUG" }

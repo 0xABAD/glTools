@@ -1,7 +1,6 @@
 #ifndef __IMAGE_HPP__
 #define __IMAGE_HPP__
 
-#include <glt/api.hpp>
 #include <glt/gl.hpp>
 
 namespace glt {
@@ -10,7 +9,7 @@ namespace glt {
  * Provides ability to load an image from a file.  This is a
  * wrapper around the stb_image.h library.
  */
-class GLT_API Image final {
+class Image final {
 public:
     /** 
      * Constructs an image whose contents are from filepath.  The
@@ -74,11 +73,11 @@ private:
  * @param format          Format of each pixel in the image for usage
  *                        (e.g. gl::RGBA).
  */
-GLT_API void loadTexture2D(const char * filepath, 
-                           bool         flip, 
-                           GLuint       texture, 
-                           GLenum       internalformat, 
-                           GLenum       format);
+void loadTexture2D(const char * filepath, 
+                   bool         flip, 
+                   GLuint       texture, 
+                   GLenum       internalformat, 
+                   GLenum       format);
 
 } // end namespace glt
 

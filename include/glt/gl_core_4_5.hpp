@@ -2198,676 +2198,674 @@ namespace gl
     
   } //namespace _detail
   
-#include <glt/api.hpp>
-
-  inline GLT_API void BlendFunc(GLenum sfactor, GLenum dfactor){_detail::BlendFunc(sfactor, dfactor);}
-  inline GLT_API void Clear(GLbitfield mask){_detail::Clear(mask);}
-  inline GLT_API void ClearColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha){_detail::ClearColor(red, green, blue, alpha);}
-  inline GLT_API void ClearDepth(GLdouble depth){_detail::ClearDepth(depth);}
-  inline GLT_API void ClearStencil(GLint s){_detail::ClearStencil(s);}
-  inline GLT_API void ColorMask(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha){_detail::ColorMask(red, green, blue, alpha);}
-  inline GLT_API void CullFace(GLenum mode){_detail::CullFace(mode);}
-  inline GLT_API void DepthFunc(GLenum func){_detail::DepthFunc(func);}
-  inline GLT_API void DepthMask(GLboolean flag){_detail::DepthMask(flag);}
-  inline GLT_API void DepthRange(GLdouble ren_near, GLdouble ren_far){_detail::DepthRange(ren_near, ren_far);}
-  inline GLT_API void Disable(GLenum cap){_detail::Disable(cap);}
-  inline GLT_API void DrawBuffer(GLenum buf){_detail::DrawBuffer(buf);}
-  inline GLT_API void Enable(GLenum cap){_detail::Enable(cap);}
-  inline GLT_API void Finish(void){_detail::Finish();}
-  inline GLT_API void Flush(void){_detail::Flush();}
-  inline GLT_API void FrontFace(GLenum mode){_detail::FrontFace(mode);}
-  inline GLT_API void GetBooleanv(GLenum pname, GLboolean * data){_detail::GetBooleanv(pname, data);}
-  inline GLT_API void GetDoublev(GLenum pname, GLdouble * data){_detail::GetDoublev(pname, data);}
-  inline GLT_API GLenum GetError(void){return _detail::GetError();}
-  inline GLT_API void GetFloatv(GLenum pname, GLfloat * data){_detail::GetFloatv(pname, data);}
-  inline GLT_API void GetIntegerv(GLenum pname, GLint * data){_detail::GetIntegerv(pname, data);}
-  inline GLT_API const GLubyte * GetString(GLenum name){return _detail::GetString(name);}
-  inline GLT_API void GetTexImage(GLenum target, GLint level, GLenum format, GLenum type, void * pixels){_detail::GetTexImage(target, level, format, type, pixels);}
-  inline GLT_API void GetTexLevelParameterfv(GLenum target, GLint level, GLenum pname, GLfloat * params){_detail::GetTexLevelParameterfv(target, level, pname, params);}
-  inline GLT_API void GetTexLevelParameteriv(GLenum target, GLint level, GLenum pname, GLint * params){_detail::GetTexLevelParameteriv(target, level, pname, params);}
-  inline GLT_API void GetTexParameterfv(GLenum target, GLenum pname, GLfloat * params){_detail::GetTexParameterfv(target, pname, params);}
-  inline GLT_API void GetTexParameteriv(GLenum target, GLenum pname, GLint * params){_detail::GetTexParameteriv(target, pname, params);}
-  inline GLT_API void Hint(GLenum target, GLenum mode){_detail::Hint(target, mode);}
-  inline GLT_API GLboolean IsEnabled(GLenum cap){return _detail::IsEnabled(cap);}
-  inline GLT_API void LineWidth(GLfloat width){_detail::LineWidth(width);}
-  inline GLT_API void LogicOp(GLenum opcode){_detail::LogicOp(opcode);}
-  inline GLT_API void PixelStoref(GLenum pname, GLfloat param){_detail::PixelStoref(pname, param);}
-  inline GLT_API void PixelStorei(GLenum pname, GLint param){_detail::PixelStorei(pname, param);}
-  inline GLT_API void PointSize(GLfloat size){_detail::PointSize(size);}
-  inline GLT_API void PolygonMode(GLenum face, GLenum mode){_detail::PolygonMode(face, mode);}
-  inline GLT_API void ReadBuffer(GLenum src){_detail::ReadBuffer(src);}
-  inline GLT_API void ReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, void * pixels){_detail::ReadPixels(x, y, width, height, format, type, pixels);}
-  inline GLT_API void Scissor(GLint x, GLint y, GLsizei width, GLsizei height){_detail::Scissor(x, y, width, height);}
-  inline GLT_API void StencilFunc(GLenum func, GLint ref, GLuint mask){_detail::StencilFunc(func, ref, mask);}
-  inline GLT_API void StencilMask(GLuint mask){_detail::StencilMask(mask);}
-  inline GLT_API void StencilOp(GLenum fail, GLenum zfail, GLenum zpass){_detail::StencilOp(fail, zfail, zpass);}
-  inline GLT_API void TexImage1D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const void * pixels){_detail::TexImage1D(target, level, internalformat, width, border, format, type, pixels);}
-  inline GLT_API void TexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const void * pixels){_detail::TexImage2D(target, level, internalformat, width, height, border, format, type, pixels);}
-  inline GLT_API void TexParameterf(GLenum target, GLenum pname, GLfloat param){_detail::TexParameterf(target, pname, param);}
-  inline GLT_API void TexParameterfv(GLenum target, GLenum pname, const GLfloat * params){_detail::TexParameterfv(target, pname, params);}
-  inline GLT_API void TexParameteri(GLenum target, GLenum pname, GLint param){_detail::TexParameteri(target, pname, param);}
-  inline GLT_API void TexParameteriv(GLenum target, GLenum pname, const GLint * params){_detail::TexParameteriv(target, pname, params);}
-  inline GLT_API void Viewport(GLint x, GLint y, GLsizei width, GLsizei height){_detail::Viewport(x, y, width, height);}
+  inline void BlendFunc(GLenum sfactor, GLenum dfactor){_detail::BlendFunc(sfactor, dfactor);}
+  inline void Clear(GLbitfield mask){_detail::Clear(mask);}
+  inline void ClearColor(GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha){_detail::ClearColor(red, green, blue, alpha);}
+  inline void ClearDepth(GLdouble depth){_detail::ClearDepth(depth);}
+  inline void ClearStencil(GLint s){_detail::ClearStencil(s);}
+  inline void ColorMask(GLboolean red, GLboolean green, GLboolean blue, GLboolean alpha){_detail::ColorMask(red, green, blue, alpha);}
+  inline void CullFace(GLenum mode){_detail::CullFace(mode);}
+  inline void DepthFunc(GLenum func){_detail::DepthFunc(func);}
+  inline void DepthMask(GLboolean flag){_detail::DepthMask(flag);}
+  inline void DepthRange(GLdouble ren_near, GLdouble ren_far){_detail::DepthRange(ren_near, ren_far);}
+  inline void Disable(GLenum cap){_detail::Disable(cap);}
+  inline void DrawBuffer(GLenum buf){_detail::DrawBuffer(buf);}
+  inline void Enable(GLenum cap){_detail::Enable(cap);}
+  inline void Finish(void){_detail::Finish();}
+  inline void Flush(void){_detail::Flush();}
+  inline void FrontFace(GLenum mode){_detail::FrontFace(mode);}
+  inline void GetBooleanv(GLenum pname, GLboolean * data){_detail::GetBooleanv(pname, data);}
+  inline void GetDoublev(GLenum pname, GLdouble * data){_detail::GetDoublev(pname, data);}
+  inline GLenum GetError(void){return _detail::GetError();}
+  inline void GetFloatv(GLenum pname, GLfloat * data){_detail::GetFloatv(pname, data);}
+  inline void GetIntegerv(GLenum pname, GLint * data){_detail::GetIntegerv(pname, data);}
+  inline const GLubyte * GetString(GLenum name){return _detail::GetString(name);}
+  inline void GetTexImage(GLenum target, GLint level, GLenum format, GLenum type, void * pixels){_detail::GetTexImage(target, level, format, type, pixels);}
+  inline void GetTexLevelParameterfv(GLenum target, GLint level, GLenum pname, GLfloat * params){_detail::GetTexLevelParameterfv(target, level, pname, params);}
+  inline void GetTexLevelParameteriv(GLenum target, GLint level, GLenum pname, GLint * params){_detail::GetTexLevelParameteriv(target, level, pname, params);}
+  inline void GetTexParameterfv(GLenum target, GLenum pname, GLfloat * params){_detail::GetTexParameterfv(target, pname, params);}
+  inline void GetTexParameteriv(GLenum target, GLenum pname, GLint * params){_detail::GetTexParameteriv(target, pname, params);}
+  inline void Hint(GLenum target, GLenum mode){_detail::Hint(target, mode);}
+  inline GLboolean IsEnabled(GLenum cap){return _detail::IsEnabled(cap);}
+  inline void LineWidth(GLfloat width){_detail::LineWidth(width);}
+  inline void LogicOp(GLenum opcode){_detail::LogicOp(opcode);}
+  inline void PixelStoref(GLenum pname, GLfloat param){_detail::PixelStoref(pname, param);}
+  inline void PixelStorei(GLenum pname, GLint param){_detail::PixelStorei(pname, param);}
+  inline void PointSize(GLfloat size){_detail::PointSize(size);}
+  inline void PolygonMode(GLenum face, GLenum mode){_detail::PolygonMode(face, mode);}
+  inline void ReadBuffer(GLenum src){_detail::ReadBuffer(src);}
+  inline void ReadPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, void * pixels){_detail::ReadPixels(x, y, width, height, format, type, pixels);}
+  inline void Scissor(GLint x, GLint y, GLsizei width, GLsizei height){_detail::Scissor(x, y, width, height);}
+  inline void StencilFunc(GLenum func, GLint ref, GLuint mask){_detail::StencilFunc(func, ref, mask);}
+  inline void StencilMask(GLuint mask){_detail::StencilMask(mask);}
+  inline void StencilOp(GLenum fail, GLenum zfail, GLenum zpass){_detail::StencilOp(fail, zfail, zpass);}
+  inline void TexImage1D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLint border, GLenum format, GLenum type, const void * pixels){_detail::TexImage1D(target, level, internalformat, width, border, format, type, pixels);}
+  inline void TexImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const void * pixels){_detail::TexImage2D(target, level, internalformat, width, height, border, format, type, pixels);}
+  inline void TexParameterf(GLenum target, GLenum pname, GLfloat param){_detail::TexParameterf(target, pname, param);}
+  inline void TexParameterfv(GLenum target, GLenum pname, const GLfloat * params){_detail::TexParameterfv(target, pname, params);}
+  inline void TexParameteri(GLenum target, GLenum pname, GLint param){_detail::TexParameteri(target, pname, param);}
+  inline void TexParameteriv(GLenum target, GLenum pname, const GLint * params){_detail::TexParameteriv(target, pname, params);}
+  inline void Viewport(GLint x, GLint y, GLsizei width, GLsizei height){_detail::Viewport(x, y, width, height);}
   
-  inline GLT_API void BindTexture(GLenum target, GLuint texture){_detail::BindTexture(target, texture);}
-  inline GLT_API void CopyTexImage1D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border){_detail::CopyTexImage1D(target, level, internalformat, x, y, width, border);}
-  inline GLT_API void CopyTexImage2D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border){_detail::CopyTexImage2D(target, level, internalformat, x, y, width, height, border);}
-  inline GLT_API void CopyTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width){_detail::CopyTexSubImage1D(target, level, xoffset, x, y, width);}
-  inline GLT_API void CopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height){_detail::CopyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height);}
-  inline GLT_API void DeleteTextures(GLsizei n, const GLuint * textures){_detail::DeleteTextures(n, textures);}
-  inline GLT_API void DrawArrays(GLenum mode, GLint first, GLsizei count){_detail::DrawArrays(mode, first, count);}
-  inline GLT_API void DrawElements(GLenum mode, GLsizei count, GLenum type, const void * indices){_detail::DrawElements(mode, count, type, indices);}
-  inline GLT_API void GenTextures(GLsizei n, GLuint * textures){_detail::GenTextures(n, textures);}
-  inline GLT_API void GetPointerv(GLenum pname, void ** params){_detail::GetPointerv(pname, params);}
-  inline GLT_API GLboolean IsTexture(GLuint texture){return _detail::IsTexture(texture);}
-  inline GLT_API void PolygonOffset(GLfloat factor, GLfloat units){_detail::PolygonOffset(factor, units);}
-  inline GLT_API void TexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void * pixels){_detail::TexSubImage1D(target, level, xoffset, width, format, type, pixels);}
-  inline GLT_API void TexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void * pixels){_detail::TexSubImage2D(target, level, xoffset, yoffset, width, height, format, type, pixels);}
+  inline void BindTexture(GLenum target, GLuint texture){_detail::BindTexture(target, texture);}
+  inline void CopyTexImage1D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLint border){_detail::CopyTexImage1D(target, level, internalformat, x, y, width, border);}
+  inline void CopyTexImage2D(GLenum target, GLint level, GLenum internalformat, GLint x, GLint y, GLsizei width, GLsizei height, GLint border){_detail::CopyTexImage2D(target, level, internalformat, x, y, width, height, border);}
+  inline void CopyTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width){_detail::CopyTexSubImage1D(target, level, xoffset, x, y, width);}
+  inline void CopyTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height){_detail::CopyTexSubImage2D(target, level, xoffset, yoffset, x, y, width, height);}
+  inline void DeleteTextures(GLsizei n, const GLuint * textures){_detail::DeleteTextures(n, textures);}
+  inline void DrawArrays(GLenum mode, GLint first, GLsizei count){_detail::DrawArrays(mode, first, count);}
+  inline void DrawElements(GLenum mode, GLsizei count, GLenum type, const void * indices){_detail::DrawElements(mode, count, type, indices);}
+  inline void GenTextures(GLsizei n, GLuint * textures){_detail::GenTextures(n, textures);}
+  inline void GetPointerv(GLenum pname, void ** params){_detail::GetPointerv(pname, params);}
+  inline GLboolean IsTexture(GLuint texture){return _detail::IsTexture(texture);}
+  inline void PolygonOffset(GLfloat factor, GLfloat units){_detail::PolygonOffset(factor, units);}
+  inline void TexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void * pixels){_detail::TexSubImage1D(target, level, xoffset, width, format, type, pixels);}
+  inline void TexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void * pixels){_detail::TexSubImage2D(target, level, xoffset, yoffset, width, height, format, type, pixels);}
   
-  inline GLT_API void CopyTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height){_detail::CopyTexSubImage3D(target, level, xoffset, yoffset, zoffset, x, y, width, height);}
-  inline GLT_API void DrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void * indices){_detail::DrawRangeElements(mode, start, end, count, type, indices);}
-  inline GLT_API void TexImage3D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void * pixels){_detail::TexImage3D(target, level, internalformat, width, height, depth, border, format, type, pixels);}
-  inline GLT_API void TexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * pixels){_detail::TexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, type, pixels);}
+  inline void CopyTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height){_detail::CopyTexSubImage3D(target, level, xoffset, yoffset, zoffset, x, y, width, height);}
+  inline void DrawRangeElements(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void * indices){_detail::DrawRangeElements(mode, start, end, count, type, indices);}
+  inline void TexImage3D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const void * pixels){_detail::TexImage3D(target, level, internalformat, width, height, depth, border, format, type, pixels);}
+  inline void TexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * pixels){_detail::TexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, type, pixels);}
   
-  inline GLT_API void ActiveTexture(GLenum texture){_detail::ActiveTexture(texture);}
-  inline GLT_API void CompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void * data){_detail::CompressedTexImage1D(target, level, internalformat, width, border, imageSize, data);}
-  inline GLT_API void CompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void * data){_detail::CompressedTexImage2D(target, level, internalformat, width, height, border, imageSize, data);}
-  inline GLT_API void CompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void * data){_detail::CompressedTexImage3D(target, level, internalformat, width, height, depth, border, imageSize, data);}
-  inline GLT_API void CompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTexSubImage1D(target, level, xoffset, width, format, imageSize, data);}
-  inline GLT_API void CompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize, data);}
-  inline GLT_API void CompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, data);}
-  inline GLT_API void GetCompressedTexImage(GLenum target, GLint level, void * img){_detail::GetCompressedTexImage(target, level, img);}
-  inline GLT_API void SampleCoverage(GLfloat value, GLboolean invert){_detail::SampleCoverage(value, invert);}
+  inline void ActiveTexture(GLenum texture){_detail::ActiveTexture(texture);}
+  inline void CompressedTexImage1D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLint border, GLsizei imageSize, const void * data){_detail::CompressedTexImage1D(target, level, internalformat, width, border, imageSize, data);}
+  inline void CompressedTexImage2D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLint border, GLsizei imageSize, const void * data){_detail::CompressedTexImage2D(target, level, internalformat, width, height, border, imageSize, data);}
+  inline void CompressedTexImage3D(GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const void * data){_detail::CompressedTexImage3D(target, level, internalformat, width, height, depth, border, imageSize, data);}
+  inline void CompressedTexSubImage1D(GLenum target, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTexSubImage1D(target, level, xoffset, width, format, imageSize, data);}
+  inline void CompressedTexSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTexSubImage2D(target, level, xoffset, yoffset, width, height, format, imageSize, data);}
+  inline void CompressedTexSubImage3D(GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTexSubImage3D(target, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, data);}
+  inline void GetCompressedTexImage(GLenum target, GLint level, void * img){_detail::GetCompressedTexImage(target, level, img);}
+  inline void SampleCoverage(GLfloat value, GLboolean invert){_detail::SampleCoverage(value, invert);}
   
-  inline GLT_API void BlendFuncSeparate(GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha){_detail::BlendFuncSeparate(sfactorRGB, dfactorRGB, sfactorAlpha, dfactorAlpha);}
-  inline GLT_API void MultiDrawArrays(GLenum mode, const GLint * first, const GLsizei * count, GLsizei drawcount){_detail::MultiDrawArrays(mode, first, count, drawcount);}
-  inline GLT_API void MultiDrawElements(GLenum mode, const GLsizei * count, GLenum type, const void *const* indices, GLsizei drawcount){_detail::MultiDrawElements(mode, count, type, indices, drawcount);}
-  inline GLT_API void PointParameterf(GLenum pname, GLfloat param){_detail::PointParameterf(pname, param);}
-  inline GLT_API void PointParameterfv(GLenum pname, const GLfloat * params){_detail::PointParameterfv(pname, params);}
-  inline GLT_API void PointParameteri(GLenum pname, GLint param){_detail::PointParameteri(pname, param);}
-  inline GLT_API void PointParameteriv(GLenum pname, const GLint * params){_detail::PointParameteriv(pname, params);}
+  inline void BlendFuncSeparate(GLenum sfactorRGB, GLenum dfactorRGB, GLenum sfactorAlpha, GLenum dfactorAlpha){_detail::BlendFuncSeparate(sfactorRGB, dfactorRGB, sfactorAlpha, dfactorAlpha);}
+  inline void MultiDrawArrays(GLenum mode, const GLint * first, const GLsizei * count, GLsizei drawcount){_detail::MultiDrawArrays(mode, first, count, drawcount);}
+  inline void MultiDrawElements(GLenum mode, const GLsizei * count, GLenum type, const void *const* indices, GLsizei drawcount){_detail::MultiDrawElements(mode, count, type, indices, drawcount);}
+  inline void PointParameterf(GLenum pname, GLfloat param){_detail::PointParameterf(pname, param);}
+  inline void PointParameterfv(GLenum pname, const GLfloat * params){_detail::PointParameterfv(pname, params);}
+  inline void PointParameteri(GLenum pname, GLint param){_detail::PointParameteri(pname, param);}
+  inline void PointParameteriv(GLenum pname, const GLint * params){_detail::PointParameteriv(pname, params);}
   
-  inline GLT_API void BeginQuery(GLenum target, GLuint id){_detail::BeginQuery(target, id);}
-  inline GLT_API void BindBuffer(GLenum target, GLuint buffer){_detail::BindBuffer(target, buffer);}
-  inline GLT_API void BufferData(GLenum target, GLsizeiptr size, const void * data, GLenum usage){_detail::BufferData(target, size, data, usage);}
-  inline GLT_API void BufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, const void * data){_detail::BufferSubData(target, offset, size, data);}
-  inline GLT_API void DeleteBuffers(GLsizei n, const GLuint * buffers){_detail::DeleteBuffers(n, buffers);}
-  inline GLT_API void DeleteQueries(GLsizei n, const GLuint * ids){_detail::DeleteQueries(n, ids);}
-  inline GLT_API void EndQuery(GLenum target){_detail::EndQuery(target);}
-  inline GLT_API void GenBuffers(GLsizei n, GLuint * buffers){_detail::GenBuffers(n, buffers);}
-  inline GLT_API void GenQueries(GLsizei n, GLuint * ids){_detail::GenQueries(n, ids);}
-  inline GLT_API void GetBufferParameteriv(GLenum target, GLenum pname, GLint * params){_detail::GetBufferParameteriv(target, pname, params);}
-  inline GLT_API void GetBufferPointerv(GLenum target, GLenum pname, void ** params){_detail::GetBufferPointerv(target, pname, params);}
-  inline GLT_API void GetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, void * data){_detail::GetBufferSubData(target, offset, size, data);}
-  inline GLT_API void GetQueryObjectiv(GLuint id, GLenum pname, GLint * params){_detail::GetQueryObjectiv(id, pname, params);}
-  inline GLT_API void GetQueryObjectuiv(GLuint id, GLenum pname, GLuint * params){_detail::GetQueryObjectuiv(id, pname, params);}
-  inline GLT_API void GetQueryiv(GLenum target, GLenum pname, GLint * params){_detail::GetQueryiv(target, pname, params);}
-  inline GLT_API GLboolean IsBuffer(GLuint buffer){return _detail::IsBuffer(buffer);}
-  inline GLT_API GLboolean IsQuery(GLuint id){return _detail::IsQuery(id);}
-  inline GLT_API void * MapBuffer(GLenum target, GLenum access){return _detail::MapBuffer(target, access);}
-  inline GLT_API GLboolean UnmapBuffer(GLenum target){return _detail::UnmapBuffer(target);}
+  inline void BeginQuery(GLenum target, GLuint id){_detail::BeginQuery(target, id);}
+  inline void BindBuffer(GLenum target, GLuint buffer){_detail::BindBuffer(target, buffer);}
+  inline void BufferData(GLenum target, GLsizeiptr size, const void * data, GLenum usage){_detail::BufferData(target, size, data, usage);}
+  inline void BufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, const void * data){_detail::BufferSubData(target, offset, size, data);}
+  inline void DeleteBuffers(GLsizei n, const GLuint * buffers){_detail::DeleteBuffers(n, buffers);}
+  inline void DeleteQueries(GLsizei n, const GLuint * ids){_detail::DeleteQueries(n, ids);}
+  inline void EndQuery(GLenum target){_detail::EndQuery(target);}
+  inline void GenBuffers(GLsizei n, GLuint * buffers){_detail::GenBuffers(n, buffers);}
+  inline void GenQueries(GLsizei n, GLuint * ids){_detail::GenQueries(n, ids);}
+  inline void GetBufferParameteriv(GLenum target, GLenum pname, GLint * params){_detail::GetBufferParameteriv(target, pname, params);}
+  inline void GetBufferPointerv(GLenum target, GLenum pname, void ** params){_detail::GetBufferPointerv(target, pname, params);}
+  inline void GetBufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, void * data){_detail::GetBufferSubData(target, offset, size, data);}
+  inline void GetQueryObjectiv(GLuint id, GLenum pname, GLint * params){_detail::GetQueryObjectiv(id, pname, params);}
+  inline void GetQueryObjectuiv(GLuint id, GLenum pname, GLuint * params){_detail::GetQueryObjectuiv(id, pname, params);}
+  inline void GetQueryiv(GLenum target, GLenum pname, GLint * params){_detail::GetQueryiv(target, pname, params);}
+  inline GLboolean IsBuffer(GLuint buffer){return _detail::IsBuffer(buffer);}
+  inline GLboolean IsQuery(GLuint id){return _detail::IsQuery(id);}
+  inline void * MapBuffer(GLenum target, GLenum access){return _detail::MapBuffer(target, access);}
+  inline GLboolean UnmapBuffer(GLenum target){return _detail::UnmapBuffer(target);}
   
-  inline GLT_API void AttachShader(GLuint program, GLuint shader){_detail::AttachShader(program, shader);}
-  inline GLT_API void BindAttribLocation(GLuint program, GLuint index, const GLchar * name){_detail::BindAttribLocation(program, index, name);}
-  inline GLT_API void BlendEquationSeparate(GLenum modeRGB, GLenum modeAlpha){_detail::BlendEquationSeparate(modeRGB, modeAlpha);}
-  inline GLT_API void CompileShader(GLuint shader){_detail::CompileShader(shader);}
-  inline GLT_API GLuint CreateProgram(void){return _detail::CreateProgram();}
-  inline GLT_API GLuint CreateShader(GLenum type){return _detail::CreateShader(type);}
-  inline GLT_API void DeleteProgram(GLuint program){_detail::DeleteProgram(program);}
-  inline GLT_API void DeleteShader(GLuint shader){_detail::DeleteShader(shader);}
-  inline GLT_API void DetachShader(GLuint program, GLuint shader){_detail::DetachShader(program, shader);}
-  inline GLT_API void DisableVertexAttribArray(GLuint index){_detail::DisableVertexAttribArray(index);}
-  inline GLT_API void DrawBuffers(GLsizei n, const GLenum * bufs){_detail::DrawBuffers(n, bufs);}
-  inline GLT_API void EnableVertexAttribArray(GLuint index){_detail::EnableVertexAttribArray(index);}
-  inline GLT_API void GetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLint * size, GLenum * type, GLchar * name){_detail::GetActiveAttrib(program, index, bufSize, length, size, type, name);}
-  inline GLT_API void GetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLint * size, GLenum * type, GLchar * name){_detail::GetActiveUniform(program, index, bufSize, length, size, type, name);}
-  inline GLT_API void GetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei * count, GLuint * shaders){_detail::GetAttachedShaders(program, maxCount, count, shaders);}
-  inline GLT_API GLint GetAttribLocation(GLuint program, const GLchar * name){return _detail::GetAttribLocation(program, name);}
-  inline GLT_API void GetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei * length, GLchar * infoLog){_detail::GetProgramInfoLog(program, bufSize, length, infoLog);}
-  inline GLT_API void GetProgramiv(GLuint program, GLenum pname, GLint * params){_detail::GetProgramiv(program, pname, params);}
-  inline GLT_API void GetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei * length, GLchar * infoLog){_detail::GetShaderInfoLog(shader, bufSize, length, infoLog);}
-  inline GLT_API void GetShaderSource(GLuint shader, GLsizei bufSize, GLsizei * length, GLchar * source){_detail::GetShaderSource(shader, bufSize, length, source);}
-  inline GLT_API void GetShaderiv(GLuint shader, GLenum pname, GLint * params){_detail::GetShaderiv(shader, pname, params);}
-  inline GLT_API GLint GetUniformLocation(GLuint program, const GLchar * name){return _detail::GetUniformLocation(program, name);}
-  inline GLT_API void GetUniformfv(GLuint program, GLint location, GLfloat * params){_detail::GetUniformfv(program, location, params);}
-  inline GLT_API void GetUniformiv(GLuint program, GLint location, GLint * params){_detail::GetUniformiv(program, location, params);}
-  inline GLT_API void GetVertexAttribPointerv(GLuint index, GLenum pname, void ** pointer){_detail::GetVertexAttribPointerv(index, pname, pointer);}
-  inline GLT_API void GetVertexAttribdv(GLuint index, GLenum pname, GLdouble * params){_detail::GetVertexAttribdv(index, pname, params);}
-  inline GLT_API void GetVertexAttribfv(GLuint index, GLenum pname, GLfloat * params){_detail::GetVertexAttribfv(index, pname, params);}
-  inline GLT_API void GetVertexAttribiv(GLuint index, GLenum pname, GLint * params){_detail::GetVertexAttribiv(index, pname, params);}
-  inline GLT_API GLboolean IsProgram(GLuint program){return _detail::IsProgram(program);}
-  inline GLT_API GLboolean IsShader(GLuint shader){return _detail::IsShader(shader);}
-  inline GLT_API void LinkProgram(GLuint program){_detail::LinkProgram(program);}
-  inline GLT_API void ShaderSource(GLuint shader, GLsizei count, const GLchar *const* string, const GLint * length){_detail::ShaderSource(shader, count, string, length);}
-  inline GLT_API void StencilFuncSeparate(GLenum face, GLenum func, GLint ref, GLuint mask){_detail::StencilFuncSeparate(face, func, ref, mask);}
-  inline GLT_API void StencilMaskSeparate(GLenum face, GLuint mask){_detail::StencilMaskSeparate(face, mask);}
-  inline GLT_API void StencilOpSeparate(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass){_detail::StencilOpSeparate(face, sfail, dpfail, dppass);}
-  inline GLT_API void Uniform1f(GLint location, GLfloat v0){_detail::Uniform1f(location, v0);}
-  inline GLT_API void Uniform1fv(GLint location, GLsizei count, const GLfloat * value){_detail::Uniform1fv(location, count, value);}
-  inline GLT_API void Uniform1i(GLint location, GLint v0){_detail::Uniform1i(location, v0);}
-  inline GLT_API void Uniform1iv(GLint location, GLsizei count, const GLint * value){_detail::Uniform1iv(location, count, value);}
-  inline GLT_API void Uniform2f(GLint location, GLfloat v0, GLfloat v1){_detail::Uniform2f(location, v0, v1);}
-  inline GLT_API void Uniform2fv(GLint location, GLsizei count, const GLfloat * value){_detail::Uniform2fv(location, count, value);}
-  inline GLT_API void Uniform2i(GLint location, GLint v0, GLint v1){_detail::Uniform2i(location, v0, v1);}
-  inline GLT_API void Uniform2iv(GLint location, GLsizei count, const GLint * value){_detail::Uniform2iv(location, count, value);}
-  inline GLT_API void Uniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2){_detail::Uniform3f(location, v0, v1, v2);}
-  inline GLT_API void Uniform3fv(GLint location, GLsizei count, const GLfloat * value){_detail::Uniform3fv(location, count, value);}
-  inline GLT_API void Uniform3i(GLint location, GLint v0, GLint v1, GLint v2){_detail::Uniform3i(location, v0, v1, v2);}
-  inline GLT_API void Uniform3iv(GLint location, GLsizei count, const GLint * value){_detail::Uniform3iv(location, count, value);}
-  inline GLT_API void Uniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3){_detail::Uniform4f(location, v0, v1, v2, v3);}
-  inline GLT_API void Uniform4fv(GLint location, GLsizei count, const GLfloat * value){_detail::Uniform4fv(location, count, value);}
-  inline GLT_API void Uniform4i(GLint location, GLint v0, GLint v1, GLint v2, GLint v3){_detail::Uniform4i(location, v0, v1, v2, v3);}
-  inline GLT_API void Uniform4iv(GLint location, GLsizei count, const GLint * value){_detail::Uniform4iv(location, count, value);}
-  inline GLT_API void UniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix2fv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix3fv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix4fv(location, count, transpose, value);}
-  inline GLT_API void UseProgram(GLuint program){_detail::UseProgram(program);}
-  inline GLT_API void ValidateProgram(GLuint program){_detail::ValidateProgram(program);}
-  inline GLT_API void VertexAttrib1d(GLuint index, GLdouble x){_detail::VertexAttrib1d(index, x);}
-  inline GLT_API void VertexAttrib1dv(GLuint index, const GLdouble * v){_detail::VertexAttrib1dv(index, v);}
-  inline GLT_API void VertexAttrib1f(GLuint index, GLfloat x){_detail::VertexAttrib1f(index, x);}
-  inline GLT_API void VertexAttrib1fv(GLuint index, const GLfloat * v){_detail::VertexAttrib1fv(index, v);}
-  inline GLT_API void VertexAttrib1s(GLuint index, GLshort x){_detail::VertexAttrib1s(index, x);}
-  inline GLT_API void VertexAttrib1sv(GLuint index, const GLshort * v){_detail::VertexAttrib1sv(index, v);}
-  inline GLT_API void VertexAttrib2d(GLuint index, GLdouble x, GLdouble y){_detail::VertexAttrib2d(index, x, y);}
-  inline GLT_API void VertexAttrib2dv(GLuint index, const GLdouble * v){_detail::VertexAttrib2dv(index, v);}
-  inline GLT_API void VertexAttrib2f(GLuint index, GLfloat x, GLfloat y){_detail::VertexAttrib2f(index, x, y);}
-  inline GLT_API void VertexAttrib2fv(GLuint index, const GLfloat * v){_detail::VertexAttrib2fv(index, v);}
-  inline GLT_API void VertexAttrib2s(GLuint index, GLshort x, GLshort y){_detail::VertexAttrib2s(index, x, y);}
-  inline GLT_API void VertexAttrib2sv(GLuint index, const GLshort * v){_detail::VertexAttrib2sv(index, v);}
-  inline GLT_API void VertexAttrib3d(GLuint index, GLdouble x, GLdouble y, GLdouble z){_detail::VertexAttrib3d(index, x, y, z);}
-  inline GLT_API void VertexAttrib3dv(GLuint index, const GLdouble * v){_detail::VertexAttrib3dv(index, v);}
-  inline GLT_API void VertexAttrib3f(GLuint index, GLfloat x, GLfloat y, GLfloat z){_detail::VertexAttrib3f(index, x, y, z);}
-  inline GLT_API void VertexAttrib3fv(GLuint index, const GLfloat * v){_detail::VertexAttrib3fv(index, v);}
-  inline GLT_API void VertexAttrib3s(GLuint index, GLshort x, GLshort y, GLshort z){_detail::VertexAttrib3s(index, x, y, z);}
-  inline GLT_API void VertexAttrib3sv(GLuint index, const GLshort * v){_detail::VertexAttrib3sv(index, v);}
-  inline GLT_API void VertexAttrib4Nbv(GLuint index, const GLbyte * v){_detail::VertexAttrib4Nbv(index, v);}
-  inline GLT_API void VertexAttrib4Niv(GLuint index, const GLint * v){_detail::VertexAttrib4Niv(index, v);}
-  inline GLT_API void VertexAttrib4Nsv(GLuint index, const GLshort * v){_detail::VertexAttrib4Nsv(index, v);}
-  inline GLT_API void VertexAttrib4Nub(GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w){_detail::VertexAttrib4Nub(index, x, y, z, w);}
-  inline GLT_API void VertexAttrib4Nubv(GLuint index, const GLubyte * v){_detail::VertexAttrib4Nubv(index, v);}
-  inline GLT_API void VertexAttrib4Nuiv(GLuint index, const GLuint * v){_detail::VertexAttrib4Nuiv(index, v);}
-  inline GLT_API void VertexAttrib4Nusv(GLuint index, const GLushort * v){_detail::VertexAttrib4Nusv(index, v);}
-  inline GLT_API void VertexAttrib4bv(GLuint index, const GLbyte * v){_detail::VertexAttrib4bv(index, v);}
-  inline GLT_API void VertexAttrib4d(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w){_detail::VertexAttrib4d(index, x, y, z, w);}
-  inline GLT_API void VertexAttrib4dv(GLuint index, const GLdouble * v){_detail::VertexAttrib4dv(index, v);}
-  inline GLT_API void VertexAttrib4f(GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w){_detail::VertexAttrib4f(index, x, y, z, w);}
-  inline GLT_API void VertexAttrib4fv(GLuint index, const GLfloat * v){_detail::VertexAttrib4fv(index, v);}
-  inline GLT_API void VertexAttrib4iv(GLuint index, const GLint * v){_detail::VertexAttrib4iv(index, v);}
-  inline GLT_API void VertexAttrib4s(GLuint index, GLshort x, GLshort y, GLshort z, GLshort w){_detail::VertexAttrib4s(index, x, y, z, w);}
-  inline GLT_API void VertexAttrib4sv(GLuint index, const GLshort * v){_detail::VertexAttrib4sv(index, v);}
-  inline GLT_API void VertexAttrib4ubv(GLuint index, const GLubyte * v){_detail::VertexAttrib4ubv(index, v);}
-  inline GLT_API void VertexAttrib4uiv(GLuint index, const GLuint * v){_detail::VertexAttrib4uiv(index, v);}
-  inline GLT_API void VertexAttrib4usv(GLuint index, const GLushort * v){_detail::VertexAttrib4usv(index, v);}
-  inline GLT_API void VertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void * pointer){_detail::VertexAttribPointer(index, size, type, normalized, stride, pointer);}
+  inline void AttachShader(GLuint program, GLuint shader){_detail::AttachShader(program, shader);}
+  inline void BindAttribLocation(GLuint program, GLuint index, const GLchar * name){_detail::BindAttribLocation(program, index, name);}
+  inline void BlendEquationSeparate(GLenum modeRGB, GLenum modeAlpha){_detail::BlendEquationSeparate(modeRGB, modeAlpha);}
+  inline void CompileShader(GLuint shader){_detail::CompileShader(shader);}
+  inline GLuint CreateProgram(void){return _detail::CreateProgram();}
+  inline GLuint CreateShader(GLenum type){return _detail::CreateShader(type);}
+  inline void DeleteProgram(GLuint program){_detail::DeleteProgram(program);}
+  inline void DeleteShader(GLuint shader){_detail::DeleteShader(shader);}
+  inline void DetachShader(GLuint program, GLuint shader){_detail::DetachShader(program, shader);}
+  inline void DisableVertexAttribArray(GLuint index){_detail::DisableVertexAttribArray(index);}
+  inline void DrawBuffers(GLsizei n, const GLenum * bufs){_detail::DrawBuffers(n, bufs);}
+  inline void EnableVertexAttribArray(GLuint index){_detail::EnableVertexAttribArray(index);}
+  inline void GetActiveAttrib(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLint * size, GLenum * type, GLchar * name){_detail::GetActiveAttrib(program, index, bufSize, length, size, type, name);}
+  inline void GetActiveUniform(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLint * size, GLenum * type, GLchar * name){_detail::GetActiveUniform(program, index, bufSize, length, size, type, name);}
+  inline void GetAttachedShaders(GLuint program, GLsizei maxCount, GLsizei * count, GLuint * shaders){_detail::GetAttachedShaders(program, maxCount, count, shaders);}
+  inline GLint GetAttribLocation(GLuint program, const GLchar * name){return _detail::GetAttribLocation(program, name);}
+  inline void GetProgramInfoLog(GLuint program, GLsizei bufSize, GLsizei * length, GLchar * infoLog){_detail::GetProgramInfoLog(program, bufSize, length, infoLog);}
+  inline void GetProgramiv(GLuint program, GLenum pname, GLint * params){_detail::GetProgramiv(program, pname, params);}
+  inline void GetShaderInfoLog(GLuint shader, GLsizei bufSize, GLsizei * length, GLchar * infoLog){_detail::GetShaderInfoLog(shader, bufSize, length, infoLog);}
+  inline void GetShaderSource(GLuint shader, GLsizei bufSize, GLsizei * length, GLchar * source){_detail::GetShaderSource(shader, bufSize, length, source);}
+  inline void GetShaderiv(GLuint shader, GLenum pname, GLint * params){_detail::GetShaderiv(shader, pname, params);}
+  inline GLint GetUniformLocation(GLuint program, const GLchar * name){return _detail::GetUniformLocation(program, name);}
+  inline void GetUniformfv(GLuint program, GLint location, GLfloat * params){_detail::GetUniformfv(program, location, params);}
+  inline void GetUniformiv(GLuint program, GLint location, GLint * params){_detail::GetUniformiv(program, location, params);}
+  inline void GetVertexAttribPointerv(GLuint index, GLenum pname, void ** pointer){_detail::GetVertexAttribPointerv(index, pname, pointer);}
+  inline void GetVertexAttribdv(GLuint index, GLenum pname, GLdouble * params){_detail::GetVertexAttribdv(index, pname, params);}
+  inline void GetVertexAttribfv(GLuint index, GLenum pname, GLfloat * params){_detail::GetVertexAttribfv(index, pname, params);}
+  inline void GetVertexAttribiv(GLuint index, GLenum pname, GLint * params){_detail::GetVertexAttribiv(index, pname, params);}
+  inline GLboolean IsProgram(GLuint program){return _detail::IsProgram(program);}
+  inline GLboolean IsShader(GLuint shader){return _detail::IsShader(shader);}
+  inline void LinkProgram(GLuint program){_detail::LinkProgram(program);}
+  inline void ShaderSource(GLuint shader, GLsizei count, const GLchar *const* string, const GLint * length){_detail::ShaderSource(shader, count, string, length);}
+  inline void StencilFuncSeparate(GLenum face, GLenum func, GLint ref, GLuint mask){_detail::StencilFuncSeparate(face, func, ref, mask);}
+  inline void StencilMaskSeparate(GLenum face, GLuint mask){_detail::StencilMaskSeparate(face, mask);}
+  inline void StencilOpSeparate(GLenum face, GLenum sfail, GLenum dpfail, GLenum dppass){_detail::StencilOpSeparate(face, sfail, dpfail, dppass);}
+  inline void Uniform1f(GLint location, GLfloat v0){_detail::Uniform1f(location, v0);}
+  inline void Uniform1fv(GLint location, GLsizei count, const GLfloat * value){_detail::Uniform1fv(location, count, value);}
+  inline void Uniform1i(GLint location, GLint v0){_detail::Uniform1i(location, v0);}
+  inline void Uniform1iv(GLint location, GLsizei count, const GLint * value){_detail::Uniform1iv(location, count, value);}
+  inline void Uniform2f(GLint location, GLfloat v0, GLfloat v1){_detail::Uniform2f(location, v0, v1);}
+  inline void Uniform2fv(GLint location, GLsizei count, const GLfloat * value){_detail::Uniform2fv(location, count, value);}
+  inline void Uniform2i(GLint location, GLint v0, GLint v1){_detail::Uniform2i(location, v0, v1);}
+  inline void Uniform2iv(GLint location, GLsizei count, const GLint * value){_detail::Uniform2iv(location, count, value);}
+  inline void Uniform3f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2){_detail::Uniform3f(location, v0, v1, v2);}
+  inline void Uniform3fv(GLint location, GLsizei count, const GLfloat * value){_detail::Uniform3fv(location, count, value);}
+  inline void Uniform3i(GLint location, GLint v0, GLint v1, GLint v2){_detail::Uniform3i(location, v0, v1, v2);}
+  inline void Uniform3iv(GLint location, GLsizei count, const GLint * value){_detail::Uniform3iv(location, count, value);}
+  inline void Uniform4f(GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3){_detail::Uniform4f(location, v0, v1, v2, v3);}
+  inline void Uniform4fv(GLint location, GLsizei count, const GLfloat * value){_detail::Uniform4fv(location, count, value);}
+  inline void Uniform4i(GLint location, GLint v0, GLint v1, GLint v2, GLint v3){_detail::Uniform4i(location, v0, v1, v2, v3);}
+  inline void Uniform4iv(GLint location, GLsizei count, const GLint * value){_detail::Uniform4iv(location, count, value);}
+  inline void UniformMatrix2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix2fv(location, count, transpose, value);}
+  inline void UniformMatrix3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix3fv(location, count, transpose, value);}
+  inline void UniformMatrix4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix4fv(location, count, transpose, value);}
+  inline void UseProgram(GLuint program){_detail::UseProgram(program);}
+  inline void ValidateProgram(GLuint program){_detail::ValidateProgram(program);}
+  inline void VertexAttrib1d(GLuint index, GLdouble x){_detail::VertexAttrib1d(index, x);}
+  inline void VertexAttrib1dv(GLuint index, const GLdouble * v){_detail::VertexAttrib1dv(index, v);}
+  inline void VertexAttrib1f(GLuint index, GLfloat x){_detail::VertexAttrib1f(index, x);}
+  inline void VertexAttrib1fv(GLuint index, const GLfloat * v){_detail::VertexAttrib1fv(index, v);}
+  inline void VertexAttrib1s(GLuint index, GLshort x){_detail::VertexAttrib1s(index, x);}
+  inline void VertexAttrib1sv(GLuint index, const GLshort * v){_detail::VertexAttrib1sv(index, v);}
+  inline void VertexAttrib2d(GLuint index, GLdouble x, GLdouble y){_detail::VertexAttrib2d(index, x, y);}
+  inline void VertexAttrib2dv(GLuint index, const GLdouble * v){_detail::VertexAttrib2dv(index, v);}
+  inline void VertexAttrib2f(GLuint index, GLfloat x, GLfloat y){_detail::VertexAttrib2f(index, x, y);}
+  inline void VertexAttrib2fv(GLuint index, const GLfloat * v){_detail::VertexAttrib2fv(index, v);}
+  inline void VertexAttrib2s(GLuint index, GLshort x, GLshort y){_detail::VertexAttrib2s(index, x, y);}
+  inline void VertexAttrib2sv(GLuint index, const GLshort * v){_detail::VertexAttrib2sv(index, v);}
+  inline void VertexAttrib3d(GLuint index, GLdouble x, GLdouble y, GLdouble z){_detail::VertexAttrib3d(index, x, y, z);}
+  inline void VertexAttrib3dv(GLuint index, const GLdouble * v){_detail::VertexAttrib3dv(index, v);}
+  inline void VertexAttrib3f(GLuint index, GLfloat x, GLfloat y, GLfloat z){_detail::VertexAttrib3f(index, x, y, z);}
+  inline void VertexAttrib3fv(GLuint index, const GLfloat * v){_detail::VertexAttrib3fv(index, v);}
+  inline void VertexAttrib3s(GLuint index, GLshort x, GLshort y, GLshort z){_detail::VertexAttrib3s(index, x, y, z);}
+  inline void VertexAttrib3sv(GLuint index, const GLshort * v){_detail::VertexAttrib3sv(index, v);}
+  inline void VertexAttrib4Nbv(GLuint index, const GLbyte * v){_detail::VertexAttrib4Nbv(index, v);}
+  inline void VertexAttrib4Niv(GLuint index, const GLint * v){_detail::VertexAttrib4Niv(index, v);}
+  inline void VertexAttrib4Nsv(GLuint index, const GLshort * v){_detail::VertexAttrib4Nsv(index, v);}
+  inline void VertexAttrib4Nub(GLuint index, GLubyte x, GLubyte y, GLubyte z, GLubyte w){_detail::VertexAttrib4Nub(index, x, y, z, w);}
+  inline void VertexAttrib4Nubv(GLuint index, const GLubyte * v){_detail::VertexAttrib4Nubv(index, v);}
+  inline void VertexAttrib4Nuiv(GLuint index, const GLuint * v){_detail::VertexAttrib4Nuiv(index, v);}
+  inline void VertexAttrib4Nusv(GLuint index, const GLushort * v){_detail::VertexAttrib4Nusv(index, v);}
+  inline void VertexAttrib4bv(GLuint index, const GLbyte * v){_detail::VertexAttrib4bv(index, v);}
+  inline void VertexAttrib4d(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w){_detail::VertexAttrib4d(index, x, y, z, w);}
+  inline void VertexAttrib4dv(GLuint index, const GLdouble * v){_detail::VertexAttrib4dv(index, v);}
+  inline void VertexAttrib4f(GLuint index, GLfloat x, GLfloat y, GLfloat z, GLfloat w){_detail::VertexAttrib4f(index, x, y, z, w);}
+  inline void VertexAttrib4fv(GLuint index, const GLfloat * v){_detail::VertexAttrib4fv(index, v);}
+  inline void VertexAttrib4iv(GLuint index, const GLint * v){_detail::VertexAttrib4iv(index, v);}
+  inline void VertexAttrib4s(GLuint index, GLshort x, GLshort y, GLshort z, GLshort w){_detail::VertexAttrib4s(index, x, y, z, w);}
+  inline void VertexAttrib4sv(GLuint index, const GLshort * v){_detail::VertexAttrib4sv(index, v);}
+  inline void VertexAttrib4ubv(GLuint index, const GLubyte * v){_detail::VertexAttrib4ubv(index, v);}
+  inline void VertexAttrib4uiv(GLuint index, const GLuint * v){_detail::VertexAttrib4uiv(index, v);}
+  inline void VertexAttrib4usv(GLuint index, const GLushort * v){_detail::VertexAttrib4usv(index, v);}
+  inline void VertexAttribPointer(GLuint index, GLint size, GLenum type, GLboolean normalized, GLsizei stride, const void * pointer){_detail::VertexAttribPointer(index, size, type, normalized, stride, pointer);}
   
-  inline GLT_API void UniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix2x3fv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix2x4fv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix3x2fv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix3x4fv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix4x2fv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix4x3fv(location, count, transpose, value);}
+  inline void UniformMatrix2x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix2x3fv(location, count, transpose, value);}
+  inline void UniformMatrix2x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix2x4fv(location, count, transpose, value);}
+  inline void UniformMatrix3x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix3x2fv(location, count, transpose, value);}
+  inline void UniformMatrix3x4fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix3x4fv(location, count, transpose, value);}
+  inline void UniformMatrix4x2fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix4x2fv(location, count, transpose, value);}
+  inline void UniformMatrix4x3fv(GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::UniformMatrix4x3fv(location, count, transpose, value);}
   
-  inline GLT_API void BeginConditionalRender(GLuint id, GLenum mode){_detail::BeginConditionalRender(id, mode);}
-  inline GLT_API void BeginTransformFeedback(GLenum primitiveMode){_detail::BeginTransformFeedback(primitiveMode);}
-  inline GLT_API void BindBufferBase(GLenum target, GLuint index, GLuint buffer){_detail::BindBufferBase(target, index, buffer);}
-  inline GLT_API void BindBufferRange(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size){_detail::BindBufferRange(target, index, buffer, offset, size);}
-  inline GLT_API void BindFragDataLocation(GLuint program, GLuint color, const GLchar * name){_detail::BindFragDataLocation(program, color, name);}
-  inline GLT_API void BindFramebuffer(GLenum target, GLuint framebuffer){_detail::BindFramebuffer(target, framebuffer);}
-  inline GLT_API void BindRenderbuffer(GLenum target, GLuint renderbuffer){_detail::BindRenderbuffer(target, renderbuffer);}
-  inline GLT_API void BindVertexArray(GLuint ren_array){_detail::BindVertexArray(ren_array);}
-  inline GLT_API void BlitFramebuffer(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter){_detail::BlitFramebuffer(srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1, dstY1, mask, filter);}
-  inline GLT_API GLenum CheckFramebufferStatus(GLenum target){return _detail::CheckFramebufferStatus(target);}
-  inline GLT_API void ClampColor(GLenum target, GLenum clamp){_detail::ClampColor(target, clamp);}
-  inline GLT_API void ClearBufferfi(GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil){_detail::ClearBufferfi(buffer, drawbuffer, depth, stencil);}
-  inline GLT_API void ClearBufferfv(GLenum buffer, GLint drawbuffer, const GLfloat * value){_detail::ClearBufferfv(buffer, drawbuffer, value);}
-  inline GLT_API void ClearBufferiv(GLenum buffer, GLint drawbuffer, const GLint * value){_detail::ClearBufferiv(buffer, drawbuffer, value);}
-  inline GLT_API void ClearBufferuiv(GLenum buffer, GLint drawbuffer, const GLuint * value){_detail::ClearBufferuiv(buffer, drawbuffer, value);}
-  inline GLT_API void ColorMaski(GLuint index, GLboolean r, GLboolean g, GLboolean b, GLboolean a){_detail::ColorMaski(index, r, g, b, a);}
-  inline GLT_API void DeleteFramebuffers(GLsizei n, const GLuint * framebuffers){_detail::DeleteFramebuffers(n, framebuffers);}
-  inline GLT_API void DeleteRenderbuffers(GLsizei n, const GLuint * renderbuffers){_detail::DeleteRenderbuffers(n, renderbuffers);}
-  inline GLT_API void DeleteVertexArrays(GLsizei n, const GLuint * arrays){_detail::DeleteVertexArrays(n, arrays);}
-  inline GLT_API void Disablei(GLenum target, GLuint index){_detail::Disablei(target, index);}
-  inline GLT_API void Enablei(GLenum target, GLuint index){_detail::Enablei(target, index);}
-  inline GLT_API void EndConditionalRender(void){_detail::EndConditionalRender();}
-  inline GLT_API void EndTransformFeedback(void){_detail::EndTransformFeedback();}
-  inline GLT_API void FlushMappedBufferRange(GLenum target, GLintptr offset, GLsizeiptr length){_detail::FlushMappedBufferRange(target, offset, length);}
-  inline GLT_API void FramebufferRenderbuffer(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer){_detail::FramebufferRenderbuffer(target, attachment, renderbuffertarget, renderbuffer);}
-  inline GLT_API void FramebufferTexture1D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level){_detail::FramebufferTexture1D(target, attachment, textarget, texture, level);}
-  inline GLT_API void FramebufferTexture2D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level){_detail::FramebufferTexture2D(target, attachment, textarget, texture, level);}
-  inline GLT_API void FramebufferTexture3D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset){_detail::FramebufferTexture3D(target, attachment, textarget, texture, level, zoffset);}
-  inline GLT_API void FramebufferTextureLayer(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer){_detail::FramebufferTextureLayer(target, attachment, texture, level, layer);}
-  inline GLT_API void GenFramebuffers(GLsizei n, GLuint * framebuffers){_detail::GenFramebuffers(n, framebuffers);}
-  inline GLT_API void GenRenderbuffers(GLsizei n, GLuint * renderbuffers){_detail::GenRenderbuffers(n, renderbuffers);}
-  inline GLT_API void GenVertexArrays(GLsizei n, GLuint * arrays){_detail::GenVertexArrays(n, arrays);}
-  inline GLT_API void GenerateMipmap(GLenum target){_detail::GenerateMipmap(target);}
-  inline GLT_API void GetBooleani_v(GLenum target, GLuint index, GLboolean * data){_detail::GetBooleani_v(target, index, data);}
-  inline GLT_API GLint GetFragDataLocation(GLuint program, const GLchar * name){return _detail::GetFragDataLocation(program, name);}
-  inline GLT_API void GetFramebufferAttachmentParameteriv(GLenum target, GLenum attachment, GLenum pname, GLint * params){_detail::GetFramebufferAttachmentParameteriv(target, attachment, pname, params);}
-  inline GLT_API void GetIntegeri_v(GLenum target, GLuint index, GLint * data){_detail::GetIntegeri_v(target, index, data);}
-  inline GLT_API void GetRenderbufferParameteriv(GLenum target, GLenum pname, GLint * params){_detail::GetRenderbufferParameteriv(target, pname, params);}
-  inline GLT_API const GLubyte * GetStringi(GLenum name, GLuint index){return _detail::GetStringi(name, index);}
-  inline GLT_API void GetTexParameterIiv(GLenum target, GLenum pname, GLint * params){_detail::GetTexParameterIiv(target, pname, params);}
-  inline GLT_API void GetTexParameterIuiv(GLenum target, GLenum pname, GLuint * params){_detail::GetTexParameterIuiv(target, pname, params);}
-  inline GLT_API void GetTransformFeedbackVarying(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLsizei * size, GLenum * type, GLchar * name){_detail::GetTransformFeedbackVarying(program, index, bufSize, length, size, type, name);}
-  inline GLT_API void GetUniformuiv(GLuint program, GLint location, GLuint * params){_detail::GetUniformuiv(program, location, params);}
-  inline GLT_API void GetVertexAttribIiv(GLuint index, GLenum pname, GLint * params){_detail::GetVertexAttribIiv(index, pname, params);}
-  inline GLT_API void GetVertexAttribIuiv(GLuint index, GLenum pname, GLuint * params){_detail::GetVertexAttribIuiv(index, pname, params);}
-  inline GLT_API GLboolean IsEnabledi(GLenum target, GLuint index){return _detail::IsEnabledi(target, index);}
-  inline GLT_API GLboolean IsFramebuffer(GLuint framebuffer){return _detail::IsFramebuffer(framebuffer);}
-  inline GLT_API GLboolean IsRenderbuffer(GLuint renderbuffer){return _detail::IsRenderbuffer(renderbuffer);}
-  inline GLT_API GLboolean IsVertexArray(GLuint ren_array){return _detail::IsVertexArray(ren_array);}
-  inline GLT_API void * MapBufferRange(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access){return _detail::MapBufferRange(target, offset, length, access);}
-  inline GLT_API void RenderbufferStorage(GLenum target, GLenum internalformat, GLsizei width, GLsizei height){_detail::RenderbufferStorage(target, internalformat, width, height);}
-  inline GLT_API void RenderbufferStorageMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height){_detail::RenderbufferStorageMultisample(target, samples, internalformat, width, height);}
-  inline GLT_API void TexParameterIiv(GLenum target, GLenum pname, const GLint * params){_detail::TexParameterIiv(target, pname, params);}
-  inline GLT_API void TexParameterIuiv(GLenum target, GLenum pname, const GLuint * params){_detail::TexParameterIuiv(target, pname, params);}
-  inline GLT_API void TransformFeedbackVaryings(GLuint program, GLsizei count, const GLchar *const* varyings, GLenum bufferMode){_detail::TransformFeedbackVaryings(program, count, varyings, bufferMode);}
-  inline GLT_API void Uniform1ui(GLint location, GLuint v0){_detail::Uniform1ui(location, v0);}
-  inline GLT_API void Uniform1uiv(GLint location, GLsizei count, const GLuint * value){_detail::Uniform1uiv(location, count, value);}
-  inline GLT_API void Uniform2ui(GLint location, GLuint v0, GLuint v1){_detail::Uniform2ui(location, v0, v1);}
-  inline GLT_API void Uniform2uiv(GLint location, GLsizei count, const GLuint * value){_detail::Uniform2uiv(location, count, value);}
-  inline GLT_API void Uniform3ui(GLint location, GLuint v0, GLuint v1, GLuint v2){_detail::Uniform3ui(location, v0, v1, v2);}
-  inline GLT_API void Uniform3uiv(GLint location, GLsizei count, const GLuint * value){_detail::Uniform3uiv(location, count, value);}
-  inline GLT_API void Uniform4ui(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3){_detail::Uniform4ui(location, v0, v1, v2, v3);}
-  inline GLT_API void Uniform4uiv(GLint location, GLsizei count, const GLuint * value){_detail::Uniform4uiv(location, count, value);}
-  inline GLT_API void VertexAttribI1i(GLuint index, GLint x){_detail::VertexAttribI1i(index, x);}
-  inline GLT_API void VertexAttribI1iv(GLuint index, const GLint * v){_detail::VertexAttribI1iv(index, v);}
-  inline GLT_API void VertexAttribI1ui(GLuint index, GLuint x){_detail::VertexAttribI1ui(index, x);}
-  inline GLT_API void VertexAttribI1uiv(GLuint index, const GLuint * v){_detail::VertexAttribI1uiv(index, v);}
-  inline GLT_API void VertexAttribI2i(GLuint index, GLint x, GLint y){_detail::VertexAttribI2i(index, x, y);}
-  inline GLT_API void VertexAttribI2iv(GLuint index, const GLint * v){_detail::VertexAttribI2iv(index, v);}
-  inline GLT_API void VertexAttribI2ui(GLuint index, GLuint x, GLuint y){_detail::VertexAttribI2ui(index, x, y);}
-  inline GLT_API void VertexAttribI2uiv(GLuint index, const GLuint * v){_detail::VertexAttribI2uiv(index, v);}
-  inline GLT_API void VertexAttribI3i(GLuint index, GLint x, GLint y, GLint z){_detail::VertexAttribI3i(index, x, y, z);}
-  inline GLT_API void VertexAttribI3iv(GLuint index, const GLint * v){_detail::VertexAttribI3iv(index, v);}
-  inline GLT_API void VertexAttribI3ui(GLuint index, GLuint x, GLuint y, GLuint z){_detail::VertexAttribI3ui(index, x, y, z);}
-  inline GLT_API void VertexAttribI3uiv(GLuint index, const GLuint * v){_detail::VertexAttribI3uiv(index, v);}
-  inline GLT_API void VertexAttribI4bv(GLuint index, const GLbyte * v){_detail::VertexAttribI4bv(index, v);}
-  inline GLT_API void VertexAttribI4i(GLuint index, GLint x, GLint y, GLint z, GLint w){_detail::VertexAttribI4i(index, x, y, z, w);}
-  inline GLT_API void VertexAttribI4iv(GLuint index, const GLint * v){_detail::VertexAttribI4iv(index, v);}
-  inline GLT_API void VertexAttribI4sv(GLuint index, const GLshort * v){_detail::VertexAttribI4sv(index, v);}
-  inline GLT_API void VertexAttribI4ubv(GLuint index, const GLubyte * v){_detail::VertexAttribI4ubv(index, v);}
-  inline GLT_API void VertexAttribI4ui(GLuint index, GLuint x, GLuint y, GLuint z, GLuint w){_detail::VertexAttribI4ui(index, x, y, z, w);}
-  inline GLT_API void VertexAttribI4uiv(GLuint index, const GLuint * v){_detail::VertexAttribI4uiv(index, v);}
-  inline GLT_API void VertexAttribI4usv(GLuint index, const GLushort * v){_detail::VertexAttribI4usv(index, v);}
-  inline GLT_API void VertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer){_detail::VertexAttribIPointer(index, size, type, stride, pointer);}
+  inline void BeginConditionalRender(GLuint id, GLenum mode){_detail::BeginConditionalRender(id, mode);}
+  inline void BeginTransformFeedback(GLenum primitiveMode){_detail::BeginTransformFeedback(primitiveMode);}
+  inline void BindBufferBase(GLenum target, GLuint index, GLuint buffer){_detail::BindBufferBase(target, index, buffer);}
+  inline void BindBufferRange(GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size){_detail::BindBufferRange(target, index, buffer, offset, size);}
+  inline void BindFragDataLocation(GLuint program, GLuint color, const GLchar * name){_detail::BindFragDataLocation(program, color, name);}
+  inline void BindFramebuffer(GLenum target, GLuint framebuffer){_detail::BindFramebuffer(target, framebuffer);}
+  inline void BindRenderbuffer(GLenum target, GLuint renderbuffer){_detail::BindRenderbuffer(target, renderbuffer);}
+  inline void BindVertexArray(GLuint ren_array){_detail::BindVertexArray(ren_array);}
+  inline void BlitFramebuffer(GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter){_detail::BlitFramebuffer(srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1, dstY1, mask, filter);}
+  inline GLenum CheckFramebufferStatus(GLenum target){return _detail::CheckFramebufferStatus(target);}
+  inline void ClampColor(GLenum target, GLenum clamp){_detail::ClampColor(target, clamp);}
+  inline void ClearBufferfi(GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil){_detail::ClearBufferfi(buffer, drawbuffer, depth, stencil);}
+  inline void ClearBufferfv(GLenum buffer, GLint drawbuffer, const GLfloat * value){_detail::ClearBufferfv(buffer, drawbuffer, value);}
+  inline void ClearBufferiv(GLenum buffer, GLint drawbuffer, const GLint * value){_detail::ClearBufferiv(buffer, drawbuffer, value);}
+  inline void ClearBufferuiv(GLenum buffer, GLint drawbuffer, const GLuint * value){_detail::ClearBufferuiv(buffer, drawbuffer, value);}
+  inline void ColorMaski(GLuint index, GLboolean r, GLboolean g, GLboolean b, GLboolean a){_detail::ColorMaski(index, r, g, b, a);}
+  inline void DeleteFramebuffers(GLsizei n, const GLuint * framebuffers){_detail::DeleteFramebuffers(n, framebuffers);}
+  inline void DeleteRenderbuffers(GLsizei n, const GLuint * renderbuffers){_detail::DeleteRenderbuffers(n, renderbuffers);}
+  inline void DeleteVertexArrays(GLsizei n, const GLuint * arrays){_detail::DeleteVertexArrays(n, arrays);}
+  inline void Disablei(GLenum target, GLuint index){_detail::Disablei(target, index);}
+  inline void Enablei(GLenum target, GLuint index){_detail::Enablei(target, index);}
+  inline void EndConditionalRender(void){_detail::EndConditionalRender();}
+  inline void EndTransformFeedback(void){_detail::EndTransformFeedback();}
+  inline void FlushMappedBufferRange(GLenum target, GLintptr offset, GLsizeiptr length){_detail::FlushMappedBufferRange(target, offset, length);}
+  inline void FramebufferRenderbuffer(GLenum target, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer){_detail::FramebufferRenderbuffer(target, attachment, renderbuffertarget, renderbuffer);}
+  inline void FramebufferTexture1D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level){_detail::FramebufferTexture1D(target, attachment, textarget, texture, level);}
+  inline void FramebufferTexture2D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level){_detail::FramebufferTexture2D(target, attachment, textarget, texture, level);}
+  inline void FramebufferTexture3D(GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level, GLint zoffset){_detail::FramebufferTexture3D(target, attachment, textarget, texture, level, zoffset);}
+  inline void FramebufferTextureLayer(GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer){_detail::FramebufferTextureLayer(target, attachment, texture, level, layer);}
+  inline void GenFramebuffers(GLsizei n, GLuint * framebuffers){_detail::GenFramebuffers(n, framebuffers);}
+  inline void GenRenderbuffers(GLsizei n, GLuint * renderbuffers){_detail::GenRenderbuffers(n, renderbuffers);}
+  inline void GenVertexArrays(GLsizei n, GLuint * arrays){_detail::GenVertexArrays(n, arrays);}
+  inline void GenerateMipmap(GLenum target){_detail::GenerateMipmap(target);}
+  inline void GetBooleani_v(GLenum target, GLuint index, GLboolean * data){_detail::GetBooleani_v(target, index, data);}
+  inline GLint GetFragDataLocation(GLuint program, const GLchar * name){return _detail::GetFragDataLocation(program, name);}
+  inline void GetFramebufferAttachmentParameteriv(GLenum target, GLenum attachment, GLenum pname, GLint * params){_detail::GetFramebufferAttachmentParameteriv(target, attachment, pname, params);}
+  inline void GetIntegeri_v(GLenum target, GLuint index, GLint * data){_detail::GetIntegeri_v(target, index, data);}
+  inline void GetRenderbufferParameteriv(GLenum target, GLenum pname, GLint * params){_detail::GetRenderbufferParameteriv(target, pname, params);}
+  inline const GLubyte * GetStringi(GLenum name, GLuint index){return _detail::GetStringi(name, index);}
+  inline void GetTexParameterIiv(GLenum target, GLenum pname, GLint * params){_detail::GetTexParameterIiv(target, pname, params);}
+  inline void GetTexParameterIuiv(GLenum target, GLenum pname, GLuint * params){_detail::GetTexParameterIuiv(target, pname, params);}
+  inline void GetTransformFeedbackVarying(GLuint program, GLuint index, GLsizei bufSize, GLsizei * length, GLsizei * size, GLenum * type, GLchar * name){_detail::GetTransformFeedbackVarying(program, index, bufSize, length, size, type, name);}
+  inline void GetUniformuiv(GLuint program, GLint location, GLuint * params){_detail::GetUniformuiv(program, location, params);}
+  inline void GetVertexAttribIiv(GLuint index, GLenum pname, GLint * params){_detail::GetVertexAttribIiv(index, pname, params);}
+  inline void GetVertexAttribIuiv(GLuint index, GLenum pname, GLuint * params){_detail::GetVertexAttribIuiv(index, pname, params);}
+  inline GLboolean IsEnabledi(GLenum target, GLuint index){return _detail::IsEnabledi(target, index);}
+  inline GLboolean IsFramebuffer(GLuint framebuffer){return _detail::IsFramebuffer(framebuffer);}
+  inline GLboolean IsRenderbuffer(GLuint renderbuffer){return _detail::IsRenderbuffer(renderbuffer);}
+  inline GLboolean IsVertexArray(GLuint ren_array){return _detail::IsVertexArray(ren_array);}
+  inline void * MapBufferRange(GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access){return _detail::MapBufferRange(target, offset, length, access);}
+  inline void RenderbufferStorage(GLenum target, GLenum internalformat, GLsizei width, GLsizei height){_detail::RenderbufferStorage(target, internalformat, width, height);}
+  inline void RenderbufferStorageMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height){_detail::RenderbufferStorageMultisample(target, samples, internalformat, width, height);}
+  inline void TexParameterIiv(GLenum target, GLenum pname, const GLint * params){_detail::TexParameterIiv(target, pname, params);}
+  inline void TexParameterIuiv(GLenum target, GLenum pname, const GLuint * params){_detail::TexParameterIuiv(target, pname, params);}
+  inline void TransformFeedbackVaryings(GLuint program, GLsizei count, const GLchar *const* varyings, GLenum bufferMode){_detail::TransformFeedbackVaryings(program, count, varyings, bufferMode);}
+  inline void Uniform1ui(GLint location, GLuint v0){_detail::Uniform1ui(location, v0);}
+  inline void Uniform1uiv(GLint location, GLsizei count, const GLuint * value){_detail::Uniform1uiv(location, count, value);}
+  inline void Uniform2ui(GLint location, GLuint v0, GLuint v1){_detail::Uniform2ui(location, v0, v1);}
+  inline void Uniform2uiv(GLint location, GLsizei count, const GLuint * value){_detail::Uniform2uiv(location, count, value);}
+  inline void Uniform3ui(GLint location, GLuint v0, GLuint v1, GLuint v2){_detail::Uniform3ui(location, v0, v1, v2);}
+  inline void Uniform3uiv(GLint location, GLsizei count, const GLuint * value){_detail::Uniform3uiv(location, count, value);}
+  inline void Uniform4ui(GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3){_detail::Uniform4ui(location, v0, v1, v2, v3);}
+  inline void Uniform4uiv(GLint location, GLsizei count, const GLuint * value){_detail::Uniform4uiv(location, count, value);}
+  inline void VertexAttribI1i(GLuint index, GLint x){_detail::VertexAttribI1i(index, x);}
+  inline void VertexAttribI1iv(GLuint index, const GLint * v){_detail::VertexAttribI1iv(index, v);}
+  inline void VertexAttribI1ui(GLuint index, GLuint x){_detail::VertexAttribI1ui(index, x);}
+  inline void VertexAttribI1uiv(GLuint index, const GLuint * v){_detail::VertexAttribI1uiv(index, v);}
+  inline void VertexAttribI2i(GLuint index, GLint x, GLint y){_detail::VertexAttribI2i(index, x, y);}
+  inline void VertexAttribI2iv(GLuint index, const GLint * v){_detail::VertexAttribI2iv(index, v);}
+  inline void VertexAttribI2ui(GLuint index, GLuint x, GLuint y){_detail::VertexAttribI2ui(index, x, y);}
+  inline void VertexAttribI2uiv(GLuint index, const GLuint * v){_detail::VertexAttribI2uiv(index, v);}
+  inline void VertexAttribI3i(GLuint index, GLint x, GLint y, GLint z){_detail::VertexAttribI3i(index, x, y, z);}
+  inline void VertexAttribI3iv(GLuint index, const GLint * v){_detail::VertexAttribI3iv(index, v);}
+  inline void VertexAttribI3ui(GLuint index, GLuint x, GLuint y, GLuint z){_detail::VertexAttribI3ui(index, x, y, z);}
+  inline void VertexAttribI3uiv(GLuint index, const GLuint * v){_detail::VertexAttribI3uiv(index, v);}
+  inline void VertexAttribI4bv(GLuint index, const GLbyte * v){_detail::VertexAttribI4bv(index, v);}
+  inline void VertexAttribI4i(GLuint index, GLint x, GLint y, GLint z, GLint w){_detail::VertexAttribI4i(index, x, y, z, w);}
+  inline void VertexAttribI4iv(GLuint index, const GLint * v){_detail::VertexAttribI4iv(index, v);}
+  inline void VertexAttribI4sv(GLuint index, const GLshort * v){_detail::VertexAttribI4sv(index, v);}
+  inline void VertexAttribI4ubv(GLuint index, const GLubyte * v){_detail::VertexAttribI4ubv(index, v);}
+  inline void VertexAttribI4ui(GLuint index, GLuint x, GLuint y, GLuint z, GLuint w){_detail::VertexAttribI4ui(index, x, y, z, w);}
+  inline void VertexAttribI4uiv(GLuint index, const GLuint * v){_detail::VertexAttribI4uiv(index, v);}
+  inline void VertexAttribI4usv(GLuint index, const GLushort * v){_detail::VertexAttribI4usv(index, v);}
+  inline void VertexAttribIPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer){_detail::VertexAttribIPointer(index, size, type, stride, pointer);}
   
-  inline GLT_API void CopyBufferSubData(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size){_detail::CopyBufferSubData(readTarget, writeTarget, readOffset, writeOffset, size);}
-  inline GLT_API void DrawArraysInstanced(GLenum mode, GLint first, GLsizei count, GLsizei instancecount){_detail::DrawArraysInstanced(mode, first, count, instancecount);}
-  inline GLT_API void DrawElementsInstanced(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount){_detail::DrawElementsInstanced(mode, count, type, indices, instancecount);}
-  inline GLT_API void GetActiveUniformBlockName(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei * length, GLchar * uniformBlockName){_detail::GetActiveUniformBlockName(program, uniformBlockIndex, bufSize, length, uniformBlockName);}
-  inline GLT_API void GetActiveUniformBlockiv(GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint * params){_detail::GetActiveUniformBlockiv(program, uniformBlockIndex, pname, params);}
-  inline GLT_API void GetActiveUniformName(GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei * length, GLchar * uniformName){_detail::GetActiveUniformName(program, uniformIndex, bufSize, length, uniformName);}
-  inline GLT_API void GetActiveUniformsiv(GLuint program, GLsizei uniformCount, const GLuint * uniformIndices, GLenum pname, GLint * params){_detail::GetActiveUniformsiv(program, uniformCount, uniformIndices, pname, params);}
-  inline GLT_API GLuint GetUniformBlockIndex(GLuint program, const GLchar * uniformBlockName){return _detail::GetUniformBlockIndex(program, uniformBlockName);}
-  inline GLT_API void GetUniformIndices(GLuint program, GLsizei uniformCount, const GLchar *const* uniformNames, GLuint * uniformIndices){_detail::GetUniformIndices(program, uniformCount, uniformNames, uniformIndices);}
-  inline GLT_API void PrimitiveRestartIndex(GLuint index){_detail::PrimitiveRestartIndex(index);}
-  inline GLT_API void TexBuffer(GLenum target, GLenum internalformat, GLuint buffer){_detail::TexBuffer(target, internalformat, buffer);}
-  inline GLT_API void UniformBlockBinding(GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding){_detail::UniformBlockBinding(program, uniformBlockIndex, uniformBlockBinding);}
+  inline void CopyBufferSubData(GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size){_detail::CopyBufferSubData(readTarget, writeTarget, readOffset, writeOffset, size);}
+  inline void DrawArraysInstanced(GLenum mode, GLint first, GLsizei count, GLsizei instancecount){_detail::DrawArraysInstanced(mode, first, count, instancecount);}
+  inline void DrawElementsInstanced(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount){_detail::DrawElementsInstanced(mode, count, type, indices, instancecount);}
+  inline void GetActiveUniformBlockName(GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei * length, GLchar * uniformBlockName){_detail::GetActiveUniformBlockName(program, uniformBlockIndex, bufSize, length, uniformBlockName);}
+  inline void GetActiveUniformBlockiv(GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint * params){_detail::GetActiveUniformBlockiv(program, uniformBlockIndex, pname, params);}
+  inline void GetActiveUniformName(GLuint program, GLuint uniformIndex, GLsizei bufSize, GLsizei * length, GLchar * uniformName){_detail::GetActiveUniformName(program, uniformIndex, bufSize, length, uniformName);}
+  inline void GetActiveUniformsiv(GLuint program, GLsizei uniformCount, const GLuint * uniformIndices, GLenum pname, GLint * params){_detail::GetActiveUniformsiv(program, uniformCount, uniformIndices, pname, params);}
+  inline GLuint GetUniformBlockIndex(GLuint program, const GLchar * uniformBlockName){return _detail::GetUniformBlockIndex(program, uniformBlockName);}
+  inline void GetUniformIndices(GLuint program, GLsizei uniformCount, const GLchar *const* uniformNames, GLuint * uniformIndices){_detail::GetUniformIndices(program, uniformCount, uniformNames, uniformIndices);}
+  inline void PrimitiveRestartIndex(GLuint index){_detail::PrimitiveRestartIndex(index);}
+  inline void TexBuffer(GLenum target, GLenum internalformat, GLuint buffer){_detail::TexBuffer(target, internalformat, buffer);}
+  inline void UniformBlockBinding(GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding){_detail::UniformBlockBinding(program, uniformBlockIndex, uniformBlockBinding);}
   
-  inline GLT_API GLenum ClientWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout){return _detail::ClientWaitSync(sync, flags, timeout);}
-  inline GLT_API void DeleteSync(GLsync sync){_detail::DeleteSync(sync);}
-  inline GLT_API void DrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, const void * indices, GLint basevertex){_detail::DrawElementsBaseVertex(mode, count, type, indices, basevertex);}
-  inline GLT_API void DrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLint basevertex){_detail::DrawElementsInstancedBaseVertex(mode, count, type, indices, instancecount, basevertex);}
-  inline GLT_API void DrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void * indices, GLint basevertex){_detail::DrawRangeElementsBaseVertex(mode, start, end, count, type, indices, basevertex);}
-  inline GLT_API GLsync FenceSync(GLenum condition, GLbitfield flags){return _detail::FenceSync(condition, flags);}
-  inline GLT_API void FramebufferTexture(GLenum target, GLenum attachment, GLuint texture, GLint level){_detail::FramebufferTexture(target, attachment, texture, level);}
-  inline GLT_API void GetBufferParameteri64v(GLenum target, GLenum pname, GLint64 * params){_detail::GetBufferParameteri64v(target, pname, params);}
-  inline GLT_API void GetInteger64i_v(GLenum target, GLuint index, GLint64 * data){_detail::GetInteger64i_v(target, index, data);}
-  inline GLT_API void GetInteger64v(GLenum pname, GLint64 * data){_detail::GetInteger64v(pname, data);}
-  inline GLT_API void GetMultisamplefv(GLenum pname, GLuint index, GLfloat * val){_detail::GetMultisamplefv(pname, index, val);}
-  inline GLT_API void GetSynciv(GLsync sync, GLenum pname, GLsizei bufSize, GLsizei * length, GLint * values){_detail::GetSynciv(sync, pname, bufSize, length, values);}
-  inline GLT_API GLboolean IsSync(GLsync sync){return _detail::IsSync(sync);}
-  inline GLT_API void MultiDrawElementsBaseVertex(GLenum mode, const GLsizei * count, GLenum type, const void *const* indices, GLsizei drawcount, const GLint * basevertex){_detail::MultiDrawElementsBaseVertex(mode, count, type, indices, drawcount, basevertex);}
-  inline GLT_API void ProvokingVertex(GLenum mode){_detail::ProvokingVertex(mode);}
-  inline GLT_API void SampleMaski(GLuint maskNumber, GLbitfield mask){_detail::SampleMaski(maskNumber, mask);}
-  inline GLT_API void TexImage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations){_detail::TexImage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations);}
-  inline GLT_API void TexImage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations){_detail::TexImage3DMultisample(target, samples, internalformat, width, height, depth, fixedsamplelocations);}
-  inline GLT_API void WaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout){_detail::WaitSync(sync, flags, timeout);}
+  inline GLenum ClientWaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout){return _detail::ClientWaitSync(sync, flags, timeout);}
+  inline void DeleteSync(GLsync sync){_detail::DeleteSync(sync);}
+  inline void DrawElementsBaseVertex(GLenum mode, GLsizei count, GLenum type, const void * indices, GLint basevertex){_detail::DrawElementsBaseVertex(mode, count, type, indices, basevertex);}
+  inline void DrawElementsInstancedBaseVertex(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLint basevertex){_detail::DrawElementsInstancedBaseVertex(mode, count, type, indices, instancecount, basevertex);}
+  inline void DrawRangeElementsBaseVertex(GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const void * indices, GLint basevertex){_detail::DrawRangeElementsBaseVertex(mode, start, end, count, type, indices, basevertex);}
+  inline GLsync FenceSync(GLenum condition, GLbitfield flags){return _detail::FenceSync(condition, flags);}
+  inline void FramebufferTexture(GLenum target, GLenum attachment, GLuint texture, GLint level){_detail::FramebufferTexture(target, attachment, texture, level);}
+  inline void GetBufferParameteri64v(GLenum target, GLenum pname, GLint64 * params){_detail::GetBufferParameteri64v(target, pname, params);}
+  inline void GetInteger64i_v(GLenum target, GLuint index, GLint64 * data){_detail::GetInteger64i_v(target, index, data);}
+  inline void GetInteger64v(GLenum pname, GLint64 * data){_detail::GetInteger64v(pname, data);}
+  inline void GetMultisamplefv(GLenum pname, GLuint index, GLfloat * val){_detail::GetMultisamplefv(pname, index, val);}
+  inline void GetSynciv(GLsync sync, GLenum pname, GLsizei bufSize, GLsizei * length, GLint * values){_detail::GetSynciv(sync, pname, bufSize, length, values);}
+  inline GLboolean IsSync(GLsync sync){return _detail::IsSync(sync);}
+  inline void MultiDrawElementsBaseVertex(GLenum mode, const GLsizei * count, GLenum type, const void *const* indices, GLsizei drawcount, const GLint * basevertex){_detail::MultiDrawElementsBaseVertex(mode, count, type, indices, drawcount, basevertex);}
+  inline void ProvokingVertex(GLenum mode){_detail::ProvokingVertex(mode);}
+  inline void SampleMaski(GLuint maskNumber, GLbitfield mask){_detail::SampleMaski(maskNumber, mask);}
+  inline void TexImage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations){_detail::TexImage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations);}
+  inline void TexImage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations){_detail::TexImage3DMultisample(target, samples, internalformat, width, height, depth, fixedsamplelocations);}
+  inline void WaitSync(GLsync sync, GLbitfield flags, GLuint64 timeout){_detail::WaitSync(sync, flags, timeout);}
   
-  inline GLT_API void BindFragDataLocationIndexed(GLuint program, GLuint colorNumber, GLuint index, const GLchar * name){_detail::BindFragDataLocationIndexed(program, colorNumber, index, name);}
-  inline GLT_API void BindSampler(GLuint unit, GLuint sampler){_detail::BindSampler(unit, sampler);}
-  inline GLT_API void DeleteSamplers(GLsizei count, const GLuint * samplers){_detail::DeleteSamplers(count, samplers);}
-  inline GLT_API void GenSamplers(GLsizei count, GLuint * samplers){_detail::GenSamplers(count, samplers);}
-  inline GLT_API GLint GetFragDataIndex(GLuint program, const GLchar * name){return _detail::GetFragDataIndex(program, name);}
-  inline GLT_API void GetQueryObjecti64v(GLuint id, GLenum pname, GLint64 * params){_detail::GetQueryObjecti64v(id, pname, params);}
-  inline GLT_API void GetQueryObjectui64v(GLuint id, GLenum pname, GLuint64 * params){_detail::GetQueryObjectui64v(id, pname, params);}
-  inline GLT_API void GetSamplerParameterIiv(GLuint sampler, GLenum pname, GLint * params){_detail::GetSamplerParameterIiv(sampler, pname, params);}
-  inline GLT_API void GetSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint * params){_detail::GetSamplerParameterIuiv(sampler, pname, params);}
-  inline GLT_API void GetSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat * params){_detail::GetSamplerParameterfv(sampler, pname, params);}
-  inline GLT_API void GetSamplerParameteriv(GLuint sampler, GLenum pname, GLint * params){_detail::GetSamplerParameteriv(sampler, pname, params);}
-  inline GLT_API GLboolean IsSampler(GLuint sampler){return _detail::IsSampler(sampler);}
-  inline GLT_API void QueryCounter(GLuint id, GLenum target){_detail::QueryCounter(id, target);}
-  inline GLT_API void SamplerParameterIiv(GLuint sampler, GLenum pname, const GLint * param){_detail::SamplerParameterIiv(sampler, pname, param);}
-  inline GLT_API void SamplerParameterIuiv(GLuint sampler, GLenum pname, const GLuint * param){_detail::SamplerParameterIuiv(sampler, pname, param);}
-  inline GLT_API void SamplerParameterf(GLuint sampler, GLenum pname, GLfloat param){_detail::SamplerParameterf(sampler, pname, param);}
-  inline GLT_API void SamplerParameterfv(GLuint sampler, GLenum pname, const GLfloat * param){_detail::SamplerParameterfv(sampler, pname, param);}
-  inline GLT_API void SamplerParameteri(GLuint sampler, GLenum pname, GLint param){_detail::SamplerParameteri(sampler, pname, param);}
-  inline GLT_API void SamplerParameteriv(GLuint sampler, GLenum pname, const GLint * param){_detail::SamplerParameteriv(sampler, pname, param);}
-  inline GLT_API void VertexAttribDivisor(GLuint index, GLuint divisor){_detail::VertexAttribDivisor(index, divisor);}
-  inline GLT_API void VertexAttribP1ui(GLuint index, GLenum type, GLboolean normalized, GLuint value){_detail::VertexAttribP1ui(index, type, normalized, value);}
-  inline GLT_API void VertexAttribP1uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint * value){_detail::VertexAttribP1uiv(index, type, normalized, value);}
-  inline GLT_API void VertexAttribP2ui(GLuint index, GLenum type, GLboolean normalized, GLuint value){_detail::VertexAttribP2ui(index, type, normalized, value);}
-  inline GLT_API void VertexAttribP2uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint * value){_detail::VertexAttribP2uiv(index, type, normalized, value);}
-  inline GLT_API void VertexAttribP3ui(GLuint index, GLenum type, GLboolean normalized, GLuint value){_detail::VertexAttribP3ui(index, type, normalized, value);}
-  inline GLT_API void VertexAttribP3uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint * value){_detail::VertexAttribP3uiv(index, type, normalized, value);}
-  inline GLT_API void VertexAttribP4ui(GLuint index, GLenum type, GLboolean normalized, GLuint value){_detail::VertexAttribP4ui(index, type, normalized, value);}
-  inline GLT_API void VertexAttribP4uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint * value){_detail::VertexAttribP4uiv(index, type, normalized, value);}
+  inline void BindFragDataLocationIndexed(GLuint program, GLuint colorNumber, GLuint index, const GLchar * name){_detail::BindFragDataLocationIndexed(program, colorNumber, index, name);}
+  inline void BindSampler(GLuint unit, GLuint sampler){_detail::BindSampler(unit, sampler);}
+  inline void DeleteSamplers(GLsizei count, const GLuint * samplers){_detail::DeleteSamplers(count, samplers);}
+  inline void GenSamplers(GLsizei count, GLuint * samplers){_detail::GenSamplers(count, samplers);}
+  inline GLint GetFragDataIndex(GLuint program, const GLchar * name){return _detail::GetFragDataIndex(program, name);}
+  inline void GetQueryObjecti64v(GLuint id, GLenum pname, GLint64 * params){_detail::GetQueryObjecti64v(id, pname, params);}
+  inline void GetQueryObjectui64v(GLuint id, GLenum pname, GLuint64 * params){_detail::GetQueryObjectui64v(id, pname, params);}
+  inline void GetSamplerParameterIiv(GLuint sampler, GLenum pname, GLint * params){_detail::GetSamplerParameterIiv(sampler, pname, params);}
+  inline void GetSamplerParameterIuiv(GLuint sampler, GLenum pname, GLuint * params){_detail::GetSamplerParameterIuiv(sampler, pname, params);}
+  inline void GetSamplerParameterfv(GLuint sampler, GLenum pname, GLfloat * params){_detail::GetSamplerParameterfv(sampler, pname, params);}
+  inline void GetSamplerParameteriv(GLuint sampler, GLenum pname, GLint * params){_detail::GetSamplerParameteriv(sampler, pname, params);}
+  inline GLboolean IsSampler(GLuint sampler){return _detail::IsSampler(sampler);}
+  inline void QueryCounter(GLuint id, GLenum target){_detail::QueryCounter(id, target);}
+  inline void SamplerParameterIiv(GLuint sampler, GLenum pname, const GLint * param){_detail::SamplerParameterIiv(sampler, pname, param);}
+  inline void SamplerParameterIuiv(GLuint sampler, GLenum pname, const GLuint * param){_detail::SamplerParameterIuiv(sampler, pname, param);}
+  inline void SamplerParameterf(GLuint sampler, GLenum pname, GLfloat param){_detail::SamplerParameterf(sampler, pname, param);}
+  inline void SamplerParameterfv(GLuint sampler, GLenum pname, const GLfloat * param){_detail::SamplerParameterfv(sampler, pname, param);}
+  inline void SamplerParameteri(GLuint sampler, GLenum pname, GLint param){_detail::SamplerParameteri(sampler, pname, param);}
+  inline void SamplerParameteriv(GLuint sampler, GLenum pname, const GLint * param){_detail::SamplerParameteriv(sampler, pname, param);}
+  inline void VertexAttribDivisor(GLuint index, GLuint divisor){_detail::VertexAttribDivisor(index, divisor);}
+  inline void VertexAttribP1ui(GLuint index, GLenum type, GLboolean normalized, GLuint value){_detail::VertexAttribP1ui(index, type, normalized, value);}
+  inline void VertexAttribP1uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint * value){_detail::VertexAttribP1uiv(index, type, normalized, value);}
+  inline void VertexAttribP2ui(GLuint index, GLenum type, GLboolean normalized, GLuint value){_detail::VertexAttribP2ui(index, type, normalized, value);}
+  inline void VertexAttribP2uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint * value){_detail::VertexAttribP2uiv(index, type, normalized, value);}
+  inline void VertexAttribP3ui(GLuint index, GLenum type, GLboolean normalized, GLuint value){_detail::VertexAttribP3ui(index, type, normalized, value);}
+  inline void VertexAttribP3uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint * value){_detail::VertexAttribP3uiv(index, type, normalized, value);}
+  inline void VertexAttribP4ui(GLuint index, GLenum type, GLboolean normalized, GLuint value){_detail::VertexAttribP4ui(index, type, normalized, value);}
+  inline void VertexAttribP4uiv(GLuint index, GLenum type, GLboolean normalized, const GLuint * value){_detail::VertexAttribP4uiv(index, type, normalized, value);}
   
-  inline GLT_API void BeginQueryIndexed(GLenum target, GLuint index, GLuint id){_detail::BeginQueryIndexed(target, index, id);}
-  inline GLT_API void BindTransformFeedback(GLenum target, GLuint id){_detail::BindTransformFeedback(target, id);}
-  inline GLT_API void BlendEquationSeparatei(GLuint buf, GLenum modeRGB, GLenum modeAlpha){_detail::BlendEquationSeparatei(buf, modeRGB, modeAlpha);}
-  inline GLT_API void BlendEquationi(GLuint buf, GLenum mode){_detail::BlendEquationi(buf, mode);}
-  inline GLT_API void BlendFuncSeparatei(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha){_detail::BlendFuncSeparatei(buf, srcRGB, dstRGB, srcAlpha, dstAlpha);}
-  inline GLT_API void BlendFunci(GLuint buf, GLenum src, GLenum dst){_detail::BlendFunci(buf, src, dst);}
-  inline GLT_API void DeleteTransformFeedbacks(GLsizei n, const GLuint * ids){_detail::DeleteTransformFeedbacks(n, ids);}
-  inline GLT_API void DrawArraysIndirect(GLenum mode, const void * indirect){_detail::DrawArraysIndirect(mode, indirect);}
-  inline GLT_API void DrawElementsIndirect(GLenum mode, GLenum type, const void * indirect){_detail::DrawElementsIndirect(mode, type, indirect);}
-  inline GLT_API void DrawTransformFeedback(GLenum mode, GLuint id){_detail::DrawTransformFeedback(mode, id);}
-  inline GLT_API void DrawTransformFeedbackStream(GLenum mode, GLuint id, GLuint stream){_detail::DrawTransformFeedbackStream(mode, id, stream);}
-  inline GLT_API void EndQueryIndexed(GLenum target, GLuint index){_detail::EndQueryIndexed(target, index);}
-  inline GLT_API void GenTransformFeedbacks(GLsizei n, GLuint * ids){_detail::GenTransformFeedbacks(n, ids);}
-  inline GLT_API void GetActiveSubroutineName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei * length, GLchar * name){_detail::GetActiveSubroutineName(program, shadertype, index, bufsize, length, name);}
-  inline GLT_API void GetActiveSubroutineUniformName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei * length, GLchar * name){_detail::GetActiveSubroutineUniformName(program, shadertype, index, bufsize, length, name);}
-  inline GLT_API void GetActiveSubroutineUniformiv(GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint * values){_detail::GetActiveSubroutineUniformiv(program, shadertype, index, pname, values);}
-  inline GLT_API void GetProgramStageiv(GLuint program, GLenum shadertype, GLenum pname, GLint * values){_detail::GetProgramStageiv(program, shadertype, pname, values);}
-  inline GLT_API void GetQueryIndexediv(GLenum target, GLuint index, GLenum pname, GLint * params){_detail::GetQueryIndexediv(target, index, pname, params);}
-  inline GLT_API GLuint GetSubroutineIndex(GLuint program, GLenum shadertype, const GLchar * name){return _detail::GetSubroutineIndex(program, shadertype, name);}
-  inline GLT_API GLint GetSubroutineUniformLocation(GLuint program, GLenum shadertype, const GLchar * name){return _detail::GetSubroutineUniformLocation(program, shadertype, name);}
-  inline GLT_API void GetUniformSubroutineuiv(GLenum shadertype, GLint location, GLuint * params){_detail::GetUniformSubroutineuiv(shadertype, location, params);}
-  inline GLT_API void GetUniformdv(GLuint program, GLint location, GLdouble * params){_detail::GetUniformdv(program, location, params);}
-  inline GLT_API GLboolean IsTransformFeedback(GLuint id){return _detail::IsTransformFeedback(id);}
-  inline GLT_API void MinSampleShading(GLfloat value){_detail::MinSampleShading(value);}
-  inline GLT_API void PatchParameterfv(GLenum pname, const GLfloat * values){_detail::PatchParameterfv(pname, values);}
-  inline GLT_API void PatchParameteri(GLenum pname, GLint value){_detail::PatchParameteri(pname, value);}
-  inline GLT_API void PauseTransformFeedback(void){_detail::PauseTransformFeedback();}
-  inline GLT_API void ResumeTransformFeedback(void){_detail::ResumeTransformFeedback();}
-  inline GLT_API void Uniform1d(GLint location, GLdouble x){_detail::Uniform1d(location, x);}
-  inline GLT_API void Uniform1dv(GLint location, GLsizei count, const GLdouble * value){_detail::Uniform1dv(location, count, value);}
-  inline GLT_API void Uniform2d(GLint location, GLdouble x, GLdouble y){_detail::Uniform2d(location, x, y);}
-  inline GLT_API void Uniform2dv(GLint location, GLsizei count, const GLdouble * value){_detail::Uniform2dv(location, count, value);}
-  inline GLT_API void Uniform3d(GLint location, GLdouble x, GLdouble y, GLdouble z){_detail::Uniform3d(location, x, y, z);}
-  inline GLT_API void Uniform3dv(GLint location, GLsizei count, const GLdouble * value){_detail::Uniform3dv(location, count, value);}
-  inline GLT_API void Uniform4d(GLint location, GLdouble x, GLdouble y, GLdouble z, GLdouble w){_detail::Uniform4d(location, x, y, z, w);}
-  inline GLT_API void Uniform4dv(GLint location, GLsizei count, const GLdouble * value){_detail::Uniform4dv(location, count, value);}
-  inline GLT_API void UniformMatrix2dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix2dv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix2x3dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix2x3dv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix2x4dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix2x4dv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix3dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix3dv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix3x2dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix3x2dv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix3x4dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix3x4dv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix4dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix4dv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix4x2dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix4x2dv(location, count, transpose, value);}
-  inline GLT_API void UniformMatrix4x3dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix4x3dv(location, count, transpose, value);}
-  inline GLT_API void UniformSubroutinesuiv(GLenum shadertype, GLsizei count, const GLuint * indices){_detail::UniformSubroutinesuiv(shadertype, count, indices);}
+  inline void BeginQueryIndexed(GLenum target, GLuint index, GLuint id){_detail::BeginQueryIndexed(target, index, id);}
+  inline void BindTransformFeedback(GLenum target, GLuint id){_detail::BindTransformFeedback(target, id);}
+  inline void BlendEquationSeparatei(GLuint buf, GLenum modeRGB, GLenum modeAlpha){_detail::BlendEquationSeparatei(buf, modeRGB, modeAlpha);}
+  inline void BlendEquationi(GLuint buf, GLenum mode){_detail::BlendEquationi(buf, mode);}
+  inline void BlendFuncSeparatei(GLuint buf, GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha){_detail::BlendFuncSeparatei(buf, srcRGB, dstRGB, srcAlpha, dstAlpha);}
+  inline void BlendFunci(GLuint buf, GLenum src, GLenum dst){_detail::BlendFunci(buf, src, dst);}
+  inline void DeleteTransformFeedbacks(GLsizei n, const GLuint * ids){_detail::DeleteTransformFeedbacks(n, ids);}
+  inline void DrawArraysIndirect(GLenum mode, const void * indirect){_detail::DrawArraysIndirect(mode, indirect);}
+  inline void DrawElementsIndirect(GLenum mode, GLenum type, const void * indirect){_detail::DrawElementsIndirect(mode, type, indirect);}
+  inline void DrawTransformFeedback(GLenum mode, GLuint id){_detail::DrawTransformFeedback(mode, id);}
+  inline void DrawTransformFeedbackStream(GLenum mode, GLuint id, GLuint stream){_detail::DrawTransformFeedbackStream(mode, id, stream);}
+  inline void EndQueryIndexed(GLenum target, GLuint index){_detail::EndQueryIndexed(target, index);}
+  inline void GenTransformFeedbacks(GLsizei n, GLuint * ids){_detail::GenTransformFeedbacks(n, ids);}
+  inline void GetActiveSubroutineName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei * length, GLchar * name){_detail::GetActiveSubroutineName(program, shadertype, index, bufsize, length, name);}
+  inline void GetActiveSubroutineUniformName(GLuint program, GLenum shadertype, GLuint index, GLsizei bufsize, GLsizei * length, GLchar * name){_detail::GetActiveSubroutineUniformName(program, shadertype, index, bufsize, length, name);}
+  inline void GetActiveSubroutineUniformiv(GLuint program, GLenum shadertype, GLuint index, GLenum pname, GLint * values){_detail::GetActiveSubroutineUniformiv(program, shadertype, index, pname, values);}
+  inline void GetProgramStageiv(GLuint program, GLenum shadertype, GLenum pname, GLint * values){_detail::GetProgramStageiv(program, shadertype, pname, values);}
+  inline void GetQueryIndexediv(GLenum target, GLuint index, GLenum pname, GLint * params){_detail::GetQueryIndexediv(target, index, pname, params);}
+  inline GLuint GetSubroutineIndex(GLuint program, GLenum shadertype, const GLchar * name){return _detail::GetSubroutineIndex(program, shadertype, name);}
+  inline GLint GetSubroutineUniformLocation(GLuint program, GLenum shadertype, const GLchar * name){return _detail::GetSubroutineUniformLocation(program, shadertype, name);}
+  inline void GetUniformSubroutineuiv(GLenum shadertype, GLint location, GLuint * params){_detail::GetUniformSubroutineuiv(shadertype, location, params);}
+  inline void GetUniformdv(GLuint program, GLint location, GLdouble * params){_detail::GetUniformdv(program, location, params);}
+  inline GLboolean IsTransformFeedback(GLuint id){return _detail::IsTransformFeedback(id);}
+  inline void MinSampleShading(GLfloat value){_detail::MinSampleShading(value);}
+  inline void PatchParameterfv(GLenum pname, const GLfloat * values){_detail::PatchParameterfv(pname, values);}
+  inline void PatchParameteri(GLenum pname, GLint value){_detail::PatchParameteri(pname, value);}
+  inline void PauseTransformFeedback(void){_detail::PauseTransformFeedback();}
+  inline void ResumeTransformFeedback(void){_detail::ResumeTransformFeedback();}
+  inline void Uniform1d(GLint location, GLdouble x){_detail::Uniform1d(location, x);}
+  inline void Uniform1dv(GLint location, GLsizei count, const GLdouble * value){_detail::Uniform1dv(location, count, value);}
+  inline void Uniform2d(GLint location, GLdouble x, GLdouble y){_detail::Uniform2d(location, x, y);}
+  inline void Uniform2dv(GLint location, GLsizei count, const GLdouble * value){_detail::Uniform2dv(location, count, value);}
+  inline void Uniform3d(GLint location, GLdouble x, GLdouble y, GLdouble z){_detail::Uniform3d(location, x, y, z);}
+  inline void Uniform3dv(GLint location, GLsizei count, const GLdouble * value){_detail::Uniform3dv(location, count, value);}
+  inline void Uniform4d(GLint location, GLdouble x, GLdouble y, GLdouble z, GLdouble w){_detail::Uniform4d(location, x, y, z, w);}
+  inline void Uniform4dv(GLint location, GLsizei count, const GLdouble * value){_detail::Uniform4dv(location, count, value);}
+  inline void UniformMatrix2dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix2dv(location, count, transpose, value);}
+  inline void UniformMatrix2x3dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix2x3dv(location, count, transpose, value);}
+  inline void UniformMatrix2x4dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix2x4dv(location, count, transpose, value);}
+  inline void UniformMatrix3dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix3dv(location, count, transpose, value);}
+  inline void UniformMatrix3x2dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix3x2dv(location, count, transpose, value);}
+  inline void UniformMatrix3x4dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix3x4dv(location, count, transpose, value);}
+  inline void UniformMatrix4dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix4dv(location, count, transpose, value);}
+  inline void UniformMatrix4x2dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix4x2dv(location, count, transpose, value);}
+  inline void UniformMatrix4x3dv(GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::UniformMatrix4x3dv(location, count, transpose, value);}
+  inline void UniformSubroutinesuiv(GLenum shadertype, GLsizei count, const GLuint * indices){_detail::UniformSubroutinesuiv(shadertype, count, indices);}
   
-  inline GLT_API void ActiveShaderProgram(GLuint pipeline, GLuint program){_detail::ActiveShaderProgram(pipeline, program);}
-  inline GLT_API void BindProgramPipeline(GLuint pipeline){_detail::BindProgramPipeline(pipeline);}
-  inline GLT_API void ClearDepthf(GLfloat d){_detail::ClearDepthf(d);}
-  inline GLT_API GLuint CreateShaderProgramv(GLenum type, GLsizei count, const GLchar *const* strings){return _detail::CreateShaderProgramv(type, count, strings);}
-  inline GLT_API void DeleteProgramPipelines(GLsizei n, const GLuint * pipelines){_detail::DeleteProgramPipelines(n, pipelines);}
-  inline GLT_API void DepthRangeArrayv(GLuint first, GLsizei count, const GLdouble * v){_detail::DepthRangeArrayv(first, count, v);}
-  inline GLT_API void DepthRangeIndexed(GLuint index, GLdouble n, GLdouble f){_detail::DepthRangeIndexed(index, n, f);}
-  inline GLT_API void DepthRangef(GLfloat n, GLfloat f){_detail::DepthRangef(n, f);}
-  inline GLT_API void GenProgramPipelines(GLsizei n, GLuint * pipelines){_detail::GenProgramPipelines(n, pipelines);}
-  inline GLT_API void GetDoublei_v(GLenum target, GLuint index, GLdouble * data){_detail::GetDoublei_v(target, index, data);}
-  inline GLT_API void GetFloati_v(GLenum target, GLuint index, GLfloat * data){_detail::GetFloati_v(target, index, data);}
-  inline GLT_API void GetProgramBinary(GLuint program, GLsizei bufSize, GLsizei * length, GLenum * binaryFormat, void * binary){_detail::GetProgramBinary(program, bufSize, length, binaryFormat, binary);}
-  inline GLT_API void GetProgramPipelineInfoLog(GLuint pipeline, GLsizei bufSize, GLsizei * length, GLchar * infoLog){_detail::GetProgramPipelineInfoLog(pipeline, bufSize, length, infoLog);}
-  inline GLT_API void GetProgramPipelineiv(GLuint pipeline, GLenum pname, GLint * params){_detail::GetProgramPipelineiv(pipeline, pname, params);}
-  inline GLT_API void GetShaderPrecisionFormat(GLenum shadertype, GLenum precisiontype, GLint * range, GLint * precision){_detail::GetShaderPrecisionFormat(shadertype, precisiontype, range, precision);}
-  inline GLT_API void GetVertexAttribLdv(GLuint index, GLenum pname, GLdouble * params){_detail::GetVertexAttribLdv(index, pname, params);}
-  inline GLT_API GLboolean IsProgramPipeline(GLuint pipeline){return _detail::IsProgramPipeline(pipeline);}
-  inline GLT_API void ProgramBinary(GLuint program, GLenum binaryFormat, const void * binary, GLsizei length){_detail::ProgramBinary(program, binaryFormat, binary, length);}
-  inline GLT_API void ProgramParameteri(GLuint program, GLenum pname, GLint value){_detail::ProgramParameteri(program, pname, value);}
-  inline GLT_API void ProgramUniform1d(GLuint program, GLint location, GLdouble v0){_detail::ProgramUniform1d(program, location, v0);}
-  inline GLT_API void ProgramUniform1dv(GLuint program, GLint location, GLsizei count, const GLdouble * value){_detail::ProgramUniform1dv(program, location, count, value);}
-  inline GLT_API void ProgramUniform1f(GLuint program, GLint location, GLfloat v0){_detail::ProgramUniform1f(program, location, v0);}
-  inline GLT_API void ProgramUniform1fv(GLuint program, GLint location, GLsizei count, const GLfloat * value){_detail::ProgramUniform1fv(program, location, count, value);}
-  inline GLT_API void ProgramUniform1i(GLuint program, GLint location, GLint v0){_detail::ProgramUniform1i(program, location, v0);}
-  inline GLT_API void ProgramUniform1iv(GLuint program, GLint location, GLsizei count, const GLint * value){_detail::ProgramUniform1iv(program, location, count, value);}
-  inline GLT_API void ProgramUniform1ui(GLuint program, GLint location, GLuint v0){_detail::ProgramUniform1ui(program, location, v0);}
-  inline GLT_API void ProgramUniform1uiv(GLuint program, GLint location, GLsizei count, const GLuint * value){_detail::ProgramUniform1uiv(program, location, count, value);}
-  inline GLT_API void ProgramUniform2d(GLuint program, GLint location, GLdouble v0, GLdouble v1){_detail::ProgramUniform2d(program, location, v0, v1);}
-  inline GLT_API void ProgramUniform2dv(GLuint program, GLint location, GLsizei count, const GLdouble * value){_detail::ProgramUniform2dv(program, location, count, value);}
-  inline GLT_API void ProgramUniform2f(GLuint program, GLint location, GLfloat v0, GLfloat v1){_detail::ProgramUniform2f(program, location, v0, v1);}
-  inline GLT_API void ProgramUniform2fv(GLuint program, GLint location, GLsizei count, const GLfloat * value){_detail::ProgramUniform2fv(program, location, count, value);}
-  inline GLT_API void ProgramUniform2i(GLuint program, GLint location, GLint v0, GLint v1){_detail::ProgramUniform2i(program, location, v0, v1);}
-  inline GLT_API void ProgramUniform2iv(GLuint program, GLint location, GLsizei count, const GLint * value){_detail::ProgramUniform2iv(program, location, count, value);}
-  inline GLT_API void ProgramUniform2ui(GLuint program, GLint location, GLuint v0, GLuint v1){_detail::ProgramUniform2ui(program, location, v0, v1);}
-  inline GLT_API void ProgramUniform2uiv(GLuint program, GLint location, GLsizei count, const GLuint * value){_detail::ProgramUniform2uiv(program, location, count, value);}
-  inline GLT_API void ProgramUniform3d(GLuint program, GLint location, GLdouble v0, GLdouble v1, GLdouble v2){_detail::ProgramUniform3d(program, location, v0, v1, v2);}
-  inline GLT_API void ProgramUniform3dv(GLuint program, GLint location, GLsizei count, const GLdouble * value){_detail::ProgramUniform3dv(program, location, count, value);}
-  inline GLT_API void ProgramUniform3f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2){_detail::ProgramUniform3f(program, location, v0, v1, v2);}
-  inline GLT_API void ProgramUniform3fv(GLuint program, GLint location, GLsizei count, const GLfloat * value){_detail::ProgramUniform3fv(program, location, count, value);}
-  inline GLT_API void ProgramUniform3i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2){_detail::ProgramUniform3i(program, location, v0, v1, v2);}
-  inline GLT_API void ProgramUniform3iv(GLuint program, GLint location, GLsizei count, const GLint * value){_detail::ProgramUniform3iv(program, location, count, value);}
-  inline GLT_API void ProgramUniform3ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2){_detail::ProgramUniform3ui(program, location, v0, v1, v2);}
-  inline GLT_API void ProgramUniform3uiv(GLuint program, GLint location, GLsizei count, const GLuint * value){_detail::ProgramUniform3uiv(program, location, count, value);}
-  inline GLT_API void ProgramUniform4d(GLuint program, GLint location, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3){_detail::ProgramUniform4d(program, location, v0, v1, v2, v3);}
-  inline GLT_API void ProgramUniform4dv(GLuint program, GLint location, GLsizei count, const GLdouble * value){_detail::ProgramUniform4dv(program, location, count, value);}
-  inline GLT_API void ProgramUniform4f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3){_detail::ProgramUniform4f(program, location, v0, v1, v2, v3);}
-  inline GLT_API void ProgramUniform4fv(GLuint program, GLint location, GLsizei count, const GLfloat * value){_detail::ProgramUniform4fv(program, location, count, value);}
-  inline GLT_API void ProgramUniform4i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3){_detail::ProgramUniform4i(program, location, v0, v1, v2, v3);}
-  inline GLT_API void ProgramUniform4iv(GLuint program, GLint location, GLsizei count, const GLint * value){_detail::ProgramUniform4iv(program, location, count, value);}
-  inline GLT_API void ProgramUniform4ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3){_detail::ProgramUniform4ui(program, location, v0, v1, v2, v3);}
-  inline GLT_API void ProgramUniform4uiv(GLuint program, GLint location, GLsizei count, const GLuint * value){_detail::ProgramUniform4uiv(program, location, count, value);}
-  inline GLT_API void ProgramUniformMatrix2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix2dv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix2fv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix2x3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix2x3dv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix2x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix2x3fv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix2x4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix2x4dv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix2x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix2x4fv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix3dv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix3fv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix3x2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix3x2dv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix3x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix3x2fv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix3x4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix3x4dv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix3x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix3x4fv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix4dv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix4fv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix4x2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix4x2dv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix4x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix4x2fv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix4x3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix4x3dv(program, location, count, transpose, value);}
-  inline GLT_API void ProgramUniformMatrix4x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix4x3fv(program, location, count, transpose, value);}
-  inline GLT_API void ReleaseShaderCompiler(void){_detail::ReleaseShaderCompiler();}
-  inline GLT_API void ScissorArrayv(GLuint first, GLsizei count, const GLint * v){_detail::ScissorArrayv(first, count, v);}
-  inline GLT_API void ScissorIndexed(GLuint index, GLint left, GLint bottom, GLsizei width, GLsizei height){_detail::ScissorIndexed(index, left, bottom, width, height);}
-  inline GLT_API void ScissorIndexedv(GLuint index, const GLint * v){_detail::ScissorIndexedv(index, v);}
-  inline GLT_API void ShaderBinary(GLsizei count, const GLuint * shaders, GLenum binaryformat, const void * binary, GLsizei length){_detail::ShaderBinary(count, shaders, binaryformat, binary, length);}
-  inline GLT_API void UseProgramStages(GLuint pipeline, GLbitfield stages, GLuint program){_detail::UseProgramStages(pipeline, stages, program);}
-  inline GLT_API void ValidateProgramPipeline(GLuint pipeline){_detail::ValidateProgramPipeline(pipeline);}
-  inline GLT_API void VertexAttribL1d(GLuint index, GLdouble x){_detail::VertexAttribL1d(index, x);}
-  inline GLT_API void VertexAttribL1dv(GLuint index, const GLdouble * v){_detail::VertexAttribL1dv(index, v);}
-  inline GLT_API void VertexAttribL2d(GLuint index, GLdouble x, GLdouble y){_detail::VertexAttribL2d(index, x, y);}
-  inline GLT_API void VertexAttribL2dv(GLuint index, const GLdouble * v){_detail::VertexAttribL2dv(index, v);}
-  inline GLT_API void VertexAttribL3d(GLuint index, GLdouble x, GLdouble y, GLdouble z){_detail::VertexAttribL3d(index, x, y, z);}
-  inline GLT_API void VertexAttribL3dv(GLuint index, const GLdouble * v){_detail::VertexAttribL3dv(index, v);}
-  inline GLT_API void VertexAttribL4d(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w){_detail::VertexAttribL4d(index, x, y, z, w);}
-  inline GLT_API void VertexAttribL4dv(GLuint index, const GLdouble * v){_detail::VertexAttribL4dv(index, v);}
-  inline GLT_API void VertexAttribLPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer){_detail::VertexAttribLPointer(index, size, type, stride, pointer);}
-  inline GLT_API void ViewportArrayv(GLuint first, GLsizei count, const GLfloat * v){_detail::ViewportArrayv(first, count, v);}
-  inline GLT_API void ViewportIndexedf(GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h){_detail::ViewportIndexedf(index, x, y, w, h);}
-  inline GLT_API void ViewportIndexedfv(GLuint index, const GLfloat * v){_detail::ViewportIndexedfv(index, v);}
+  inline void ActiveShaderProgram(GLuint pipeline, GLuint program){_detail::ActiveShaderProgram(pipeline, program);}
+  inline void BindProgramPipeline(GLuint pipeline){_detail::BindProgramPipeline(pipeline);}
+  inline void ClearDepthf(GLfloat d){_detail::ClearDepthf(d);}
+  inline GLuint CreateShaderProgramv(GLenum type, GLsizei count, const GLchar *const* strings){return _detail::CreateShaderProgramv(type, count, strings);}
+  inline void DeleteProgramPipelines(GLsizei n, const GLuint * pipelines){_detail::DeleteProgramPipelines(n, pipelines);}
+  inline void DepthRangeArrayv(GLuint first, GLsizei count, const GLdouble * v){_detail::DepthRangeArrayv(first, count, v);}
+  inline void DepthRangeIndexed(GLuint index, GLdouble n, GLdouble f){_detail::DepthRangeIndexed(index, n, f);}
+  inline void DepthRangef(GLfloat n, GLfloat f){_detail::DepthRangef(n, f);}
+  inline void GenProgramPipelines(GLsizei n, GLuint * pipelines){_detail::GenProgramPipelines(n, pipelines);}
+  inline void GetDoublei_v(GLenum target, GLuint index, GLdouble * data){_detail::GetDoublei_v(target, index, data);}
+  inline void GetFloati_v(GLenum target, GLuint index, GLfloat * data){_detail::GetFloati_v(target, index, data);}
+  inline void GetProgramBinary(GLuint program, GLsizei bufSize, GLsizei * length, GLenum * binaryFormat, void * binary){_detail::GetProgramBinary(program, bufSize, length, binaryFormat, binary);}
+  inline void GetProgramPipelineInfoLog(GLuint pipeline, GLsizei bufSize, GLsizei * length, GLchar * infoLog){_detail::GetProgramPipelineInfoLog(pipeline, bufSize, length, infoLog);}
+  inline void GetProgramPipelineiv(GLuint pipeline, GLenum pname, GLint * params){_detail::GetProgramPipelineiv(pipeline, pname, params);}
+  inline void GetShaderPrecisionFormat(GLenum shadertype, GLenum precisiontype, GLint * range, GLint * precision){_detail::GetShaderPrecisionFormat(shadertype, precisiontype, range, precision);}
+  inline void GetVertexAttribLdv(GLuint index, GLenum pname, GLdouble * params){_detail::GetVertexAttribLdv(index, pname, params);}
+  inline GLboolean IsProgramPipeline(GLuint pipeline){return _detail::IsProgramPipeline(pipeline);}
+  inline void ProgramBinary(GLuint program, GLenum binaryFormat, const void * binary, GLsizei length){_detail::ProgramBinary(program, binaryFormat, binary, length);}
+  inline void ProgramParameteri(GLuint program, GLenum pname, GLint value){_detail::ProgramParameteri(program, pname, value);}
+  inline void ProgramUniform1d(GLuint program, GLint location, GLdouble v0){_detail::ProgramUniform1d(program, location, v0);}
+  inline void ProgramUniform1dv(GLuint program, GLint location, GLsizei count, const GLdouble * value){_detail::ProgramUniform1dv(program, location, count, value);}
+  inline void ProgramUniform1f(GLuint program, GLint location, GLfloat v0){_detail::ProgramUniform1f(program, location, v0);}
+  inline void ProgramUniform1fv(GLuint program, GLint location, GLsizei count, const GLfloat * value){_detail::ProgramUniform1fv(program, location, count, value);}
+  inline void ProgramUniform1i(GLuint program, GLint location, GLint v0){_detail::ProgramUniform1i(program, location, v0);}
+  inline void ProgramUniform1iv(GLuint program, GLint location, GLsizei count, const GLint * value){_detail::ProgramUniform1iv(program, location, count, value);}
+  inline void ProgramUniform1ui(GLuint program, GLint location, GLuint v0){_detail::ProgramUniform1ui(program, location, v0);}
+  inline void ProgramUniform1uiv(GLuint program, GLint location, GLsizei count, const GLuint * value){_detail::ProgramUniform1uiv(program, location, count, value);}
+  inline void ProgramUniform2d(GLuint program, GLint location, GLdouble v0, GLdouble v1){_detail::ProgramUniform2d(program, location, v0, v1);}
+  inline void ProgramUniform2dv(GLuint program, GLint location, GLsizei count, const GLdouble * value){_detail::ProgramUniform2dv(program, location, count, value);}
+  inline void ProgramUniform2f(GLuint program, GLint location, GLfloat v0, GLfloat v1){_detail::ProgramUniform2f(program, location, v0, v1);}
+  inline void ProgramUniform2fv(GLuint program, GLint location, GLsizei count, const GLfloat * value){_detail::ProgramUniform2fv(program, location, count, value);}
+  inline void ProgramUniform2i(GLuint program, GLint location, GLint v0, GLint v1){_detail::ProgramUniform2i(program, location, v0, v1);}
+  inline void ProgramUniform2iv(GLuint program, GLint location, GLsizei count, const GLint * value){_detail::ProgramUniform2iv(program, location, count, value);}
+  inline void ProgramUniform2ui(GLuint program, GLint location, GLuint v0, GLuint v1){_detail::ProgramUniform2ui(program, location, v0, v1);}
+  inline void ProgramUniform2uiv(GLuint program, GLint location, GLsizei count, const GLuint * value){_detail::ProgramUniform2uiv(program, location, count, value);}
+  inline void ProgramUniform3d(GLuint program, GLint location, GLdouble v0, GLdouble v1, GLdouble v2){_detail::ProgramUniform3d(program, location, v0, v1, v2);}
+  inline void ProgramUniform3dv(GLuint program, GLint location, GLsizei count, const GLdouble * value){_detail::ProgramUniform3dv(program, location, count, value);}
+  inline void ProgramUniform3f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2){_detail::ProgramUniform3f(program, location, v0, v1, v2);}
+  inline void ProgramUniform3fv(GLuint program, GLint location, GLsizei count, const GLfloat * value){_detail::ProgramUniform3fv(program, location, count, value);}
+  inline void ProgramUniform3i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2){_detail::ProgramUniform3i(program, location, v0, v1, v2);}
+  inline void ProgramUniform3iv(GLuint program, GLint location, GLsizei count, const GLint * value){_detail::ProgramUniform3iv(program, location, count, value);}
+  inline void ProgramUniform3ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2){_detail::ProgramUniform3ui(program, location, v0, v1, v2);}
+  inline void ProgramUniform3uiv(GLuint program, GLint location, GLsizei count, const GLuint * value){_detail::ProgramUniform3uiv(program, location, count, value);}
+  inline void ProgramUniform4d(GLuint program, GLint location, GLdouble v0, GLdouble v1, GLdouble v2, GLdouble v3){_detail::ProgramUniform4d(program, location, v0, v1, v2, v3);}
+  inline void ProgramUniform4dv(GLuint program, GLint location, GLsizei count, const GLdouble * value){_detail::ProgramUniform4dv(program, location, count, value);}
+  inline void ProgramUniform4f(GLuint program, GLint location, GLfloat v0, GLfloat v1, GLfloat v2, GLfloat v3){_detail::ProgramUniform4f(program, location, v0, v1, v2, v3);}
+  inline void ProgramUniform4fv(GLuint program, GLint location, GLsizei count, const GLfloat * value){_detail::ProgramUniform4fv(program, location, count, value);}
+  inline void ProgramUniform4i(GLuint program, GLint location, GLint v0, GLint v1, GLint v2, GLint v3){_detail::ProgramUniform4i(program, location, v0, v1, v2, v3);}
+  inline void ProgramUniform4iv(GLuint program, GLint location, GLsizei count, const GLint * value){_detail::ProgramUniform4iv(program, location, count, value);}
+  inline void ProgramUniform4ui(GLuint program, GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3){_detail::ProgramUniform4ui(program, location, v0, v1, v2, v3);}
+  inline void ProgramUniform4uiv(GLuint program, GLint location, GLsizei count, const GLuint * value){_detail::ProgramUniform4uiv(program, location, count, value);}
+  inline void ProgramUniformMatrix2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix2dv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix2fv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix2x3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix2x3dv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix2x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix2x3fv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix2x4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix2x4dv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix2x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix2x4fv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix3dv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix3fv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix3x2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix3x2dv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix3x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix3x2fv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix3x4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix3x4dv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix3x4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix3x4fv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix4dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix4dv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix4fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix4fv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix4x2dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix4x2dv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix4x2fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix4x2fv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix4x3dv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLdouble * value){_detail::ProgramUniformMatrix4x3dv(program, location, count, transpose, value);}
+  inline void ProgramUniformMatrix4x3fv(GLuint program, GLint location, GLsizei count, GLboolean transpose, const GLfloat * value){_detail::ProgramUniformMatrix4x3fv(program, location, count, transpose, value);}
+  inline void ReleaseShaderCompiler(void){_detail::ReleaseShaderCompiler();}
+  inline void ScissorArrayv(GLuint first, GLsizei count, const GLint * v){_detail::ScissorArrayv(first, count, v);}
+  inline void ScissorIndexed(GLuint index, GLint left, GLint bottom, GLsizei width, GLsizei height){_detail::ScissorIndexed(index, left, bottom, width, height);}
+  inline void ScissorIndexedv(GLuint index, const GLint * v){_detail::ScissorIndexedv(index, v);}
+  inline void ShaderBinary(GLsizei count, const GLuint * shaders, GLenum binaryformat, const void * binary, GLsizei length){_detail::ShaderBinary(count, shaders, binaryformat, binary, length);}
+  inline void UseProgramStages(GLuint pipeline, GLbitfield stages, GLuint program){_detail::UseProgramStages(pipeline, stages, program);}
+  inline void ValidateProgramPipeline(GLuint pipeline){_detail::ValidateProgramPipeline(pipeline);}
+  inline void VertexAttribL1d(GLuint index, GLdouble x){_detail::VertexAttribL1d(index, x);}
+  inline void VertexAttribL1dv(GLuint index, const GLdouble * v){_detail::VertexAttribL1dv(index, v);}
+  inline void VertexAttribL2d(GLuint index, GLdouble x, GLdouble y){_detail::VertexAttribL2d(index, x, y);}
+  inline void VertexAttribL2dv(GLuint index, const GLdouble * v){_detail::VertexAttribL2dv(index, v);}
+  inline void VertexAttribL3d(GLuint index, GLdouble x, GLdouble y, GLdouble z){_detail::VertexAttribL3d(index, x, y, z);}
+  inline void VertexAttribL3dv(GLuint index, const GLdouble * v){_detail::VertexAttribL3dv(index, v);}
+  inline void VertexAttribL4d(GLuint index, GLdouble x, GLdouble y, GLdouble z, GLdouble w){_detail::VertexAttribL4d(index, x, y, z, w);}
+  inline void VertexAttribL4dv(GLuint index, const GLdouble * v){_detail::VertexAttribL4dv(index, v);}
+  inline void VertexAttribLPointer(GLuint index, GLint size, GLenum type, GLsizei stride, const void * pointer){_detail::VertexAttribLPointer(index, size, type, stride, pointer);}
+  inline void ViewportArrayv(GLuint first, GLsizei count, const GLfloat * v){_detail::ViewportArrayv(first, count, v);}
+  inline void ViewportIndexedf(GLuint index, GLfloat x, GLfloat y, GLfloat w, GLfloat h){_detail::ViewportIndexedf(index, x, y, w, h);}
+  inline void ViewportIndexedfv(GLuint index, const GLfloat * v){_detail::ViewportIndexedfv(index, v);}
   
-  inline GLT_API void BindImageTexture(GLuint unit, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLenum format){_detail::BindImageTexture(unit, texture, level, layered, layer, access, format);}
-  inline GLT_API void DrawArraysInstancedBaseInstance(GLenum mode, GLint first, GLsizei count, GLsizei instancecount, GLuint baseinstance){_detail::DrawArraysInstancedBaseInstance(mode, first, count, instancecount, baseinstance);}
-  inline GLT_API void DrawElementsInstancedBaseInstance(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLuint baseinstance){_detail::DrawElementsInstancedBaseInstance(mode, count, type, indices, instancecount, baseinstance);}
-  inline GLT_API void DrawElementsInstancedBaseVertexBaseInstance(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLint basevertex, GLuint baseinstance){_detail::DrawElementsInstancedBaseVertexBaseInstance(mode, count, type, indices, instancecount, basevertex, baseinstance);}
-  inline GLT_API void DrawTransformFeedbackInstanced(GLenum mode, GLuint id, GLsizei instancecount){_detail::DrawTransformFeedbackInstanced(mode, id, instancecount);}
-  inline GLT_API void DrawTransformFeedbackStreamInstanced(GLenum mode, GLuint id, GLuint stream, GLsizei instancecount){_detail::DrawTransformFeedbackStreamInstanced(mode, id, stream, instancecount);}
-  inline GLT_API void GetActiveAtomicCounterBufferiv(GLuint program, GLuint bufferIndex, GLenum pname, GLint * params){_detail::GetActiveAtomicCounterBufferiv(program, bufferIndex, pname, params);}
-  inline GLT_API void GetInternalformativ(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint * params){_detail::GetInternalformativ(target, internalformat, pname, bufSize, params);}
-  inline GLT_API void MemoryBarrier(GLbitfield barriers){_detail::MemoryBarrier(barriers);}
-  inline GLT_API void TexStorage1D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width){_detail::TexStorage1D(target, levels, internalformat, width);}
-  inline GLT_API void TexStorage2D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height){_detail::TexStorage2D(target, levels, internalformat, width, height);}
-  inline GLT_API void TexStorage3D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth){_detail::TexStorage3D(target, levels, internalformat, width, height, depth);}
+  inline void BindImageTexture(GLuint unit, GLuint texture, GLint level, GLboolean layered, GLint layer, GLenum access, GLenum format){_detail::BindImageTexture(unit, texture, level, layered, layer, access, format);}
+  inline void DrawArraysInstancedBaseInstance(GLenum mode, GLint first, GLsizei count, GLsizei instancecount, GLuint baseinstance){_detail::DrawArraysInstancedBaseInstance(mode, first, count, instancecount, baseinstance);}
+  inline void DrawElementsInstancedBaseInstance(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLuint baseinstance){_detail::DrawElementsInstancedBaseInstance(mode, count, type, indices, instancecount, baseinstance);}
+  inline void DrawElementsInstancedBaseVertexBaseInstance(GLenum mode, GLsizei count, GLenum type, const void * indices, GLsizei instancecount, GLint basevertex, GLuint baseinstance){_detail::DrawElementsInstancedBaseVertexBaseInstance(mode, count, type, indices, instancecount, basevertex, baseinstance);}
+  inline void DrawTransformFeedbackInstanced(GLenum mode, GLuint id, GLsizei instancecount){_detail::DrawTransformFeedbackInstanced(mode, id, instancecount);}
+  inline void DrawTransformFeedbackStreamInstanced(GLenum mode, GLuint id, GLuint stream, GLsizei instancecount){_detail::DrawTransformFeedbackStreamInstanced(mode, id, stream, instancecount);}
+  inline void GetActiveAtomicCounterBufferiv(GLuint program, GLuint bufferIndex, GLenum pname, GLint * params){_detail::GetActiveAtomicCounterBufferiv(program, bufferIndex, pname, params);}
+  inline void GetInternalformativ(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint * params){_detail::GetInternalformativ(target, internalformat, pname, bufSize, params);}
+  inline void MemoryBarrier(GLbitfield barriers){_detail::MemoryBarrier(barriers);}
+  inline void TexStorage1D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width){_detail::TexStorage1D(target, levels, internalformat, width);}
+  inline void TexStorage2D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height){_detail::TexStorage2D(target, levels, internalformat, width, height);}
+  inline void TexStorage3D(GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth){_detail::TexStorage3D(target, levels, internalformat, width, height, depth);}
   
-  inline GLT_API void BindVertexBuffer(GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride){_detail::BindVertexBuffer(bindingindex, buffer, offset, stride);}
-  inline GLT_API void ClearBufferData(GLenum target, GLenum internalformat, GLenum format, GLenum type, const void * data){_detail::ClearBufferData(target, internalformat, format, type, data);}
-  inline GLT_API void ClearBufferSubData(GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void * data){_detail::ClearBufferSubData(target, internalformat, offset, size, format, type, data);}
-  inline GLT_API void CopyImageSubData(GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei srcWidth, GLsizei srcHeight, GLsizei srcDepth){_detail::CopyImageSubData(srcName, srcTarget, srcLevel, srcX, srcY, srcZ, dstName, dstTarget, dstLevel, dstX, dstY, dstZ, srcWidth, srcHeight, srcDepth);}
-  inline GLT_API void DebugMessageCallback(GLDEBUGPROC callback, const void * userParam){_detail::DebugMessageCallback(callback, userParam);}
-  inline GLT_API void DebugMessageControl(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint * ids, GLboolean enabled){_detail::DebugMessageControl(source, type, severity, count, ids, enabled);}
-  inline GLT_API void DebugMessageInsert(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar * buf){_detail::DebugMessageInsert(source, type, id, severity, length, buf);}
-  inline GLT_API void DispatchCompute(GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z){_detail::DispatchCompute(num_groups_x, num_groups_y, num_groups_z);}
-  inline GLT_API void DispatchComputeIndirect(GLintptr indirect){_detail::DispatchComputeIndirect(indirect);}
-  inline GLT_API void FramebufferParameteri(GLenum target, GLenum pname, GLint param){_detail::FramebufferParameteri(target, pname, param);}
-  inline GLT_API GLuint GetDebugMessageLog(GLuint count, GLsizei bufSize, GLenum * sources, GLenum * types, GLuint * ids, GLenum * severities, GLsizei * lengths, GLchar * messageLog){return _detail::GetDebugMessageLog(count, bufSize, sources, types, ids, severities, lengths, messageLog);}
-  inline GLT_API void GetFramebufferParameteriv(GLenum target, GLenum pname, GLint * params){_detail::GetFramebufferParameteriv(target, pname, params);}
-  inline GLT_API void GetInternalformati64v(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint64 * params){_detail::GetInternalformati64v(target, internalformat, pname, bufSize, params);}
-  inline GLT_API void GetObjectLabel(GLenum identifier, GLuint name, GLsizei bufSize, GLsizei * length, GLchar * label){_detail::GetObjectLabel(identifier, name, bufSize, length, label);}
-  inline GLT_API void GetObjectPtrLabel(const void * ptr, GLsizei bufSize, GLsizei * length, GLchar * label){_detail::GetObjectPtrLabel(ptr, bufSize, length, label);}
-  inline GLT_API void GetProgramInterfaceiv(GLuint program, GLenum programInterface, GLenum pname, GLint * params){_detail::GetProgramInterfaceiv(program, programInterface, pname, params);}
-  inline GLT_API GLuint GetProgramResourceIndex(GLuint program, GLenum programInterface, const GLchar * name){return _detail::GetProgramResourceIndex(program, programInterface, name);}
-  inline GLT_API GLint GetProgramResourceLocation(GLuint program, GLenum programInterface, const GLchar * name){return _detail::GetProgramResourceLocation(program, programInterface, name);}
-  inline GLT_API GLint GetProgramResourceLocationIndex(GLuint program, GLenum programInterface, const GLchar * name){return _detail::GetProgramResourceLocationIndex(program, programInterface, name);}
-  inline GLT_API void GetProgramResourceName(GLuint program, GLenum programInterface, GLuint index, GLsizei bufSize, GLsizei * length, GLchar * name){_detail::GetProgramResourceName(program, programInterface, index, bufSize, length, name);}
-  inline GLT_API void GetProgramResourceiv(GLuint program, GLenum programInterface, GLuint index, GLsizei propCount, const GLenum * props, GLsizei bufSize, GLsizei * length, GLint * params){_detail::GetProgramResourceiv(program, programInterface, index, propCount, props, bufSize, length, params);}
-  inline GLT_API void InvalidateBufferData(GLuint buffer){_detail::InvalidateBufferData(buffer);}
-  inline GLT_API void InvalidateBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr length){_detail::InvalidateBufferSubData(buffer, offset, length);}
-  inline GLT_API void InvalidateFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments){_detail::InvalidateFramebuffer(target, numAttachments, attachments);}
-  inline GLT_API void InvalidateSubFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments, GLint x, GLint y, GLsizei width, GLsizei height){_detail::InvalidateSubFramebuffer(target, numAttachments, attachments, x, y, width, height);}
-  inline GLT_API void InvalidateTexImage(GLuint texture, GLint level){_detail::InvalidateTexImage(texture, level);}
-  inline GLT_API void InvalidateTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth){_detail::InvalidateTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth);}
-  inline GLT_API void MultiDrawArraysIndirect(GLenum mode, const void * indirect, GLsizei drawcount, GLsizei stride){_detail::MultiDrawArraysIndirect(mode, indirect, drawcount, stride);}
-  inline GLT_API void MultiDrawElementsIndirect(GLenum mode, GLenum type, const void * indirect, GLsizei drawcount, GLsizei stride){_detail::MultiDrawElementsIndirect(mode, type, indirect, drawcount, stride);}
-  inline GLT_API void ObjectLabel(GLenum identifier, GLuint name, GLsizei length, const GLchar * label){_detail::ObjectLabel(identifier, name, length, label);}
-  inline GLT_API void ObjectPtrLabel(const void * ptr, GLsizei length, const GLchar * label){_detail::ObjectPtrLabel(ptr, length, label);}
-  inline GLT_API void PopDebugGroup(void){_detail::PopDebugGroup();}
-  inline GLT_API void PushDebugGroup(GLenum source, GLuint id, GLsizei length, const GLchar * message){_detail::PushDebugGroup(source, id, length, message);}
-  inline GLT_API void ShaderStorageBlockBinding(GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding){_detail::ShaderStorageBlockBinding(program, storageBlockIndex, storageBlockBinding);}
-  inline GLT_API void TexBufferRange(GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size){_detail::TexBufferRange(target, internalformat, buffer, offset, size);}
-  inline GLT_API void TexStorage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations){_detail::TexStorage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations);}
-  inline GLT_API void TexStorage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations){_detail::TexStorage3DMultisample(target, samples, internalformat, width, height, depth, fixedsamplelocations);}
-  inline GLT_API void TextureView(GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat, GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers){_detail::TextureView(texture, target, origtexture, internalformat, minlevel, numlevels, minlayer, numlayers);}
-  inline GLT_API void VertexAttribBinding(GLuint attribindex, GLuint bindingindex){_detail::VertexAttribBinding(attribindex, bindingindex);}
-  inline GLT_API void VertexAttribFormat(GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset){_detail::VertexAttribFormat(attribindex, size, type, normalized, relativeoffset);}
-  inline GLT_API void VertexAttribIFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset){_detail::VertexAttribIFormat(attribindex, size, type, relativeoffset);}
-  inline GLT_API void VertexAttribLFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset){_detail::VertexAttribLFormat(attribindex, size, type, relativeoffset);}
-  inline GLT_API void VertexBindingDivisor(GLuint bindingindex, GLuint divisor){_detail::VertexBindingDivisor(bindingindex, divisor);}
+  inline void BindVertexBuffer(GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride){_detail::BindVertexBuffer(bindingindex, buffer, offset, stride);}
+  inline void ClearBufferData(GLenum target, GLenum internalformat, GLenum format, GLenum type, const void * data){_detail::ClearBufferData(target, internalformat, format, type, data);}
+  inline void ClearBufferSubData(GLenum target, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void * data){_detail::ClearBufferSubData(target, internalformat, offset, size, format, type, data);}
+  inline void CopyImageSubData(GLuint srcName, GLenum srcTarget, GLint srcLevel, GLint srcX, GLint srcY, GLint srcZ, GLuint dstName, GLenum dstTarget, GLint dstLevel, GLint dstX, GLint dstY, GLint dstZ, GLsizei srcWidth, GLsizei srcHeight, GLsizei srcDepth){_detail::CopyImageSubData(srcName, srcTarget, srcLevel, srcX, srcY, srcZ, dstName, dstTarget, dstLevel, dstX, dstY, dstZ, srcWidth, srcHeight, srcDepth);}
+  inline void DebugMessageCallback(GLDEBUGPROC callback, const void * userParam){_detail::DebugMessageCallback(callback, userParam);}
+  inline void DebugMessageControl(GLenum source, GLenum type, GLenum severity, GLsizei count, const GLuint * ids, GLboolean enabled){_detail::DebugMessageControl(source, type, severity, count, ids, enabled);}
+  inline void DebugMessageInsert(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar * buf){_detail::DebugMessageInsert(source, type, id, severity, length, buf);}
+  inline void DispatchCompute(GLuint num_groups_x, GLuint num_groups_y, GLuint num_groups_z){_detail::DispatchCompute(num_groups_x, num_groups_y, num_groups_z);}
+  inline void DispatchComputeIndirect(GLintptr indirect){_detail::DispatchComputeIndirect(indirect);}
+  inline void FramebufferParameteri(GLenum target, GLenum pname, GLint param){_detail::FramebufferParameteri(target, pname, param);}
+  inline GLuint GetDebugMessageLog(GLuint count, GLsizei bufSize, GLenum * sources, GLenum * types, GLuint * ids, GLenum * severities, GLsizei * lengths, GLchar * messageLog){return _detail::GetDebugMessageLog(count, bufSize, sources, types, ids, severities, lengths, messageLog);}
+  inline void GetFramebufferParameteriv(GLenum target, GLenum pname, GLint * params){_detail::GetFramebufferParameteriv(target, pname, params);}
+  inline void GetInternalformati64v(GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint64 * params){_detail::GetInternalformati64v(target, internalformat, pname, bufSize, params);}
+  inline void GetObjectLabel(GLenum identifier, GLuint name, GLsizei bufSize, GLsizei * length, GLchar * label){_detail::GetObjectLabel(identifier, name, bufSize, length, label);}
+  inline void GetObjectPtrLabel(const void * ptr, GLsizei bufSize, GLsizei * length, GLchar * label){_detail::GetObjectPtrLabel(ptr, bufSize, length, label);}
+  inline void GetProgramInterfaceiv(GLuint program, GLenum programInterface, GLenum pname, GLint * params){_detail::GetProgramInterfaceiv(program, programInterface, pname, params);}
+  inline GLuint GetProgramResourceIndex(GLuint program, GLenum programInterface, const GLchar * name){return _detail::GetProgramResourceIndex(program, programInterface, name);}
+  inline GLint GetProgramResourceLocation(GLuint program, GLenum programInterface, const GLchar * name){return _detail::GetProgramResourceLocation(program, programInterface, name);}
+  inline GLint GetProgramResourceLocationIndex(GLuint program, GLenum programInterface, const GLchar * name){return _detail::GetProgramResourceLocationIndex(program, programInterface, name);}
+  inline void GetProgramResourceName(GLuint program, GLenum programInterface, GLuint index, GLsizei bufSize, GLsizei * length, GLchar * name){_detail::GetProgramResourceName(program, programInterface, index, bufSize, length, name);}
+  inline void GetProgramResourceiv(GLuint program, GLenum programInterface, GLuint index, GLsizei propCount, const GLenum * props, GLsizei bufSize, GLsizei * length, GLint * params){_detail::GetProgramResourceiv(program, programInterface, index, propCount, props, bufSize, length, params);}
+  inline void InvalidateBufferData(GLuint buffer){_detail::InvalidateBufferData(buffer);}
+  inline void InvalidateBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr length){_detail::InvalidateBufferSubData(buffer, offset, length);}
+  inline void InvalidateFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments){_detail::InvalidateFramebuffer(target, numAttachments, attachments);}
+  inline void InvalidateSubFramebuffer(GLenum target, GLsizei numAttachments, const GLenum * attachments, GLint x, GLint y, GLsizei width, GLsizei height){_detail::InvalidateSubFramebuffer(target, numAttachments, attachments, x, y, width, height);}
+  inline void InvalidateTexImage(GLuint texture, GLint level){_detail::InvalidateTexImage(texture, level);}
+  inline void InvalidateTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth){_detail::InvalidateTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth);}
+  inline void MultiDrawArraysIndirect(GLenum mode, const void * indirect, GLsizei drawcount, GLsizei stride){_detail::MultiDrawArraysIndirect(mode, indirect, drawcount, stride);}
+  inline void MultiDrawElementsIndirect(GLenum mode, GLenum type, const void * indirect, GLsizei drawcount, GLsizei stride){_detail::MultiDrawElementsIndirect(mode, type, indirect, drawcount, stride);}
+  inline void ObjectLabel(GLenum identifier, GLuint name, GLsizei length, const GLchar * label){_detail::ObjectLabel(identifier, name, length, label);}
+  inline void ObjectPtrLabel(const void * ptr, GLsizei length, const GLchar * label){_detail::ObjectPtrLabel(ptr, length, label);}
+  inline void PopDebugGroup(void){_detail::PopDebugGroup();}
+  inline void PushDebugGroup(GLenum source, GLuint id, GLsizei length, const GLchar * message){_detail::PushDebugGroup(source, id, length, message);}
+  inline void ShaderStorageBlockBinding(GLuint program, GLuint storageBlockIndex, GLuint storageBlockBinding){_detail::ShaderStorageBlockBinding(program, storageBlockIndex, storageBlockBinding);}
+  inline void TexBufferRange(GLenum target, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size){_detail::TexBufferRange(target, internalformat, buffer, offset, size);}
+  inline void TexStorage2DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations){_detail::TexStorage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations);}
+  inline void TexStorage3DMultisample(GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations){_detail::TexStorage3DMultisample(target, samples, internalformat, width, height, depth, fixedsamplelocations);}
+  inline void TextureView(GLuint texture, GLenum target, GLuint origtexture, GLenum internalformat, GLuint minlevel, GLuint numlevels, GLuint minlayer, GLuint numlayers){_detail::TextureView(texture, target, origtexture, internalformat, minlevel, numlevels, minlayer, numlayers);}
+  inline void VertexAttribBinding(GLuint attribindex, GLuint bindingindex){_detail::VertexAttribBinding(attribindex, bindingindex);}
+  inline void VertexAttribFormat(GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset){_detail::VertexAttribFormat(attribindex, size, type, normalized, relativeoffset);}
+  inline void VertexAttribIFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset){_detail::VertexAttribIFormat(attribindex, size, type, relativeoffset);}
+  inline void VertexAttribLFormat(GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset){_detail::VertexAttribLFormat(attribindex, size, type, relativeoffset);}
+  inline void VertexBindingDivisor(GLuint bindingindex, GLuint divisor){_detail::VertexBindingDivisor(bindingindex, divisor);}
   
-  inline GLT_API void BindBuffersBase(GLenum target, GLuint first, GLsizei count, const GLuint * buffers){_detail::BindBuffersBase(target, first, count, buffers);}
-  inline GLT_API void BindBuffersRange(GLenum target, GLuint first, GLsizei count, const GLuint * buffers, const GLintptr * offsets, const GLsizeiptr * sizes){_detail::BindBuffersRange(target, first, count, buffers, offsets, sizes);}
-  inline GLT_API void BindImageTextures(GLuint first, GLsizei count, const GLuint * textures){_detail::BindImageTextures(first, count, textures);}
-  inline GLT_API void BindSamplers(GLuint first, GLsizei count, const GLuint * samplers){_detail::BindSamplers(first, count, samplers);}
-  inline GLT_API void BindTextures(GLuint first, GLsizei count, const GLuint * textures){_detail::BindTextures(first, count, textures);}
-  inline GLT_API void BindVertexBuffers(GLuint first, GLsizei count, const GLuint * buffers, const GLintptr * offsets, const GLsizei * strides){_detail::BindVertexBuffers(first, count, buffers, offsets, strides);}
-  inline GLT_API void BufferStorage(GLenum target, GLsizeiptr size, const void * data, GLbitfield flags){_detail::BufferStorage(target, size, data, flags);}
-  inline GLT_API void ClearTexImage(GLuint texture, GLint level, GLenum format, GLenum type, const void * data){_detail::ClearTexImage(texture, level, format, type, data);}
-  inline GLT_API void ClearTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * data){_detail::ClearTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, data);}
+  inline void BindBuffersBase(GLenum target, GLuint first, GLsizei count, const GLuint * buffers){_detail::BindBuffersBase(target, first, count, buffers);}
+  inline void BindBuffersRange(GLenum target, GLuint first, GLsizei count, const GLuint * buffers, const GLintptr * offsets, const GLsizeiptr * sizes){_detail::BindBuffersRange(target, first, count, buffers, offsets, sizes);}
+  inline void BindImageTextures(GLuint first, GLsizei count, const GLuint * textures){_detail::BindImageTextures(first, count, textures);}
+  inline void BindSamplers(GLuint first, GLsizei count, const GLuint * samplers){_detail::BindSamplers(first, count, samplers);}
+  inline void BindTextures(GLuint first, GLsizei count, const GLuint * textures){_detail::BindTextures(first, count, textures);}
+  inline void BindVertexBuffers(GLuint first, GLsizei count, const GLuint * buffers, const GLintptr * offsets, const GLsizei * strides){_detail::BindVertexBuffers(first, count, buffers, offsets, strides);}
+  inline void BufferStorage(GLenum target, GLsizeiptr size, const void * data, GLbitfield flags){_detail::BufferStorage(target, size, data, flags);}
+  inline void ClearTexImage(GLuint texture, GLint level, GLenum format, GLenum type, const void * data){_detail::ClearTexImage(texture, level, format, type, data);}
+  inline void ClearTexSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * data){_detail::ClearTexSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, data);}
   
-  inline GLT_API void BindTextureUnit(GLuint unit, GLuint texture){_detail::BindTextureUnit(unit, texture);}
-  inline GLT_API void BlitNamedFramebuffer(GLuint readFramebuffer, GLuint drawFramebuffer, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter){_detail::BlitNamedFramebuffer(readFramebuffer, drawFramebuffer, srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1, dstY1, mask, filter);}
-  inline GLT_API GLenum CheckNamedFramebufferStatus(GLuint framebuffer, GLenum target){return _detail::CheckNamedFramebufferStatus(framebuffer, target);}
-  inline GLT_API void ClearNamedBufferData(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void * data){_detail::ClearNamedBufferData(buffer, internalformat, format, type, data);}
-  inline GLT_API void ClearNamedBufferSubData(GLuint buffer, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void * data){_detail::ClearNamedBufferSubData(buffer, internalformat, offset, size, format, type, data);}
-  inline GLT_API void ClearNamedFramebufferfi(GLuint framebuffer, GLenum buffer, const GLfloat depth, GLint stencil){_detail::ClearNamedFramebufferfi(framebuffer, buffer, depth, stencil);}
-  inline GLT_API void ClearNamedFramebufferfv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLfloat * value){_detail::ClearNamedFramebufferfv(framebuffer, buffer, drawbuffer, value);}
-  inline GLT_API void ClearNamedFramebufferiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLint * value){_detail::ClearNamedFramebufferiv(framebuffer, buffer, drawbuffer, value);}
-  inline GLT_API void ClearNamedFramebufferuiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLuint * value){_detail::ClearNamedFramebufferuiv(framebuffer, buffer, drawbuffer, value);}
-  inline GLT_API void ClipControl(GLenum origin, GLenum depth){_detail::ClipControl(origin, depth);}
-  inline GLT_API void CompressedTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTextureSubImage1D(texture, level, xoffset, width, format, imageSize, data);}
-  inline GLT_API void CompressedTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTextureSubImage2D(texture, level, xoffset, yoffset, width, height, format, imageSize, data);}
-  inline GLT_API void CompressedTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, data);}
-  inline GLT_API void CopyNamedBufferSubData(GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size){_detail::CopyNamedBufferSubData(readBuffer, writeBuffer, readOffset, writeOffset, size);}
-  inline GLT_API void CopyTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width){_detail::CopyTextureSubImage1D(texture, level, xoffset, x, y, width);}
-  inline GLT_API void CopyTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height){_detail::CopyTextureSubImage2D(texture, level, xoffset, yoffset, x, y, width, height);}
-  inline GLT_API void CopyTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height){_detail::CopyTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, x, y, width, height);}
-  inline GLT_API void CreateBuffers(GLsizei n, GLuint * buffers){_detail::CreateBuffers(n, buffers);}
-  inline GLT_API void CreateFramebuffers(GLsizei n, GLuint * framebuffers){_detail::CreateFramebuffers(n, framebuffers);}
-  inline GLT_API void CreateProgramPipelines(GLsizei n, GLuint * pipelines){_detail::CreateProgramPipelines(n, pipelines);}
-  inline GLT_API void CreateQueries(GLenum target, GLsizei n, GLuint * ids){_detail::CreateQueries(target, n, ids);}
-  inline GLT_API void CreateRenderbuffers(GLsizei n, GLuint * renderbuffers){_detail::CreateRenderbuffers(n, renderbuffers);}
-  inline GLT_API void CreateSamplers(GLsizei n, GLuint * samplers){_detail::CreateSamplers(n, samplers);}
-  inline GLT_API void CreateTextures(GLenum target, GLsizei n, GLuint * textures){_detail::CreateTextures(target, n, textures);}
-  inline GLT_API void CreateTransformFeedbacks(GLsizei n, GLuint * ids){_detail::CreateTransformFeedbacks(n, ids);}
-  inline GLT_API void CreateVertexArrays(GLsizei n, GLuint * arrays){_detail::CreateVertexArrays(n, arrays);}
-  inline GLT_API void DisableVertexArrayAttrib(GLuint vaobj, GLuint index){_detail::DisableVertexArrayAttrib(vaobj, index);}
-  inline GLT_API void EnableVertexArrayAttrib(GLuint vaobj, GLuint index){_detail::EnableVertexArrayAttrib(vaobj, index);}
-  inline GLT_API void FlushMappedNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length){_detail::FlushMappedNamedBufferRange(buffer, offset, length);}
-  inline GLT_API void GenerateTextureMipmap(GLuint texture){_detail::GenerateTextureMipmap(texture);}
-  inline GLT_API void GetCompressedTextureImage(GLuint texture, GLint level, GLsizei bufSize, void * pixels){_detail::GetCompressedTextureImage(texture, level, bufSize, pixels);}
-  inline GLT_API void GetCompressedTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei bufSize, void * pixels){_detail::GetCompressedTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, bufSize, pixels);}
-  inline GLT_API GLenum GetGraphicsResetStatus(void){return _detail::GetGraphicsResetStatus();}
-  inline GLT_API void GetNamedBufferParameteri64v(GLuint buffer, GLenum pname, GLint64 * params){_detail::GetNamedBufferParameteri64v(buffer, pname, params);}
-  inline GLT_API void GetNamedBufferParameteriv(GLuint buffer, GLenum pname, GLint * params){_detail::GetNamedBufferParameteriv(buffer, pname, params);}
-  inline GLT_API void GetNamedBufferPointerv(GLuint buffer, GLenum pname, void ** params){_detail::GetNamedBufferPointerv(buffer, pname, params);}
-  inline GLT_API void GetNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, void * data){_detail::GetNamedBufferSubData(buffer, offset, size, data);}
-  inline GLT_API void GetNamedFramebufferAttachmentParameteriv(GLuint framebuffer, GLenum attachment, GLenum pname, GLint * params){_detail::GetNamedFramebufferAttachmentParameteriv(framebuffer, attachment, pname, params);}
-  inline GLT_API void GetNamedFramebufferParameteriv(GLuint framebuffer, GLenum pname, GLint * param){_detail::GetNamedFramebufferParameteriv(framebuffer, pname, param);}
-  inline GLT_API void GetNamedRenderbufferParameteriv(GLuint renderbuffer, GLenum pname, GLint * params){_detail::GetNamedRenderbufferParameteriv(renderbuffer, pname, params);}
-  inline GLT_API void GetQueryBufferObjecti64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset){_detail::GetQueryBufferObjecti64v(id, buffer, pname, offset);}
-  inline GLT_API void GetQueryBufferObjectiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset){_detail::GetQueryBufferObjectiv(id, buffer, pname, offset);}
-  inline GLT_API void GetQueryBufferObjectui64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset){_detail::GetQueryBufferObjectui64v(id, buffer, pname, offset);}
-  inline GLT_API void GetQueryBufferObjectuiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset){_detail::GetQueryBufferObjectuiv(id, buffer, pname, offset);}
-  inline GLT_API void GetTextureImage(GLuint texture, GLint level, GLenum format, GLenum type, GLsizei bufSize, void * pixels){_detail::GetTextureImage(texture, level, format, type, bufSize, pixels);}
-  inline GLT_API void GetTextureLevelParameterfv(GLuint texture, GLint level, GLenum pname, GLfloat * params){_detail::GetTextureLevelParameterfv(texture, level, pname, params);}
-  inline GLT_API void GetTextureLevelParameteriv(GLuint texture, GLint level, GLenum pname, GLint * params){_detail::GetTextureLevelParameteriv(texture, level, pname, params);}
-  inline GLT_API void GetTextureParameterIiv(GLuint texture, GLenum pname, GLint * params){_detail::GetTextureParameterIiv(texture, pname, params);}
-  inline GLT_API void GetTextureParameterIuiv(GLuint texture, GLenum pname, GLuint * params){_detail::GetTextureParameterIuiv(texture, pname, params);}
-  inline GLT_API void GetTextureParameterfv(GLuint texture, GLenum pname, GLfloat * params){_detail::GetTextureParameterfv(texture, pname, params);}
-  inline GLT_API void GetTextureParameteriv(GLuint texture, GLenum pname, GLint * params){_detail::GetTextureParameteriv(texture, pname, params);}
-  inline GLT_API void GetTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, GLsizei bufSize, void * pixels){_detail::GetTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, bufSize, pixels);}
-  inline GLT_API void GetTransformFeedbacki64_v(GLuint xfb, GLenum pname, GLuint index, GLint64 * param){_detail::GetTransformFeedbacki64_v(xfb, pname, index, param);}
-  inline GLT_API void GetTransformFeedbacki_v(GLuint xfb, GLenum pname, GLuint index, GLint * param){_detail::GetTransformFeedbacki_v(xfb, pname, index, param);}
-  inline GLT_API void GetTransformFeedbackiv(GLuint xfb, GLenum pname, GLint * param){_detail::GetTransformFeedbackiv(xfb, pname, param);}
-  inline GLT_API void GetVertexArrayIndexed64iv(GLuint vaobj, GLuint index, GLenum pname, GLint64 * param){_detail::GetVertexArrayIndexed64iv(vaobj, index, pname, param);}
-  inline GLT_API void GetVertexArrayIndexediv(GLuint vaobj, GLuint index, GLenum pname, GLint * param){_detail::GetVertexArrayIndexediv(vaobj, index, pname, param);}
-  inline GLT_API void GetVertexArrayiv(GLuint vaobj, GLenum pname, GLint * param){_detail::GetVertexArrayiv(vaobj, pname, param);}
-  inline GLT_API void GetnCompressedTexImage(GLenum target, GLint lod, GLsizei bufSize, void * pixels){_detail::GetnCompressedTexImage(target, lod, bufSize, pixels);}
-  inline GLT_API void GetnTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, void * pixels){_detail::GetnTexImage(target, level, format, type, bufSize, pixels);}
-  inline GLT_API void GetnUniformdv(GLuint program, GLint location, GLsizei bufSize, GLdouble * params){_detail::GetnUniformdv(program, location, bufSize, params);}
-  inline GLT_API void GetnUniformfv(GLuint program, GLint location, GLsizei bufSize, GLfloat * params){_detail::GetnUniformfv(program, location, bufSize, params);}
-  inline GLT_API void GetnUniformiv(GLuint program, GLint location, GLsizei bufSize, GLint * params){_detail::GetnUniformiv(program, location, bufSize, params);}
-  inline GLT_API void GetnUniformuiv(GLuint program, GLint location, GLsizei bufSize, GLuint * params){_detail::GetnUniformuiv(program, location, bufSize, params);}
-  inline GLT_API void InvalidateNamedFramebufferData(GLuint framebuffer, GLsizei numAttachments, const GLenum * attachments){_detail::InvalidateNamedFramebufferData(framebuffer, numAttachments, attachments);}
-  inline GLT_API void InvalidateNamedFramebufferSubData(GLuint framebuffer, GLsizei numAttachments, const GLenum * attachments, GLint x, GLint y, GLsizei width, GLsizei height){_detail::InvalidateNamedFramebufferSubData(framebuffer, numAttachments, attachments, x, y, width, height);}
-  inline GLT_API void * MapNamedBuffer(GLuint buffer, GLenum access){return _detail::MapNamedBuffer(buffer, access);}
-  inline GLT_API void * MapNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access){return _detail::MapNamedBufferRange(buffer, offset, length, access);}
-  inline GLT_API void MemoryBarrierByRegion(GLbitfield barriers){_detail::MemoryBarrierByRegion(barriers);}
-  inline GLT_API void NamedBufferData(GLuint buffer, GLsizeiptr size, const void * data, GLenum usage){_detail::NamedBufferData(buffer, size, data, usage);}
-  inline GLT_API void NamedBufferStorage(GLuint buffer, GLsizeiptr size, const void * data, GLbitfield flags){_detail::NamedBufferStorage(buffer, size, data, flags);}
-  inline GLT_API void NamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, const void * data){_detail::NamedBufferSubData(buffer, offset, size, data);}
-  inline GLT_API void NamedFramebufferDrawBuffer(GLuint framebuffer, GLenum buf){_detail::NamedFramebufferDrawBuffer(framebuffer, buf);}
-  inline GLT_API void NamedFramebufferDrawBuffers(GLuint framebuffer, GLsizei n, const GLenum * bufs){_detail::NamedFramebufferDrawBuffers(framebuffer, n, bufs);}
-  inline GLT_API void NamedFramebufferParameteri(GLuint framebuffer, GLenum pname, GLint param){_detail::NamedFramebufferParameteri(framebuffer, pname, param);}
-  inline GLT_API void NamedFramebufferReadBuffer(GLuint framebuffer, GLenum src){_detail::NamedFramebufferReadBuffer(framebuffer, src);}
-  inline GLT_API void NamedFramebufferRenderbuffer(GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer){_detail::NamedFramebufferRenderbuffer(framebuffer, attachment, renderbuffertarget, renderbuffer);}
-  inline GLT_API void NamedFramebufferTexture(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level){_detail::NamedFramebufferTexture(framebuffer, attachment, texture, level);}
-  inline GLT_API void NamedFramebufferTextureLayer(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer){_detail::NamedFramebufferTextureLayer(framebuffer, attachment, texture, level, layer);}
-  inline GLT_API void NamedRenderbufferStorage(GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height){_detail::NamedRenderbufferStorage(renderbuffer, internalformat, width, height);}
-  inline GLT_API void NamedRenderbufferStorageMultisample(GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height){_detail::NamedRenderbufferStorageMultisample(renderbuffer, samples, internalformat, width, height);}
-  inline GLT_API void ReadnPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, void * data){_detail::ReadnPixels(x, y, width, height, format, type, bufSize, data);}
-  inline GLT_API void TextureBarrier(void){_detail::TextureBarrier();}
-  inline GLT_API void TextureBuffer(GLuint texture, GLenum internalformat, GLuint buffer){_detail::TextureBuffer(texture, internalformat, buffer);}
-  inline GLT_API void TextureBufferRange(GLuint texture, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size){_detail::TextureBufferRange(texture, internalformat, buffer, offset, size);}
-  inline GLT_API void TextureParameterIiv(GLuint texture, GLenum pname, const GLint * params){_detail::TextureParameterIiv(texture, pname, params);}
-  inline GLT_API void TextureParameterIuiv(GLuint texture, GLenum pname, const GLuint * params){_detail::TextureParameterIuiv(texture, pname, params);}
-  inline GLT_API void TextureParameterf(GLuint texture, GLenum pname, GLfloat param){_detail::TextureParameterf(texture, pname, param);}
-  inline GLT_API void TextureParameterfv(GLuint texture, GLenum pname, const GLfloat * param){_detail::TextureParameterfv(texture, pname, param);}
-  inline GLT_API void TextureParameteri(GLuint texture, GLenum pname, GLint param){_detail::TextureParameteri(texture, pname, param);}
-  inline GLT_API void TextureParameteriv(GLuint texture, GLenum pname, const GLint * param){_detail::TextureParameteriv(texture, pname, param);}
-  inline GLT_API void TextureStorage1D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width){_detail::TextureStorage1D(texture, levels, internalformat, width);}
-  inline GLT_API void TextureStorage2D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height){_detail::TextureStorage2D(texture, levels, internalformat, width, height);}
-  inline GLT_API void TextureStorage2DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations){_detail::TextureStorage2DMultisample(texture, samples, internalformat, width, height, fixedsamplelocations);}
-  inline GLT_API void TextureStorage3D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth){_detail::TextureStorage3D(texture, levels, internalformat, width, height, depth);}
-  inline GLT_API void TextureStorage3DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations){_detail::TextureStorage3DMultisample(texture, samples, internalformat, width, height, depth, fixedsamplelocations);}
-  inline GLT_API void TextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void * pixels){_detail::TextureSubImage1D(texture, level, xoffset, width, format, type, pixels);}
-  inline GLT_API void TextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void * pixels){_detail::TextureSubImage2D(texture, level, xoffset, yoffset, width, height, format, type, pixels);}
-  inline GLT_API void TextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * pixels){_detail::TextureSubImage3D(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, pixels);}
-  inline GLT_API void TransformFeedbackBufferBase(GLuint xfb, GLuint index, GLuint buffer){_detail::TransformFeedbackBufferBase(xfb, index, buffer);}
-  inline GLT_API void TransformFeedbackBufferRange(GLuint xfb, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size){_detail::TransformFeedbackBufferRange(xfb, index, buffer, offset, size);}
-  inline GLT_API GLboolean UnmapNamedBuffer(GLuint buffer){return _detail::UnmapNamedBuffer(buffer);}
-  inline GLT_API void VertexArrayAttribBinding(GLuint vaobj, GLuint attribindex, GLuint bindingindex){_detail::VertexArrayAttribBinding(vaobj, attribindex, bindingindex);}
-  inline GLT_API void VertexArrayAttribFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset){_detail::VertexArrayAttribFormat(vaobj, attribindex, size, type, normalized, relativeoffset);}
-  inline GLT_API void VertexArrayAttribIFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset){_detail::VertexArrayAttribIFormat(vaobj, attribindex, size, type, relativeoffset);}
-  inline GLT_API void VertexArrayAttribLFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset){_detail::VertexArrayAttribLFormat(vaobj, attribindex, size, type, relativeoffset);}
-  inline GLT_API void VertexArrayBindingDivisor(GLuint vaobj, GLuint bindingindex, GLuint divisor){_detail::VertexArrayBindingDivisor(vaobj, bindingindex, divisor);}
-  inline GLT_API void VertexArrayElementBuffer(GLuint vaobj, GLuint buffer){_detail::VertexArrayElementBuffer(vaobj, buffer);}
-  inline GLT_API void VertexArrayVertexBuffer(GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride){_detail::VertexArrayVertexBuffer(vaobj, bindingindex, buffer, offset, stride);}
-  inline GLT_API void VertexArrayVertexBuffers(GLuint vaobj, GLuint first, GLsizei count, const GLuint * buffers, const GLintptr * offsets, const GLsizei * strides){_detail::VertexArrayVertexBuffers(vaobj, first, count, buffers, offsets, strides);}
+  inline void BindTextureUnit(GLuint unit, GLuint texture){_detail::BindTextureUnit(unit, texture);}
+  inline void BlitNamedFramebuffer(GLuint readFramebuffer, GLuint drawFramebuffer, GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter){_detail::BlitNamedFramebuffer(readFramebuffer, drawFramebuffer, srcX0, srcY0, srcX1, srcY1, dstX0, dstY0, dstX1, dstY1, mask, filter);}
+  inline GLenum CheckNamedFramebufferStatus(GLuint framebuffer, GLenum target){return _detail::CheckNamedFramebufferStatus(framebuffer, target);}
+  inline void ClearNamedBufferData(GLuint buffer, GLenum internalformat, GLenum format, GLenum type, const void * data){_detail::ClearNamedBufferData(buffer, internalformat, format, type, data);}
+  inline void ClearNamedBufferSubData(GLuint buffer, GLenum internalformat, GLintptr offset, GLsizeiptr size, GLenum format, GLenum type, const void * data){_detail::ClearNamedBufferSubData(buffer, internalformat, offset, size, format, type, data);}
+  inline void ClearNamedFramebufferfi(GLuint framebuffer, GLenum buffer, const GLfloat depth, GLint stencil){_detail::ClearNamedFramebufferfi(framebuffer, buffer, depth, stencil);}
+  inline void ClearNamedFramebufferfv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLfloat * value){_detail::ClearNamedFramebufferfv(framebuffer, buffer, drawbuffer, value);}
+  inline void ClearNamedFramebufferiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLint * value){_detail::ClearNamedFramebufferiv(framebuffer, buffer, drawbuffer, value);}
+  inline void ClearNamedFramebufferuiv(GLuint framebuffer, GLenum buffer, GLint drawbuffer, const GLuint * value){_detail::ClearNamedFramebufferuiv(framebuffer, buffer, drawbuffer, value);}
+  inline void ClipControl(GLenum origin, GLenum depth){_detail::ClipControl(origin, depth);}
+  inline void CompressedTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTextureSubImage1D(texture, level, xoffset, width, format, imageSize, data);}
+  inline void CompressedTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTextureSubImage2D(texture, level, xoffset, yoffset, width, height, format, imageSize, data);}
+  inline void CompressedTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const void * data){_detail::CompressedTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, imageSize, data);}
+  inline void CopyNamedBufferSubData(GLuint readBuffer, GLuint writeBuffer, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size){_detail::CopyNamedBufferSubData(readBuffer, writeBuffer, readOffset, writeOffset, size);}
+  inline void CopyTextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLint x, GLint y, GLsizei width){_detail::CopyTextureSubImage1D(texture, level, xoffset, x, y, width);}
+  inline void CopyTextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint x, GLint y, GLsizei width, GLsizei height){_detail::CopyTextureSubImage2D(texture, level, xoffset, yoffset, x, y, width, height);}
+  inline void CopyTextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height){_detail::CopyTextureSubImage3D(texture, level, xoffset, yoffset, zoffset, x, y, width, height);}
+  inline void CreateBuffers(GLsizei n, GLuint * buffers){_detail::CreateBuffers(n, buffers);}
+  inline void CreateFramebuffers(GLsizei n, GLuint * framebuffers){_detail::CreateFramebuffers(n, framebuffers);}
+  inline void CreateProgramPipelines(GLsizei n, GLuint * pipelines){_detail::CreateProgramPipelines(n, pipelines);}
+  inline void CreateQueries(GLenum target, GLsizei n, GLuint * ids){_detail::CreateQueries(target, n, ids);}
+  inline void CreateRenderbuffers(GLsizei n, GLuint * renderbuffers){_detail::CreateRenderbuffers(n, renderbuffers);}
+  inline void CreateSamplers(GLsizei n, GLuint * samplers){_detail::CreateSamplers(n, samplers);}
+  inline void CreateTextures(GLenum target, GLsizei n, GLuint * textures){_detail::CreateTextures(target, n, textures);}
+  inline void CreateTransformFeedbacks(GLsizei n, GLuint * ids){_detail::CreateTransformFeedbacks(n, ids);}
+  inline void CreateVertexArrays(GLsizei n, GLuint * arrays){_detail::CreateVertexArrays(n, arrays);}
+  inline void DisableVertexArrayAttrib(GLuint vaobj, GLuint index){_detail::DisableVertexArrayAttrib(vaobj, index);}
+  inline void EnableVertexArrayAttrib(GLuint vaobj, GLuint index){_detail::EnableVertexArrayAttrib(vaobj, index);}
+  inline void FlushMappedNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length){_detail::FlushMappedNamedBufferRange(buffer, offset, length);}
+  inline void GenerateTextureMipmap(GLuint texture){_detail::GenerateTextureMipmap(texture);}
+  inline void GetCompressedTextureImage(GLuint texture, GLint level, GLsizei bufSize, void * pixels){_detail::GetCompressedTextureImage(texture, level, bufSize, pixels);}
+  inline void GetCompressedTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLsizei bufSize, void * pixels){_detail::GetCompressedTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, bufSize, pixels);}
+  inline GLenum GetGraphicsResetStatus(void){return _detail::GetGraphicsResetStatus();}
+  inline void GetNamedBufferParameteri64v(GLuint buffer, GLenum pname, GLint64 * params){_detail::GetNamedBufferParameteri64v(buffer, pname, params);}
+  inline void GetNamedBufferParameteriv(GLuint buffer, GLenum pname, GLint * params){_detail::GetNamedBufferParameteriv(buffer, pname, params);}
+  inline void GetNamedBufferPointerv(GLuint buffer, GLenum pname, void ** params){_detail::GetNamedBufferPointerv(buffer, pname, params);}
+  inline void GetNamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, void * data){_detail::GetNamedBufferSubData(buffer, offset, size, data);}
+  inline void GetNamedFramebufferAttachmentParameteriv(GLuint framebuffer, GLenum attachment, GLenum pname, GLint * params){_detail::GetNamedFramebufferAttachmentParameteriv(framebuffer, attachment, pname, params);}
+  inline void GetNamedFramebufferParameteriv(GLuint framebuffer, GLenum pname, GLint * param){_detail::GetNamedFramebufferParameteriv(framebuffer, pname, param);}
+  inline void GetNamedRenderbufferParameteriv(GLuint renderbuffer, GLenum pname, GLint * params){_detail::GetNamedRenderbufferParameteriv(renderbuffer, pname, params);}
+  inline void GetQueryBufferObjecti64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset){_detail::GetQueryBufferObjecti64v(id, buffer, pname, offset);}
+  inline void GetQueryBufferObjectiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset){_detail::GetQueryBufferObjectiv(id, buffer, pname, offset);}
+  inline void GetQueryBufferObjectui64v(GLuint id, GLuint buffer, GLenum pname, GLintptr offset){_detail::GetQueryBufferObjectui64v(id, buffer, pname, offset);}
+  inline void GetQueryBufferObjectuiv(GLuint id, GLuint buffer, GLenum pname, GLintptr offset){_detail::GetQueryBufferObjectuiv(id, buffer, pname, offset);}
+  inline void GetTextureImage(GLuint texture, GLint level, GLenum format, GLenum type, GLsizei bufSize, void * pixels){_detail::GetTextureImage(texture, level, format, type, bufSize, pixels);}
+  inline void GetTextureLevelParameterfv(GLuint texture, GLint level, GLenum pname, GLfloat * params){_detail::GetTextureLevelParameterfv(texture, level, pname, params);}
+  inline void GetTextureLevelParameteriv(GLuint texture, GLint level, GLenum pname, GLint * params){_detail::GetTextureLevelParameteriv(texture, level, pname, params);}
+  inline void GetTextureParameterIiv(GLuint texture, GLenum pname, GLint * params){_detail::GetTextureParameterIiv(texture, pname, params);}
+  inline void GetTextureParameterIuiv(GLuint texture, GLenum pname, GLuint * params){_detail::GetTextureParameterIuiv(texture, pname, params);}
+  inline void GetTextureParameterfv(GLuint texture, GLenum pname, GLfloat * params){_detail::GetTextureParameterfv(texture, pname, params);}
+  inline void GetTextureParameteriv(GLuint texture, GLenum pname, GLint * params){_detail::GetTextureParameteriv(texture, pname, params);}
+  inline void GetTextureSubImage(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, GLsizei bufSize, void * pixels){_detail::GetTextureSubImage(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, bufSize, pixels);}
+  inline void GetTransformFeedbacki64_v(GLuint xfb, GLenum pname, GLuint index, GLint64 * param){_detail::GetTransformFeedbacki64_v(xfb, pname, index, param);}
+  inline void GetTransformFeedbacki_v(GLuint xfb, GLenum pname, GLuint index, GLint * param){_detail::GetTransformFeedbacki_v(xfb, pname, index, param);}
+  inline void GetTransformFeedbackiv(GLuint xfb, GLenum pname, GLint * param){_detail::GetTransformFeedbackiv(xfb, pname, param);}
+  inline void GetVertexArrayIndexed64iv(GLuint vaobj, GLuint index, GLenum pname, GLint64 * param){_detail::GetVertexArrayIndexed64iv(vaobj, index, pname, param);}
+  inline void GetVertexArrayIndexediv(GLuint vaobj, GLuint index, GLenum pname, GLint * param){_detail::GetVertexArrayIndexediv(vaobj, index, pname, param);}
+  inline void GetVertexArrayiv(GLuint vaobj, GLenum pname, GLint * param){_detail::GetVertexArrayiv(vaobj, pname, param);}
+  inline void GetnCompressedTexImage(GLenum target, GLint lod, GLsizei bufSize, void * pixels){_detail::GetnCompressedTexImage(target, lod, bufSize, pixels);}
+  inline void GetnTexImage(GLenum target, GLint level, GLenum format, GLenum type, GLsizei bufSize, void * pixels){_detail::GetnTexImage(target, level, format, type, bufSize, pixels);}
+  inline void GetnUniformdv(GLuint program, GLint location, GLsizei bufSize, GLdouble * params){_detail::GetnUniformdv(program, location, bufSize, params);}
+  inline void GetnUniformfv(GLuint program, GLint location, GLsizei bufSize, GLfloat * params){_detail::GetnUniformfv(program, location, bufSize, params);}
+  inline void GetnUniformiv(GLuint program, GLint location, GLsizei bufSize, GLint * params){_detail::GetnUniformiv(program, location, bufSize, params);}
+  inline void GetnUniformuiv(GLuint program, GLint location, GLsizei bufSize, GLuint * params){_detail::GetnUniformuiv(program, location, bufSize, params);}
+  inline void InvalidateNamedFramebufferData(GLuint framebuffer, GLsizei numAttachments, const GLenum * attachments){_detail::InvalidateNamedFramebufferData(framebuffer, numAttachments, attachments);}
+  inline void InvalidateNamedFramebufferSubData(GLuint framebuffer, GLsizei numAttachments, const GLenum * attachments, GLint x, GLint y, GLsizei width, GLsizei height){_detail::InvalidateNamedFramebufferSubData(framebuffer, numAttachments, attachments, x, y, width, height);}
+  inline void * MapNamedBuffer(GLuint buffer, GLenum access){return _detail::MapNamedBuffer(buffer, access);}
+  inline void * MapNamedBufferRange(GLuint buffer, GLintptr offset, GLsizeiptr length, GLbitfield access){return _detail::MapNamedBufferRange(buffer, offset, length, access);}
+  inline void MemoryBarrierByRegion(GLbitfield barriers){_detail::MemoryBarrierByRegion(barriers);}
+  inline void NamedBufferData(GLuint buffer, GLsizeiptr size, const void * data, GLenum usage){_detail::NamedBufferData(buffer, size, data, usage);}
+  inline void NamedBufferStorage(GLuint buffer, GLsizeiptr size, const void * data, GLbitfield flags){_detail::NamedBufferStorage(buffer, size, data, flags);}
+  inline void NamedBufferSubData(GLuint buffer, GLintptr offset, GLsizeiptr size, const void * data){_detail::NamedBufferSubData(buffer, offset, size, data);}
+  inline void NamedFramebufferDrawBuffer(GLuint framebuffer, GLenum buf){_detail::NamedFramebufferDrawBuffer(framebuffer, buf);}
+  inline void NamedFramebufferDrawBuffers(GLuint framebuffer, GLsizei n, const GLenum * bufs){_detail::NamedFramebufferDrawBuffers(framebuffer, n, bufs);}
+  inline void NamedFramebufferParameteri(GLuint framebuffer, GLenum pname, GLint param){_detail::NamedFramebufferParameteri(framebuffer, pname, param);}
+  inline void NamedFramebufferReadBuffer(GLuint framebuffer, GLenum src){_detail::NamedFramebufferReadBuffer(framebuffer, src);}
+  inline void NamedFramebufferRenderbuffer(GLuint framebuffer, GLenum attachment, GLenum renderbuffertarget, GLuint renderbuffer){_detail::NamedFramebufferRenderbuffer(framebuffer, attachment, renderbuffertarget, renderbuffer);}
+  inline void NamedFramebufferTexture(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level){_detail::NamedFramebufferTexture(framebuffer, attachment, texture, level);}
+  inline void NamedFramebufferTextureLayer(GLuint framebuffer, GLenum attachment, GLuint texture, GLint level, GLint layer){_detail::NamedFramebufferTextureLayer(framebuffer, attachment, texture, level, layer);}
+  inline void NamedRenderbufferStorage(GLuint renderbuffer, GLenum internalformat, GLsizei width, GLsizei height){_detail::NamedRenderbufferStorage(renderbuffer, internalformat, width, height);}
+  inline void NamedRenderbufferStorageMultisample(GLuint renderbuffer, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height){_detail::NamedRenderbufferStorageMultisample(renderbuffer, samples, internalformat, width, height);}
+  inline void ReadnPixels(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLsizei bufSize, void * data){_detail::ReadnPixels(x, y, width, height, format, type, bufSize, data);}
+  inline void TextureBarrier(void){_detail::TextureBarrier();}
+  inline void TextureBuffer(GLuint texture, GLenum internalformat, GLuint buffer){_detail::TextureBuffer(texture, internalformat, buffer);}
+  inline void TextureBufferRange(GLuint texture, GLenum internalformat, GLuint buffer, GLintptr offset, GLsizeiptr size){_detail::TextureBufferRange(texture, internalformat, buffer, offset, size);}
+  inline void TextureParameterIiv(GLuint texture, GLenum pname, const GLint * params){_detail::TextureParameterIiv(texture, pname, params);}
+  inline void TextureParameterIuiv(GLuint texture, GLenum pname, const GLuint * params){_detail::TextureParameterIuiv(texture, pname, params);}
+  inline void TextureParameterf(GLuint texture, GLenum pname, GLfloat param){_detail::TextureParameterf(texture, pname, param);}
+  inline void TextureParameterfv(GLuint texture, GLenum pname, const GLfloat * param){_detail::TextureParameterfv(texture, pname, param);}
+  inline void TextureParameteri(GLuint texture, GLenum pname, GLint param){_detail::TextureParameteri(texture, pname, param);}
+  inline void TextureParameteriv(GLuint texture, GLenum pname, const GLint * param){_detail::TextureParameteriv(texture, pname, param);}
+  inline void TextureStorage1D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width){_detail::TextureStorage1D(texture, levels, internalformat, width);}
+  inline void TextureStorage2D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height){_detail::TextureStorage2D(texture, levels, internalformat, width, height);}
+  inline void TextureStorage2DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations){_detail::TextureStorage2DMultisample(texture, samples, internalformat, width, height, fixedsamplelocations);}
+  inline void TextureStorage3D(GLuint texture, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth){_detail::TextureStorage3D(texture, levels, internalformat, width, height, depth);}
+  inline void TextureStorage3DMultisample(GLuint texture, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLboolean fixedsamplelocations){_detail::TextureStorage3DMultisample(texture, samples, internalformat, width, height, depth, fixedsamplelocations);}
+  inline void TextureSubImage1D(GLuint texture, GLint level, GLint xoffset, GLsizei width, GLenum format, GLenum type, const void * pixels){_detail::TextureSubImage1D(texture, level, xoffset, width, format, type, pixels);}
+  inline void TextureSubImage2D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLsizei width, GLsizei height, GLenum format, GLenum type, const void * pixels){_detail::TextureSubImage2D(texture, level, xoffset, yoffset, width, height, format, type, pixels);}
+  inline void TextureSubImage3D(GLuint texture, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const void * pixels){_detail::TextureSubImage3D(texture, level, xoffset, yoffset, zoffset, width, height, depth, format, type, pixels);}
+  inline void TransformFeedbackBufferBase(GLuint xfb, GLuint index, GLuint buffer){_detail::TransformFeedbackBufferBase(xfb, index, buffer);}
+  inline void TransformFeedbackBufferRange(GLuint xfb, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size){_detail::TransformFeedbackBufferRange(xfb, index, buffer, offset, size);}
+  inline GLboolean UnmapNamedBuffer(GLuint buffer){return _detail::UnmapNamedBuffer(buffer);}
+  inline void VertexArrayAttribBinding(GLuint vaobj, GLuint attribindex, GLuint bindingindex){_detail::VertexArrayAttribBinding(vaobj, attribindex, bindingindex);}
+  inline void VertexArrayAttribFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLboolean normalized, GLuint relativeoffset){_detail::VertexArrayAttribFormat(vaobj, attribindex, size, type, normalized, relativeoffset);}
+  inline void VertexArrayAttribIFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset){_detail::VertexArrayAttribIFormat(vaobj, attribindex, size, type, relativeoffset);}
+  inline void VertexArrayAttribLFormat(GLuint vaobj, GLuint attribindex, GLint size, GLenum type, GLuint relativeoffset){_detail::VertexArrayAttribLFormat(vaobj, attribindex, size, type, relativeoffset);}
+  inline void VertexArrayBindingDivisor(GLuint vaobj, GLuint bindingindex, GLuint divisor){_detail::VertexArrayBindingDivisor(vaobj, bindingindex, divisor);}
+  inline void VertexArrayElementBuffer(GLuint vaobj, GLuint buffer){_detail::VertexArrayElementBuffer(vaobj, buffer);}
+  inline void VertexArrayVertexBuffer(GLuint vaobj, GLuint bindingindex, GLuint buffer, GLintptr offset, GLsizei stride){_detail::VertexArrayVertexBuffer(vaobj, bindingindex, buffer, offset, stride);}
+  inline void VertexArrayVertexBuffers(GLuint vaobj, GLuint first, GLsizei count, const GLuint * buffers, const GLintptr * offsets, const GLsizei * strides){_detail::VertexArrayVertexBuffers(vaobj, first, count, buffers, offsets, strides);}
   
   
   namespace sys

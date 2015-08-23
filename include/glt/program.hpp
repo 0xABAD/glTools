@@ -1,13 +1,12 @@
 #ifndef __PROGRAM_HPP__
 #define __PROGRAM_HPP__
 
-#include <glt/api.hpp>
 #include <glt/gl.hpp>
 #include <ostream>
 
 namespace glt {
 
-class GLT_API Program final {
+class Program final {
 private:
     GLuint _program;
 public:
@@ -52,8 +51,8 @@ public:
  *       for any reason the the returned program will have an id of zero, otherwise
  *       it will have an id greater than zero.
  */
-GLT_API Program compileProgram(std::ostream &out, std::initializer_list<std::string> paths);
-GLT_API Program compileProgram(std::initializer_list<std::string> paths);
+Program compileProgram(std::ostream &out, std::initializer_list<std::string> paths);
+Program compileProgram(std::initializer_list<std::string> paths);
 
 /**
  * Compile an OpenGL program using the given pre-compiled shader programs.
@@ -70,8 +69,8 @@ GLT_API Program compileProgram(std::initializer_list<std::string> paths);
  *           be returned, otherwise the program will have an id greater
  *           than zero.
  */
-GLT_API Program compileProgram(std::ostream &out, GLuint shaderId, std::initializer_list<GLuint> otherIds);
-GLT_API Program compileProgram(GLuint shaderId, std::initializer_list<GLuint> otherIds);
+Program compileProgram(std::ostream &out, GLuint shaderId, std::initializer_list<GLuint> otherIds);
+Program compileProgram(GLuint shaderId, std::initializer_list<GLuint> otherIds);
 
 } // end namepsace glt
 

@@ -10,7 +10,7 @@ namespace glt {
 /**
  * A simple text rendering engine.
  */
-class GLT_API Text {
+class Text {
 public:
     Text();
 
@@ -180,8 +180,8 @@ private:
  *                        binding 0.
  *
  */
-GLT_API Text makeConsolas(size_t buffers, size_t capacity);
-GLT_API Text makeConsolas(size_t buffers, size_t capacity, const Shader& fragmentShader);
+Text makeConsolas(size_t buffers, size_t capacity);
+Text makeConsolas(size_t buffers, size_t capacity, const Shader& fragmentShader);
 
 /**
  * Returns a Text rendering engine using the built-in Segoe UI font.
@@ -196,8 +196,8 @@ GLT_API Text makeConsolas(size_t buffers, size_t capacity, const Shader& fragmen
  *                        binding 0.
  *
  */
-GLT_API Text makeSegoeUI(size_t buffers, size_t capacity);
-GLT_API Text makeSegoeUI(size_t buffers, size_t capacity, const Shader& fragmentShader);
+Text makeSegoeUI(size_t buffers, size_t capacity);
+Text makeSegoeUI(size_t buffers, size_t capacity, const Shader& fragmentShader);
 
 } // end namespace glt
 

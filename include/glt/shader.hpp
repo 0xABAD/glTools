@@ -1,14 +1,13 @@
 #ifndef __SHADER_HPP__
 #define __SHADER_HPP__
 
-#include <glt/api.hpp>
 #include <glt/gl.hpp>
 #include <string>
 #include <ostream>
 
 namespace glt {
 
-class GLT_API Shader final {
+class Shader final {
 private:
     GLuint _shader;
     GLenum _shader_t;
@@ -65,10 +64,10 @@ public:
  *           not be compiled for any reason then the shader returned will have
  *           and id of zero.
  */
-GLT_API Shader compileShader(const std::string& filepath, GLenum shadertype, std::ostream &out);
-GLT_API Shader compileShader(const std::string& filepath, GLenum shadertype);
-GLT_API Shader compileShader(const std::string& filepath, std::ostream &out);
-GLT_API Shader compileShader(const std::string& filepath);
+Shader compileShader(const std::string& filepath, GLenum shadertype, std::ostream &out);
+Shader compileShader(const std::string& filepath, GLenum shadertype);
+Shader compileShader(const std::string& filepath, std::ostream &out);
+Shader compileShader(const std::string& filepath);
 
 /**
  * Compile a shader directly from a source string.
@@ -83,8 +82,8 @@ GLT_API Shader compileShader(const std::string& filepath);
  *           not be compiled for any reason then the shader returned will have
  *           and id of zero.
  */
-GLT_API Shader compileShaderSource(const char * source, GLenum shadertype, std::ostream &out);
-GLT_API Shader compileShaderSource(const char * source, GLenum shadertype);
+Shader compileShaderSource(const char * source, GLenum shadertype, std::ostream &out);
+Shader compileShaderSource(const char * source, GLenum shadertype);
 
 } // end namespace glt
 

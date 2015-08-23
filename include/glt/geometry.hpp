@@ -2,7 +2,6 @@
 #define __GEOMETRY_HPP__
 
 #include <vector>
-#include <glt/api.hpp>
 #include <glt/gl.hpp>
 
 namespace glt {
@@ -27,7 +26,7 @@ struct Geometry {
  * @param ibo       Vertex buffer object id of where the geometry index data 
  *                  will be bound to.
  */
-GLT_API void loadGeometry(const Geometry& geometry, GLuint vbo, GLuint ibo);
+void loadGeometry(const Geometry& geometry, GLuint vbo, GLuint ibo);
 
 /**
  * Sets up the vertex attributes for geometry to the attribute positions
@@ -65,7 +64,7 @@ GLT_API void loadGeometry(const Geometry& geometry, GLuint vbo, GLuint ibo);
  *      ...
  *
  */
-GLT_API void setupAttributes(const Geometry& geometry, GLuint pos1 = 0, GLuint pos2 = 1, GLuint pos3 = 2);
+void setupAttributes(const Geometry& geometry, GLuint pos1 = 0, GLuint pos2 = 1, GLuint pos3 = 2);
 
 /**
  * Creates a geometrical plane of width and height.  The plane, and its 
@@ -77,7 +76,7 @@ GLT_API void setupAttributes(const Geometry& geometry, GLuint pos1 = 0, GLuint p
  *
  * @returns   A Geometrical plane.
  */
-GLT_API Geometry makePlane(float width, float height);
+Geometry makePlane(float width, float height);
 
 /**
  * Creates a geometry that forms a box.  The geometry will normals
@@ -89,7 +88,7 @@ GLT_API Geometry makePlane(float width, float height);
  *
  * @returns  A box geometry.
  */
-GLT_API Geometry makeBox(float width, float height, float depth);
+Geometry makeBox(float width, float height, float depth);
 
 } // end namespace glt
 

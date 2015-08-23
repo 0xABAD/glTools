@@ -1,7 +1,6 @@
 #ifndef __WINDOW_HPP__
 #define __WINDOW_HPP__
 
-#include <glt/api.hpp>
 #include <glt/app.hpp>
 #include <glt/gl.hpp>
 #include <GLFW/glfw3.h>
@@ -12,7 +11,7 @@
 
 namespace glt {
 
-class GLT_API Window final {
+class Window final {
 public:
     Window() : _window(nullptr) {}
 
@@ -164,7 +163,7 @@ private:
 };
 
 /** Processes events in the event queue. */
-GLT_API void pollEvents();
+void pollEvents();
 
 /**
  * Creates a window with optional defaults, makes the window the
@@ -181,14 +180,14 @@ GLT_API void pollEvents();
  *           window could be created for any reason or OpenGL can not
  *           be loaded then the program will be prematurely exited.
  */
-GLT_API Window easyWindow(int width, int height, const char *title, std::ostream &out);
-GLT_API Window easyWindow(int width, int height, const char *title);
-GLT_API Window easyWindow(int width, int height, std::ostream &out);
-GLT_API Window easyWindow(int width, int height);
-GLT_API Window easyWindow(const char *title, std::ostream &out);
-GLT_API Window easyWindow(const char *title);
-GLT_API Window easyWindow(std::ostream &out);
-GLT_API Window easyWindow();
+Window easyWindow(int width, int height, const char *title, std::ostream &out);
+Window easyWindow(int width, int height, const char *title);
+Window easyWindow(int width, int height, std::ostream &out);
+Window easyWindow(int width, int height);
+Window easyWindow(const char *title, std::ostream &out);
+Window easyWindow(const char *title);
+Window easyWindow(std::ostream &out);
+Window easyWindow();
 
 } // end namespace glt
 

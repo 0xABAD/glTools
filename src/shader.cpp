@@ -5,7 +5,7 @@
 
 namespace glt {
 
-inline bool compileSource(const Shader& shader, const char * source, GLenum shadertype, std::ostream& out)
+bool compileSource(const Shader& shader, const char * source, GLenum shadertype, std::ostream& out)
 {
     gl::ShaderSource(shader, 1, static_cast<const GLchar * const *>(&source), nullptr);
     gl::CompileShader(shader);

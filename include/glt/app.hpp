@@ -1,15 +1,13 @@
 #ifndef __APP_HPP__
 #define __APP_HPP__
 
-#include <glt/api.hpp>
-
 namespace glt {
 
 /**
  * Initializes the underlying GLFW3 system.  This class should
  * be only constructed once and at the top of main.
  */
-class GLT_API App final
+class App final
 {
 public:
   App();
