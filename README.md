@@ -64,7 +64,8 @@ header will typically always be included.
 
 * glt/window.hpp - Windowing using GLFW3.  A wrapper class Window
 class is defined to give programs a more modern C++ feel (e.g.
-the ability to use lambdas for callbacks).
+the ability to use lambdas for callbacks).  Including this file
+also includes GLFW3/glfw3.h for its defined macro constants.
 
 * glt/geometry.hpp - Functions for creating simple geometry to
 get something up and running quickly.  Only planes and boxes are
