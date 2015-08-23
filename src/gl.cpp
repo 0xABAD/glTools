@@ -2,7 +2,7 @@
 
 namespace glt {
 
-inline bool initGlTools()
+bool initGlTools()
 {
     return gl::sys::LoadFunctions();
 }

@@ -6,7 +6,7 @@
 
 namespace glt {
 
-void setupCallbacks(GLFWwindow *window)
+static void setupCallbacks(GLFWwindow *window)
 {
     glfwSetKeyCallback(window, OnKeyEvent);
     glfwSetCharCallback(window, OnTextInput);
@@ -34,7 +34,7 @@ Window::Window(int width, int height, const char *title, GLFWmonitor *monitor, G
     setupCallbacks(_window);
 }
 
-inline void destory(GLFWwindow *window)
+static void destory(GLFWwindow *window)
 {
     if (window != nullptr)
     {
@@ -74,15 +74,15 @@ Window& Window::operator=(Window&& rhs)
     return *this;
 }
 
-inline void Window::makeCurrentContext() 
+void Window::makeCurrentContext() 
 { 
     glfwMakeContextCurrent(_window);
 }
 
-inline void Window::show() { glfwShowWindow(_window); }
-inline void Window::hide() { glfwHideWindow(_window); }
-inline bool Window::shouldClose() { return static_cast<bool>(glfwWindowShouldClose(_window)); }
-inline void Window::swapBuffers() { glfwSwapBuffers(_window); }
+void Window::show() { glfwShowWindow(_window); }
+void Window::hide() { glfwHideWindow(_window); }
+bool Window::shouldClose() { return static_cast<bool>(glfwWindowShouldClose(_window)); }
+void Window::swapBuffers() { glfwSwapBuffers(_window); }
 
 std::tuple<int, int> Window::getFramebufferSize()
 {
@@ -98,12 +98,12 @@ std::tuple<int, int> Window::getSize()
     return std::make_tuple(width, height);
 }
 
-inline void Window::setInputMode(int mode, int value)
+void Window::setInputMode(int mode, int value)
 {
     glfwSetInputMode(_window, mode, value);
 }
 
-inline void Window::setCursor(GLFWcursor *cursor)
+void Window::setCursor(GLFWcursor *cursor)
 {
     glfwSetCursor(_window, cursor);
 }
@@ -144,7 +144,7 @@ void OnScroll(GLFWwindow *win, double xoffset, double yoffset)
     window->_onScroll(xoffset, yoffset);
 }
 
-inline void pollEvents() { glfwPollEvents(); }
+void pollEvents() { glfwPollEvents(); }
 
 const int   WIDTH  = 1024;
 const int   HEIGHT = 768;
@@ -172,37 +172,37 @@ Window easyWindow(int width, int height, const char *title, std::ostream &out)
     return window;
 }
 
-inline Window easyWindow(int width, int height, const char *title)
+Window easyWindow(int width, int height, const char *title)
 {
     return easyWindow(width, height, title, std::cerr);
 }
 
-inline Window easyWindow(int width, int height, std::ostream &out)
+Window easyWindow(int width, int height, std::ostream &out)
 {
     return easyWindow(width, height, TITLE, out);
 }
 
-inline Window easyWindow(int width, int height)
+Window easyWindow(int width, int height)
 {
     return easyWindow(width, height, TITLE, std::cerr);
 }
 
-inline Window easyWindow(const char *title, std::ostream &out)
+Window easyWindow(const char *title, std::ostream &out)
 {
     return easyWindow(WIDTH, HEIGHT, title, out);
 }
 
-inline Window easyWindow(const char *title)
+Window easyWindow(const char *title)
 {
     return easyWindow(WIDTH, HEIGHT, title, std::cerr);
 }
 
-inline Window easyWindow(std::ostream &out)
+Window easyWindow(std::ostream &out)
 {
     return easyWindow(WIDTH, HEIGHT, TITLE, out);
 }
 
-inline Window easyWindow()
+Window easyWindow()
 {
     return easyWindow(WIDTH, HEIGHT, TITLE, std::cerr);
 }
